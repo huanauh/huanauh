@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>
+      
+          修改 Windows 命令提示符字体 - 驩讙懽歡
+      
+  </title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="map[]" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.huan.ml/img/favicon.ico">
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://www.huan.ml/style.min.74c1d842fda3c5dcef37cb1e26934d4a205babfe7cbfca23903297bcab678581.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  
+  
+
+  <meta property="og:title" content="修改 Windows 命令提示符字体" />
+<meta property="og:description" content="Windows 的命令提示符默认使用点阵字体，该字体奇丑无比。更换方法如下： 字体下载 cmd 对字体的要求很多，很多字体都无法使用。推荐使用 Microsoft YaHei Mono 字体。 修改注册表" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.huan.ml/blog/modify-windows-cmd-fonts/" />
+<meta property="article:published_time" content="2019-02-16T15:45:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-02-16T15:45:00&#43;00:00"/>
+
+<meta itemprop="name" content="修改 Windows 命令提示符字体">
+<meta itemprop="description" content="Windows 的命令提示符默认使用点阵字体，该字体奇丑无比。更换方法如下： 字体下载 cmd 对字体的要求很多，很多字体都无法使用。推荐使用 Microsoft YaHei Mono 字体。 修改注册表">
+
+
+<meta itemprop="datePublished" content="2019-02-16T15:45:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-02-16T15:45:00&#43;00:00" />
+<meta itemprop="wordCount" content="343">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="修改 Windows 命令提示符字体"/>
+<meta name="twitter:description" content="Windows 的命令提示符默认使用点阵字体，该字体奇丑无比。更换方法如下： 字体下载 cmd 对字体的要求很多，很多字体都无法使用。推荐使用 Microsoft YaHei Mono 字体。 修改注册表"/>
+
+  <!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+
+  </head>
+
+  <body>
+    
+  <h1>修改 Windows 命令提示符字体</h1>
+  <header>
+  
+  <div class="avatar">
+    <img class="avatarMask" src="https://www.huan.ml/img/avatar.jpg">
+    <a href="https://www.huan.ml"><img src="https://www.huan.ml/img/avatar-border.svg" }}></a>
+  </div>
+  
+  <h2><a class="author" href="https://www.huan.ml">Han Leon</a></h2>
+</header>
+
+  
+  <p class="date">February 16, 2019</p>
+  
+  <div id="contentBody">
+    
+
+<p>Windows 的<code>命令提示符</code>默认使用点阵字体，该字体奇丑无比。更换方法如下：</p>
+
+<h3 id="字体下载">字体下载</h3>
+
+<p>cmd 对字体的要求很多，很多字体都无法使用。推荐使用 <a href="https://github.com/Microsoft/BashOnWindows/files/1362006/Microsoft.YaHei.Mono.zip">Microsoft YaHei Mono</a> 字体。</p>
+
+<h3 id="修改注册表">修改注册表</h3>
+
+<p>注册表定位到<code>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont</code>新建<code>0936</code>字符串值，填入<code>*Microsoft YaHei Mono</code>
++ 注1：936 为简体中文代码页，自行添加字体时，需要在 936 前面加 0，所以添加第一个字体就是 0936，同理添加第二个字体就是 00936。
++ 注2：字体名称前面<code>*</code>必须加上。</p>
+
+<h3 id="切换字体">切换字体</h3>
+
+<p>经过以上两步，打开<code>命令提示符</code>，在<code>属性</code>-<code>字体</code>里面就可以将字体修改为 Microsoft YaHei Mono 了。</p>
+
+<h3 id="注意事项">注意事项</h3>
+
+<p>使用该字体时，建议<code>命令提示符</code>的字体大小不要使用 18 号。原因：使用 18 号大小时，数字 0 显示不正常。</p>
+
+  </div>
+  <footer>
+  <p>
+  &copy; 2019 Han Leon.
+  Powered by <a href="https://gohugo.io/">Hugo</a>
+  using the <a href="https://github.com/koirand/pulp/">pulp</a> theme.
+  </p>
+</footer>
+
+
+  </body>
+</html>

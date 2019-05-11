@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.huan.ml/blog/</loc>
+    <lastmod>2019-02-16T15:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/modify-windows-cmd-fonts/</loc>
+    <lastmod>2019-02-16T15:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/</loc>
+    <lastmod>2019-02-16T15:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/lamp-prohibits-ip-access/</loc>
+    <lastmod>2019-01-16T14:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/change-hips-protection-days/</loc>
+    <lastmod>2018-12-23T19:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/run-bat-hide-cmd-window/</loc>
+    <lastmod>2018-12-18T17:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/lamp-set-reverse-proxy/</loc>
+    <lastmod>2018-12-03T20:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/fix-lookingglass-not-use-on-php7/</loc>
+    <lastmod>2018-12-03T20:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/fix-lookingglass-not-use-on-lamp/</loc>
+    <lastmod>2018-11-16T19:31:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/httpd-ip-binding-domain/</loc>
+    <lastmod>2018-11-10T15:12:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/linux-modified-default-editor-to-nano/</loc>
+    <lastmod>2018-11-10T15:12:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/how-to-use-symbolic-link/</loc>
+    <lastmod>2018-10-27T16:35:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/typecho-on-lighttps-pseudo-static/</loc>
+    <lastmod>2018-10-24T21:48:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/lighttps-force-https/</loc>
+    <lastmod>2018-10-24T21:48:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/crt-and-key-convert-to-pem/</loc>
+    <lastmod>2018-10-23T21:02:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/android-open-telnet-service/</loc>
+    <lastmod>2018-10-23T12:25:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/how-to-use-termux/</loc>
+    <lastmod>2018-10-21T09:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/linux-build-kms-server/</loc>
+    <lastmod>2018-09-16T20:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/linux-process-run-background/</loc>
+    <lastmod>2018-09-16T20:41:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/debian-install-linux-kernel-and-open-bbr/</loc>
+    <lastmod>2018-09-16T20:36:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/linux-fix-too-mang-bioset-processes/</loc>
+    <lastmod>2018-09-16T20:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/kms-activate-windows-and-office/</loc>
+    <lastmod>2018-08-26T21:09:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/fix-windows-update-nocheck-office2010/</loc>
+    <lastmod>2018-08-16T20:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/fix-windows-7-update-always-35per/</loc>
+    <lastmod>2018-07-16T21:09:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/fix-office2010-word-bug/</loc>
+    <lastmod>2018-07-16T20:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/windows-share-printer/</loc>
+    <lastmod>2018-06-16T20:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/windows-view-all-device/</loc>
+    <lastmod>2018-05-16T21:09:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/fix-teredo-tunneling-adapter-yellow/</loc>
+    <lastmod>2018-05-15T20:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/debian-iptables-config/</loc>
+    <lastmod>2018-04-29T18:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/debian-modify-login-prompt/</loc>
+    <lastmod>2018-04-29T18:52:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/centos-6-change-kernel/</loc>
+    <lastmod>2018-03-23T18:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/ssh-login-with-key/</loc>
+    <lastmod>2018-03-19T21:09:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/crontab-install-and-use/</loc>
+    <lastmod>2018-03-10T18:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/fix-server-refused-our-key/</loc>
+    <lastmod>2018-03-10T18:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/linux-modify-time-zone/</loc>
+    <lastmod>2018-02-12T18:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/linux-modify-hostname/</loc>
+    <lastmod>2018-01-20T18:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/ubuntu-disable-update-prompts/</loc>
+    <lastmod>2018-01-13T18:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/ubuntu-install-shadowsocks/</loc>
+    <lastmod>2017-12-18T18:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/centos-7-firewall-commands/</loc>
+    <lastmod>2017-12-02T18:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/how-to-use-screen/</loc>
+    <lastmod>2017-11-16T18:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/blog/hello-world/</loc>
+    <lastmod>2017-10-25T21:03:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/series/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

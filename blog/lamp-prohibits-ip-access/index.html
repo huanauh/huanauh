@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>
+      
+          LAMP 禁止 IP 直接访问 - 驩讙懽歡
+      
+  </title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="map[]" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.huan.ml/img/favicon.ico">
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://www.huan.ml/style.min.74c1d842fda3c5dcef37cb1e26934d4a205babfe7cbfca23903297bcab678581.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  
+  
+
+  <meta property="og:title" content="LAMP 禁止 IP 直接访问" />
+<meta property="og:description" content="针对开启了虚拟主机的 LAMP，修改conf/extra/httpd-vhosts.conf文件，添加以下内容： &lt;virtualhost 1.1.1.1:80&gt; #1.1.1.1为你的 IP ServerName" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.huan.ml/blog/lamp-prohibits-ip-access/" />
+<meta property="article:published_time" content="2019-01-16T14:45:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-01-16T14:45:00&#43;00:00"/>
+
+<meta itemprop="name" content="LAMP 禁止 IP 直接访问">
+<meta itemprop="description" content="针对开启了虚拟主机的 LAMP，修改conf/extra/httpd-vhosts.conf文件，添加以下内容： &lt;virtualhost 1.1.1.1:80&gt; #1.1.1.1为你的 IP ServerName">
+
+
+<meta itemprop="datePublished" content="2019-01-16T14:45:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-01-16T14:45:00&#43;00:00" />
+<meta itemprop="wordCount" content="168">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="LAMP 禁止 IP 直接访问"/>
+<meta name="twitter:description" content="针对开启了虚拟主机的 LAMP，修改conf/extra/httpd-vhosts.conf文件，添加以下内容： &lt;virtualhost 1.1.1.1:80&gt; #1.1.1.1为你的 IP ServerName"/>
+
+  <!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+
+  </head>
+
+  <body>
+    
+  <h1>LAMP 禁止 IP 直接访问</h1>
+  <header>
+  
+  <div class="avatar">
+    <img class="avatarMask" src="https://www.huan.ml/img/avatar.jpg">
+    <a href="https://www.huan.ml"><img src="https://www.huan.ml/img/avatar-border.svg" }}></a>
+  </div>
+  
+  <h2><a class="author" href="https://www.huan.ml">Han Leon</a></h2>
+</header>
+
+  
+  <p class="date">January 16, 2019</p>
+  
+  <div id="contentBody">
+    <p>针对开启了虚拟主机的 LAMP，修改<code>conf/extra/httpd-vhosts.conf</code>文件，添加以下内容：</p>
+
+<pre><code>&lt;virtualhost 1.1.1.1:80&gt;  #1.1.1.1为你的 IP
+ServerName 1.1.1.1
+&lt;Directory /&gt;
+    Order Allow,Deny
+    Deny from all
+&lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</code></pre>
+
+<p>没有开启虚拟主机的 LAMP 直接修改<code>httpd.conf</code>文件。
+需要注意的是，原<code>.conf</code>文件中的<code>ServerName</code>或<code>ServerAlias</code>项要修改你的域名，保证你的域名可以正常访问。</p>
+
+  </div>
+  <footer>
+  <p>
+  &copy; 2019 Han Leon.
+  Powered by <a href="https://gohugo.io/">Hugo</a>
+  using the <a href="https://github.com/koirand/pulp/">pulp</a> theme.
+  </p>
+</footer>
+
+
+  </body>
+</html>

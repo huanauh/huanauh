@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>
+      
+          Windows 查看设备管理器所有设备 - 驩讙懽歡
+      
+  </title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="map[]" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.huan.ml/img/favicon.ico">
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://www.huan.ml/style.min.74c1d842fda3c5dcef37cb1e26934d4a205babfe7cbfca23903297bcab678581.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  
+  
+
+  <meta property="og:title" content="Windows 查看设备管理器所有设备" />
+<meta property="og:description" content="进入命令提示符执行 $ set devmgr_show_nonpresent_devices=1 然后执行 $ Start DEVMGMT.MSC 即可进入设备管理，点击顶部菜单查看勾选显示隐藏的设备即可查看全部设备。 附：解决网络连接无法重命名的问题" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.huan.ml/blog/windows-view-all-device/" />
+<meta property="article:published_time" content="2018-05-16T21:09:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-05-16T21:09:00&#43;00:00"/>
+
+<meta itemprop="name" content="Windows 查看设备管理器所有设备">
+<meta itemprop="description" content="进入命令提示符执行 $ set devmgr_show_nonpresent_devices=1 然后执行 $ Start DEVMGMT.MSC 即可进入设备管理，点击顶部菜单查看勾选显示隐藏的设备即可查看全部设备。 附：解决网络连接无法重命名的问题">
+
+
+<meta itemprop="datePublished" content="2018-05-16T21:09:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-05-16T21:09:00&#43;00:00" />
+<meta itemprop="wordCount" content="246">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Windows 查看设备管理器所有设备"/>
+<meta name="twitter:description" content="进入命令提示符执行 $ set devmgr_show_nonpresent_devices=1 然后执行 $ Start DEVMGMT.MSC 即可进入设备管理，点击顶部菜单查看勾选显示隐藏的设备即可查看全部设备。 附：解决网络连接无法重命名的问题"/>
+
+  <!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+
+  </head>
+
+  <body>
+    
+  <h1>Windows 查看设备管理器所有设备</h1>
+  <header>
+  
+  <div class="avatar">
+    <img class="avatarMask" src="https://www.huan.ml/img/avatar.jpg">
+    <a href="https://www.huan.ml"><img src="https://www.huan.ml/img/avatar-border.svg" }}></a>
+  </div>
+  
+  <h2><a class="author" href="https://www.huan.ml">Han Leon</a></h2>
+</header>
+
+  
+  <p class="date">May 16, 2018</p>
+  
+  <div id="contentBody">
+    
+
+<p>进入命令提示符执行</p>
+
+<pre><code>$ set devmgr_show_nonpresent_devices=1
+</code></pre>
+
+<p>然后执行</p>
+
+<pre><code>$ Start DEVMGMT.MSC
+</code></pre>
+
+<p>即可进入设备管理，点击顶部菜单<code>查看</code>勾选<code>显示隐藏的设备</code>即可查看全部设备。</p>
+
+<h3 id="附-解决网络连接无法重命名的问题">附：解决网络连接无法重命名的问题。</h3>
+
+<h4 id="方法一">方法一：</h4>
+
+<p>按以上方法进入设备管理器，删除相应的灰色的同名称网卡（后缀一般为 #2，#3 之类）驱动，重启后即可重命名网络连接名称。</p>
+
+<h4 id="方法二">方法二：</h4>
+
+<p>进入注册表编辑器，定位到</p>
+
+<pre><code>HKEY_LOCAL_MCHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}
+</code></pre>
+
+<p>该目录下有多个目录，除<code>Descriptions</code>目录外其他均为网卡配置。每个网卡配置目录内均有<code>Connection</code>目录，选中<code>Connection</code>目录即可查看具体内容。依据实际情况可进行相应删除。</p>
+
+  </div>
+  <footer>
+  <p>
+  &copy; 2019 Han Leon.
+  Powered by <a href="https://gohugo.io/">Hugo</a>
+  using the <a href="https://github.com/koirand/pulp/">pulp</a> theme.
+  </p>
+</footer>
+
+
+  </body>
+</html>

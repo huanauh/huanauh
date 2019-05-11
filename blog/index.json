@@ -1,0 +1,313 @@
+[
+    {
+        "ref": "https://www.huan.ml/blog/modify-windows-cmd-fonts/",
+        "title": "修改 Windows 命令提示符字体",
+        "section": "blog",
+        "date" : "2019.02.16",
+        "body": " Windows 的命令提示符默认使用点阵字体，该字体奇丑无比。更换方法如下：\n字体下载 cmd 对字体的要求很多，很多字体都无法使用。推荐使用 Microsoft YaHei Mono 字体。\n修改注册表 注册表定位到HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Console\\TrueTypeFont新建0936字符串值，填入*Microsoft YaHei Mono + 注1：936 为简体中文代码页，自行添加字体时，需要在 936 前面加 0，所以添加第一个字体就是 0936，同理添加第二个字体就是 00936。 + 注2：字体名称前面*必须加上。\n切换字体 经过以上两步，打开命令提示符，在属性-字体里面就可以将字体修改为 Microsoft YaHei Mono 了。\n注意事项 使用该字体时，建议命令提示符的字体大小不要使用 18 号。原因：使用 18 号大小时，数字 0 显示不正常。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/lamp-prohibits-ip-access/",
+        "title": "LAMP 禁止 IP 直接访问",
+        "section": "blog",
+        "date" : "2019.01.16",
+        "body": "针对开启了虚拟主机的 LAMP，修改conf/extra/httpd-vhosts.conf文件，添加以下内容：\n\u0026lt;virtualhost 1.1.1.1:80\u0026gt; #1.1.1.1为你的 IP ServerName 1.1.1.1 \u0026lt;Directory /\u0026gt; Order Allow,Deny Deny from all \u0026lt;/Directory\u0026gt; \u0026lt;/VirtualHost\u0026gt;  没有开启虚拟主机的 LAMP 直接修改httpd.conf文件。 需要注意的是，原.conf文件中的ServerName或ServerAlias项要修改你的域名，保证你的域名可以正常访问。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/change-hips-protection-days/",
+        "title": "修改火绒保护天数教程",
+        "section": "blog",
+        "date" : "2018.12.23",
+        "body": " 修改方法 找到位于注册表HKEY_LOCAL_MACHINE\\SOFTWARE\\Huorong\\Sysdiag\\app的InstallTime值，该值为火绒的安装时间。火绒通过安装时间来确定保护天数，修改此值即可修改保护天数。但是，遗憾的是该值无法直接修改，需要使用其他方法。 推测是因为火绒保护注册表的功能导致不能修改此键值，所以有2种方法：一是关掉火绒保护然后再修改；二是进入 PE 修改。第一种没试过也不介绍，下面介绍如何 PE 操作。\nPE 操作 进入 PE，打开注册表编辑器文件-加载配置单元-选择C:\\Windows\\System32\\config目录下SOFTWARE文件-找到InstallTime值即可修改。修改后文件-卸载配置单元即可。\n注意事项 1.想要修改的时间需要自行转换为 Unix 时间戳格式； 2.键值默认为16进制，修改时注意选中10进制后再修改。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/run-bat-hide-cmd-window/",
+        "title": "运行 bat 脚本时隐藏 cmd 窗口",
+        "section": "blog",
+        "date" : "2018.12.18",
+        "body": "在需要运行的 bat 脚本前添加以下内容：\n@echo off if \u0026quot;%1\u0026quot; == \u0026quot;h\u0026quot; goto begin mshta vbscript:createobject(\u0026quot;wscript.shell\u0026quot;).run(\u0026quot;\u0026quot;\u0026quot;%~nx0\u0026quot;\u0026quot; h\u0026quot;,0)(window.close)\u0026amp;\u0026amp;exit :begin REM  即可。运行时 cmd 窗口会闪烁一下。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/lamp-set-reverse-proxy/",
+        "title": "LAMP 设置反向代理",
+        "section": "blog",
+        "date" : "2018.12.03",
+        "body": "举例说明，将 1.test.com 和 2.test.com 两个域名通过反向代理指向 localhost:8080 端口 首先在 LAMP 添加任意域名，假设为 0.test.com 修改/usr/local/apache/conf/vhost目录下0.test.com.conf的配置文件，将文件修改为\n\u0026lt;VirtualHost *:80\u0026gt; ServerAdmin mail@mail.com ServerName 0.test.com ServerAlias 1.test.com 2.test.com ProxyPreserveHost On ProxyPass / http://localhost:8088/ ProxyPassReverse / http://localhost:8088/ \u0026lt;/VirtualHost\u0026gt;  即可。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/fix-lookingglass-not-use-on-php7/",
+        "title": "修复 LookingGlass 在 PHP7 上无法使用的问题",
+        "section": "blog",
+        "date" : "2018.12.03",
+        "body": "LookingGlass 在 PHP7 环境无法使用，解决方案如下： 在根目录下ajax.php文件中找到以下内容\n// execute command $output = $lg-\u0026gt;$_GET['cmd']($_GET['host']);  修改为\n// execute command $output = $lg-\u0026gt;{$_GET['cmd']}($_GET['host']);  即可。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/fix-lookingglass-not-use-on-lamp/",
+        "title": "修复 LookingGlass 在 LAMP 上无法使用的问题",
+        "section": "blog",
+        "date" : "2018.11.16",
+        "body": "安装 LookingGlass 后发现 ping 和 mtr 等命令无法使用。发现是 PHP 的配置问题，解决方案如下： 编辑/usr/local/php目录下php.ini文件，找到\ndisable_functions = exec,system,dl,passthru,chown,shell_exec,popen,proc_open  将proc_open删掉，重启 Apache\n$ /etc/init.d/httpd restart  即可。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/httpd-ip-binding-domain/",
+        "title": "LAMP IP 绑定域名",
+        "section": "blog",
+        "date" : "2018.11.10",
+        "body": "在 LAMP 添加的第一个网站根目录下.htaccess文件里添加：\nRewriteCond %{http_host} ^0.0.0.0 [NC] RewriteRule ^(.*)$ http://www.examples.com/$1 [R=301,L]  注意：0.0.0.0换成服务器的IP；www.examples.com更换为需要绑定的域名。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/linux-modified-default-editor-to-nano/",
+        "title": "修改 Linux 默认编辑器为 nano",
+        "section": "blog",
+        "date" : "2018.11.10",
+        "body": "在终端执行\n$ export EDITOR=\u0026quot;/usr/bin/nano\u0026quot;  即可将编辑器临时改为 nano 编辑器。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/how-to-use-symbolic-link/",
+        "title": "如何使用符号链接",
+        "section": "blog",
+        "date" : "2018.10.27",
+        "body": " 使用缘由 Windows 电脑上有多个硬盘分区，但文件服务器又不支持虚拟目录，所以跨硬盘分区分享文件不太好操作。使用符号链接能方便的解决这个问题。\n使用方法 以管理员身份运行cmd 假设服务器目录为www，位于c:\\www 1、将整个d盘链接过来\n$ mklink /d c:\\www\\disk_d d:\\  2、将d盘的folder目录链接过来\n$ mklink /d c:\\www\\folder d:\\folder  "
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/typecho-on-lighttps-pseudo-static/",
+        "title": "Lighttpd 下 Typecho 伪静态设置",
+        "section": "blog",
+        "date" : "2018.10.24",
+        "body": "编辑lighttpd.conf文件，添加以下内容\n#pseudo static url.rewrite = ( \u0026quot;^/(admin|usr)/(.*)\u0026quot; =\u0026gt; \u0026quot;/$1/$2\u0026quot;, \u0026quot;^/(.*).html$\u0026quot; =\u0026gt; \u0026quot;/index.php/$1.html\u0026quot;, \u0026quot;^/archives/(.*)\u0026quot; =\u0026gt; \u0026quot;/index.php/archives/$1\u0026quot;, \u0026quot;^/category/(.*)\u0026quot; =\u0026gt; \u0026quot;/index.php/category/$1\u0026quot;, \u0026quot;^/([0-9]+)/([0-9]+)/$\u0026quot; =\u0026gt; \u0026quot;/index.php/$1/$2/\u0026quot;, \u0026quot;^/tag/(.*)/$\u0026quot; =\u0026gt; \u0026quot;/index.php/tag/$1\u0026quot;, \u0026quot;^/search/(.*)/$\u0026quot; =\u0026gt; \u0026quot;/index.php/search/$1\u0026quot;, \u0026quot;^/(.*)page/(.*)\u0026quot; =\u0026gt; \u0026quot;/index.php/$1page/$2\u0026quot;, \u0026quot;^/(feed.*)\u0026quot; =\u0026gt; \u0026quot;/index.php/$1\u0026quot;, \u0026quot;^/action/(.*)\u0026quot; =\u0026gt; \u0026quot;/index.php/action/$1\u0026quot;, \u0026quot;^/(.*)comment\u0026quot; =\u0026gt; \u0026quot;/index.php/$1/comment\u0026quot; )  即可。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/lighttps-force-https/",
+        "title": "Lighttpd 强制 Https 访问",
+        "section": "blog",
+        "date" : "2018.10.24",
+        "body": "编辑lighttpd.conf文件，添加以下内容\n#force https $SERVER[\u0026quot;socket\u0026quot;] == \u0026quot;:80\u0026quot; { $HTTP[\u0026quot;host\u0026quot;] =~ \u0026quot;([^:/]+)\u0026quot; { url.redirect = ( \u0026quot;^/(.*)\u0026quot; =\u0026gt; \u0026quot;https://%0:443/$1\u0026quot; ) } }  即可。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/crt-and-key-convert-to-pem/",
+        "title": "Crt 与 key 格式证书转换为 pem 格式",
+        "section": "blog",
+        "date" : "2018.10.23",
+        "body": "执行\n$ cat test.key test.crt \u0026gt; test.pem  即可转换为 pem 格式。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/android-open-telnet-service/",
+        "title": "Android 开启 Telnet 服务",
+        "section": "blog",
+        "date" : "2018.10.23",
+        "body": " 前提条件 1.需要 Root 2.安装 Busybox 3.安装终端模拟器\n开启服务器 在终端模拟器执行\n$ su $ telnetd -l /system/bin/sh  即可开启 telnet 服务器。\n关闭服务器 执行\n$ ps  找到COMMAND是telnetd -l /system/bin/sh的进程的 pid，然后执行\n$ kill pid  即可终止服务器。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/how-to-use-termux/",
+        "title": "Termux 使用教程",
+        "section": "blog",
+        "date" : "2018.10.21",
+        "body": " 安装部署 因为 Termux 官方服务器在国外，第一次打开可能需要科学上网 进入后更新一下\n$ apt update $ apt upgrade  安装nano编辑器\n$ apt install nano #非必须，我个人喜欢使用nano编辑器  因为官方源在国外，建议修改为国内中科大源\n$ nano /data/data/com.termux/files/usr/etc/apt/sources.list  将https://termux.net替换成https://mirrors.ustc.edu.cn/termux，保存退出 换源以后，重新更新一下\n$ apt update $ apt upgrade  即可正常使用了。\n使用技巧 开启外置存储权限\n$ termux-setup-storage  常用快捷键\n音量键↑ + Q 打开扩展功能键 #强烈建议打开 音量键↑ + W 上 音量键↑ + S 下 音量键↑ + A 左 音量键↑ + D 右 音量键↓ + C 取消 音量键↓ + L 清屏  "
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/linux-build-kms-server/",
+        "title": "Linux 搭建 KMS 服务器教程",
+        "section": "blog",
+        "date" : "2018.09.16",
+        "body": " 以下教程以 CentOS 7 为例。\n软件下载 vlmcsd 软件 Github下载，下载后自行编译。嫌麻烦的，可以从 GitHub 页面的链接进入作者的论坛发布页面，下载编译好的二进制文件。 下载好后解压，找到\\binaries\\Linux\\intel\\glibc目录下的 vlmcsd-x64-glibc 文件（如果是32位系统则使用 vlmcsd-x86-glibc），并改名为 kms-server。\n开始搭建 将 kms-server 放置在/root目录下，添加可执行权限\n$ chmod +x kms-server  运行软件\n$ ./kms-server  查看进程\n$ ps aux|grep kms-server  开放端口\n$ firewall-cmd --zone=public --add-port=1688/tcp --permanent  设置开机启动，在/etc/rc.d/rc.local文件中，添加\n/root/kms-server  "
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/linux-process-run-background/",
+        "title": "Linux 进程后台运行的方法",
+        "section": "blog",
+        "date" : "2018.09.16",
+        "body": " screen 命令 创建 screen $ screen -S test  保留 screen $ ctrl+a+d  按ctrl+a，然后再按d即可保留 screen\n查看 screen $ screen -ls  恢复 screen $ screen -r test  nohup 命令 后台运行 $ nohup server -c ./server.josn \u0026amp;  示例命令为server -c ./server.josn\n后台运行并重定向标准输出 $ nohup server -c ./server.josn 2\u0026gt;\u0026amp;1 \u0026amp;  停止后台运行 $ eval $(ps -ef | grep \u0026quot;server\u0026quot; | awk '{print \u0026quot;kill \u0026quot;$2}')  "
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/debian-install-linux-kernel-and-open-bbr/",
+        "title": "Debian 手动安装 Linux 4.9+ 内核并开启 BBR",
+        "section": "blog",
+        "date" : "2018.09.16",
+        "body": " 安装内核 选择需要安装的内核版本下载地址 下载内核（以 Linux 4.9.0 内核为例）\n$ wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.9/linux-image-4.9.0-040900-generic_4.9.0-040900.201612111631_amd64.deb  安装内核\n$ dpkg -i linux-image-4.*.deb  移除旧内核（可选）\n$ apt-get autoremove  更新引导文件\n$ update-grub  重启\n$ reboot  开启 BBR 查看内核\n$ uname -r  查看 BBR 是否开启\n$ lsmod | grep bbr  如果结果中没有tcp_bbr的话。执行\n$ modprobe tcp_bbr $ echo \u0026quot;tcp_bbr\u0026quot; \u0026gt;\u0026gt; /etc/modules-load.d/modules.conf $ echo \u0026quot;net.core.default_qdisc=fq\u0026quot; \u0026gt;\u0026gt; /etc/sysctl.conf $ echo \u0026quot;net.ipv4.tcp_congestion_control=bbr\u0026quot; \u0026gt;\u0026gt; /etc/sysctl.conf $ sysctl -p  检查是否开启 BBR\n$ sysctl net.ipv4.tcp_available_congestion_control $ sysctl net.ipv4.tcp_congestion_control  如果结果都有bbr, 则内核已开启 BBR。 重启\n$ reboot  "
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/linux-fix-too-mang-bioset-processes/",
+        "title": "Linux 出现大量 bioset 进程的解决办法",
+        "section": "blog",
+        "date" : "2018.09.16",
+        "body": " 此为 linux 4.x 内核的 bug。\n解决办法： linux 内核在 4.13 及以上版本修复了该 bug，故安装 4.13 以上 linux 内核即可。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/kms-activate-windows-and-office/",
+        "title": "KMS 激活 Windows 与 Office",
+        "section": "blog",
+        "date" : "2018.08.26",
+        "body": " 查看激活状态 查看 Office 激活状态： $ cscript.exe \u0026quot;C:\\Program Files\\Microsoft Office\\Office14\\OSPP.VBS\u0026quot; /dstatus  查看 Windows 激活状态： $ slmgr.vbs -dlv  激活方法 Windows 激活 $ slmgr.vbs -upk #卸载密钥 $ slmgr /ipk xxxx-xxxx-xxxx-xxxx #对应版本密钥 $ slmgr /skms 0.0.0.0 #激活服务器域名或 IP $ slmgr /ato $ slmgr /dli  Office 激活 $ cd C:\\Program Files\\Microsoft Office\\Office14 #实际 Office 安装目录 $ CSCRIPT OSPP.VBS /SETHST:0.0.0.0 #激活服务器域名或 IP $ CSCRIPT OSPP.VBS /ACT $ CSCRIPT OSPP.VBS /DSTATUS  "
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/fix-windows-update-nocheck-office2010/",
+        "title": "Windows Update 不能检测 Office 2010 的解决办法",
+        "section": "blog",
+        "date" : "2018.08.16",
+        "body": "打开 Windows Update，点击“获取其他 Microsoft 产品的更新”进入后有“查找详细信息\u0026rdquo;，点击进入，同意条款。 如使用的 IE11，点击 IE11 “工具-兼容性视图设置”，将microsoft.com添加进去，确定。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/fix-windows-7-update-always-35per/",
+        "title": "Windows 7 更新配置卡 35% 的解决方案",
+        "section": "blog",
+        "date" : "2018.07.16",
+        "body": "进入 PE ，打开命令提示符\n$ DISM /Image:X:\\ /Cleanup-Image /RevertPendingActions  X改为系统的实际盘符。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/fix-office2010-word-bug/",
+        "title": "Office 2010 Word 打开后卡顿几秒的解决办法",
+        "section": "blog",
+        "date" : "2018.07.16",
+        "body": "打开 Word 依次点击文件-选项-信任中心-信任中心设置-个人信息选项，找到允许信息检索窗格检查并安装新服务取消勾选。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/windows-share-printer/",
+        "title": "Windows 局域网连接共享打印机方法",
+        "section": "blog",
+        "date" : "2018.06.16",
+        "body": " 写在前面：本文针对在设备和打印机里面添加打印机时，无法搜索到目标打印机的解决方法。\n查看目标打印机IP地址 桌面任务栏右下角网络图标-右键-打开网络和共享中心-更改适配器设置-本地连接-右键-状态-详细信息。窗口中IPv4 地址即为目标打印机 IP 地址，记住此 IP 地址。假设 IP 地址为0.0.0.0。\n连接目标打印机 在需连接打印机的电脑，Win 键+R 键，在弹出的运行窗口输入\\\\0.0.0.0，回车即可看到目标打印机，双击此打印机即可自动完成连接。\n可能存在的问题 有部分电脑双击打印机后会要求输入用户名密码，解决方法：用户名填guest，密码留空不填，勾选记住此凭据。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/windows-view-all-device/",
+        "title": "Windows 查看设备管理器所有设备",
+        "section": "blog",
+        "date" : "2018.05.16",
+        "body": " 进入命令提示符执行\n$ set devmgr_show_nonpresent_devices=1  然后执行\n$ Start DEVMGMT.MSC  即可进入设备管理，点击顶部菜单查看勾选显示隐藏的设备即可查看全部设备。\n附：解决网络连接无法重命名的问题。 方法一： 按以上方法进入设备管理器，删除相应的灰色的同名称网卡（后缀一般为 #2，#3 之类）驱动，重启后即可重命名网络连接名称。\n方法二： 进入注册表编辑器，定位到\nHKEY_LOCAL_MCHINE\\SYSTEM\\CurrentControlSet\\Control\\Network\\{4D36E972-E325-11CE-BFC1-08002BE10318}  该目录下有多个目录，除Descriptions目录外其他均为网卡配置。每个网卡配置目录内均有Connection目录，选中Connection目录即可查看具体内容。依据实际情况可进行相应删除。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/fix-teredo-tunneling-adapter-yellow/",
+        "title": "Teredo Tunneling Adapter 驱动黄色叹号解决方法",
+        "section": "blog",
+        "date" : "2018.05.15",
+        "body": "打开注册表编辑器，定位到\nHKEY_LOCAL_MACHINE\\SYSTEM\\CURRENTCONTROLSET\\SERVICES\\TCPIP6\\PARAMETERS  右键Disabled Components将值修改为0，重启电脑。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/debian-iptables-config/",
+        "title": "Debian 安装配置 iptables 防火墙",
+        "section": "blog",
+        "date" : "2018.04.29",
+        "body": " 查看规则 $ iptables -L  编辑规则 $ vim /etc/iptables.test.rules  使规则生效 $ iptables-restore \u0026lt; /etc/iptables.test.rules  保存生效配置 $ iptables-save \u0026gt; /etc/iptables.up.rules  设置开机自动载入配置 $ touch /etc/network/if-pre-up.d/iptables  在 iptables 文件中输入以下内容 #!/bin/bash /sbin/iptables-restore \u0026lt; /etc/iptables.up.rules  设置执行仅限 $ chmod +x /etc/network/if-pre-up.d/iptables  "
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/debian-modify-login-prompt/",
+        "title": "修改 Debian 登录提示",
+        "section": "blog",
+        "date" : "2018.04.29",
+        "body": "清空/etc/motd即可。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/centos-6-change-kernel/",
+        "title": "CentOS 6 更换内核",
+        "section": "blog",
+        "date" : "2018.03.23",
+        "body": " 查看 CentOS 版本 $ cat /etc/issue  查看内核版本 $ uname -a  下载需要更换的内核 $ wget http://ftp.scientificlinux.org/linux/scientific/6.6/x86_64/updates/security/kernel-2.6.32-504.3.3.el6.x86_64.rpm  安装内核 $ rpm -ivh kernel-2.6.32-504.3.3.el6.x86_64.rpm --force  重启 $ reboot  "
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/ssh-login-with-key/",
+        "title": "SSH 使用密钥登录并禁止密码登录",
+        "section": "blog",
+        "date" : "2018.03.19",
+        "body": " 设置权限 修改.ssh目录及authorized_keys文件权限\n$ chmod 700 ~/.ssh $ chmod 600 ~/.ssh/authorized_keys  编辑文件 将/etc/ssh/sshd_config文件中PasswordAuthentication项，由yes改为no。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/crontab-install-and-use/",
+        "title": "Crontab 的安装及使用",
+        "section": "blog",
+        "date" : "2018.03.10",
+        "body": " 安装 crontab $ yum install vixie-cron crontabs  添加开机启动 $ chkconfig –level 35 crond on  crontab 文件位置（root） /var/spool/cron/root  查看 corntab 服务状态 $ service crond status  启动 corntab 服务 $ service crond start  查看 crontab 列表 $ crontab -l  编辑 crontab $ crontab -e  "
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/fix-server-refused-our-key/",
+        "title": "SSH 私钥登陆提示 Server refused our key 的解决办法",
+        "section": "blog",
+        "date" : "2018.03.10",
+        "body": "原因为authorized_keys文件没有 selinux 上下文属性，导致无法通过 selinux 认证。 执行以下命令：\n$ restorecon -R -v /root  即可解决。\n"
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/linux-modify-time-zone/",
+        "title": "Linux 修改时区的方法",
+        "section": "blog",
+        "date" : "2018.02.12",
+        "body": " 查看时区 $ date -R  调整时区 $ tzselect #根据提示选择时区  复制文件 $ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime  更新时间 $ ntpdate time.windows.com  "
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/linux-modify-hostname/",
+        "title": "Linux 修改主机名",
+        "section": "blog",
+        "date" : "2018.01.20",
+        "body": " CentOS 修改以下文件相关内容\n$ nano /etc/hosts $ nano /etc/sysconfig/network  Debian 修改以下文件相关内容\n$ nano /etc/hosts $ nano /etc/hostname  "
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/ubuntu-disable-update-prompts/",
+        "title": "Ubuntu 禁止升级提示",
+        "section": "blog",
+        "date" : "2018.01.13",
+        "body": " 禁用更新 修改/etc/update-manager/release-upgrades中的配置项Prompt=lts为Prompt=never\n$ sed -i s/Prompt=lts/Prompt=never/g /etc/update-manager/release-upgrades  清除缓存 删除/var/lib/ubuntu-release-upgrader/release-upgrade-available文件\n$ rm /var/lib/ubuntu-release-upgrader/release-upgrade-available  重启 $ reboot  "
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/ubuntu-install-shadowsocks/",
+        "title": "Ubuntu 安装 Shadowsocks 教程",
+        "section": "blog",
+        "date" : "2017.12.18",
+        "body": " 写在前面：建议直接使用网上各种一键脚本，本教程仅适用于 Python 版 Shadowsocks\n安装 PIP $ apt update $ apt install python-pip $ apt install python-setuptools m2crypto  安装 Shadowsocks $ pip install shadowsocks $ apt install shadowsocks  如果报错执行以下命令\n$ python -m pip install --upgrade pip  配置参数 新建/home/shadowsocks.json文件，并键入以下内容\n{ \u0026quot;server\u0026quot;:\u0026quot;11.22.33.44\u0026quot; #服务器IP \u0026quot;server_port\u0026quot;:443 #服务端口 \u0026quot;local_port\u0026quot;:1080 #本地端口 \u0026quot;password\u0026quot;:\u0026quot;123456\u0026quot; #密码 \u0026quot;timeout\u0026quot;:300, #超时设置 \u0026quot;method\u0026quot;:\u0026quot;aes-256-cfb\u0026quot; #加密方法 }  设置开机启动 在/etc/rc.local文件中添加\nssserver -c /home/shadowsocks.json -d start  "
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/centos-7-firewall-commands/",
+        "title": "CentOS 7 中 Firewall 相关命令",
+        "section": "blog",
+        "date" : "2017.12.02",
+        "body": " 常用命令 查看 firewall 状态 $ firewall-cmd --state  查看 firewall 所有规则 $ firewall-cmd --list-all  添加规则 $ firewall-cmd --permanent --add-port=80/tcp $ firewall-cmd --permanent --add-port=80/udp  删除规则 $ firewall-cmd --permanent --remove-port=80/tcp $ firewall-cmd --permanent --remove-port=80/tcp  重启防火墙(修改配置后要重启防火墙) $ firewall-cmd --reload  高级命令 禁止 firewall 开机启动 $ systemctl disable firewalld.service  允许 firewall 开机启动 $ systemctl enable firewalld.service  查看 firewall 服务状态 $ systemctl status firewalld  重启 firewall 服务 $ service firewalld restart  开启 firewall 服务 $ service firewalld start  关闭 firewall 服务 $ service firewalld stop  "
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/how-to-use-screen/",
+        "title": "Screen 命令的用法",
+        "section": "blog",
+        "date" : "2017.11.16",
+        "body": " 创建 Screen $ screen -S test  保留 Screen $ Ctrl+a+d  按Ctrl+a，然后再按d即可保留 Screen\n查看 Screen $ screen -ls  恢复 Screen $ screen -r test  "
+    }
+,
+    {
+        "ref": "https://www.huan.ml/blog/hello-world/",
+        "title": "Hello World",
+        "section": "blog",
+        "date" : "2017.10.25",
+        "body": " Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.\nQuick Start Create a new post $ hexo new \u0026quot;My New Post\u0026quot;  More info: Writing\nRun server $ hexo server  More info: Server\nGenerate static files $ hexo generate  More info: Generating\nDeploy to remote sites $ hexo deploy  More info: Deployment\n"
+    }
+]

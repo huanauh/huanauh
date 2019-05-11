@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>
+      
+          修改火绒保护天数教程 - 驩讙懽歡
+      
+  </title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="map[]" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.huan.ml/img/favicon.ico">
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://www.huan.ml/style.min.74c1d842fda3c5dcef37cb1e26934d4a205babfe7cbfca23903297bcab678581.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  
+  
+
+  <meta property="og:title" content="修改火绒保护天数教程" />
+<meta property="og:description" content="修改方法 找到位于注册表HKEY_LOCAL_MACHINE\SOFTWARE\Huorong\Sysdiag\app的InstallTime" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.huan.ml/blog/change-hips-protection-days/" />
+<meta property="article:published_time" content="2018-12-23T19:33:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-12-23T19:33:00&#43;00:00"/>
+
+<meta itemprop="name" content="修改火绒保护天数教程">
+<meta itemprop="description" content="修改方法 找到位于注册表HKEY_LOCAL_MACHINE\SOFTWARE\Huorong\Sysdiag\app的InstallTime">
+
+
+<meta itemprop="datePublished" content="2018-12-23T19:33:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-12-23T19:33:00&#43;00:00" />
+<meta itemprop="wordCount" content="370">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="修改火绒保护天数教程"/>
+<meta name="twitter:description" content="修改方法 找到位于注册表HKEY_LOCAL_MACHINE\SOFTWARE\Huorong\Sysdiag\app的InstallTime"/>
+
+  <!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+
+  </head>
+
+  <body>
+    
+  <h1>修改火绒保护天数教程</h1>
+  <header>
+  
+  <div class="avatar">
+    <img class="avatarMask" src="https://www.huan.ml/img/avatar.jpg">
+    <a href="https://www.huan.ml"><img src="https://www.huan.ml/img/avatar-border.svg" }}></a>
+  </div>
+  
+  <h2><a class="author" href="https://www.huan.ml">Han Leon</a></h2>
+</header>
+
+  
+  <p class="date">December 23, 2018</p>
+  
+  <div id="contentBody">
+    
+
+<h3 id="修改方法">修改方法</h3>
+
+<p>找到位于注册表<code>HKEY_LOCAL_MACHINE\SOFTWARE\Huorong\Sysdiag\app</code>的<code>InstallTime</code>值，该值为火绒的安装时间。火绒通过安装时间来确定保护天数，修改此值即可修改保护天数。但是，遗憾的是该值无法直接修改，需要使用其他方法。
+推测是因为火绒保护注册表的功能导致不能修改此键值，所以有2种方法：一是关掉火绒保护然后再修改；二是进入 PE 修改。第一种没试过也不介绍，下面介绍如何 PE 操作。</p>
+
+<h3 id="pe-操作">PE 操作</h3>
+
+<p>进入 PE，打开注册表编辑器<code>文件</code>-<code>加载配置单元</code>-选择<code>C:\Windows\System32\config</code>目录下<code>SOFTWARE</code>文件-找到<code>InstallTime</code>值即可修改。修改后<code>文件</code>-<code>卸载配置单元</code>即可。</p>
+
+<h3 id="注意事项">注意事项</h3>
+
+<p>1.想要修改的时间需要自行转换为 Unix 时间戳格式；
+2.键值默认为16进制，修改时注意选中10进制后再修改。</p>
+
+  </div>
+  <footer>
+  <p>
+  &copy; 2019 Han Leon.
+  Powered by <a href="https://gohugo.io/">Hugo</a>
+  using the <a href="https://github.com/koirand/pulp/">pulp</a> theme.
+  </p>
+</footer>
+
+
+  </body>
+</html>
