@@ -302,12 +302,4 @@
         "date" : "2017.11.16",
         "body": " 创建 Screen $ screen -S test  保留 Screen $ Ctrl+a+d  按Ctrl+a，然后再按d即可保留 Screen\n查看 Screen $ screen -ls  恢复 Screen $ screen -r test  "
     }
-,
-    {
-        "ref": "https://www.huan.ml/blog/hello-world/",
-        "title": "Hello World",
-        "section": "blog",
-        "date" : "2017.10.25",
-        "body": " Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.\nQuick Start Create a new post $ hexo new \u0026quot;My New Post\u0026quot;  More info: Writing\nRun server $ hexo server  More info: Server\nGenerate static files $ hexo generate  More info: Generating\nDeploy to remote sites $ hexo deploy  More info: Deployment\n"
-    }
 ]

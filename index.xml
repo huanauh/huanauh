@@ -352,14 +352,5 @@
       <description>创建 Screen $ screen -S test 保留 Screen $ Ctrl+a+d 按Ctrl+a，然后再按d即可保留 Screen 查看 Screen $ screen -ls 恢复 Screen $ screen -r test</description>
     </item>
     
-    <item>
-      <title>Hello World</title>
-      <link>https://www.huan.ml/blog/hello-world/</link>
-      <pubDate>Wed, 25 Oct 2017 21:03:00 +0000</pubDate>
-      
-      <guid>https://www.huan.ml/blog/hello-world/</guid>
-      <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick Start Create a new post $ hexo new &amp;quot;My New Post&amp;quot; More info: Writing Run server $ hexo server More info: Server Generate static files $ hexo generate More info: Generating Deploy to</description>
-    </item>
-    
   </channel>
 </rss>
