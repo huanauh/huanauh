@@ -5,10 +5,28 @@
     <link>https://www.huan.ml/</link>
     <description>Recent content on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 16 Feb 2019 15:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 May 2019 10:25:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.huan.ml/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://www.huan.ml/about/</link>
+      <pubDate>Sun, 12 May 2019 10:25:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/about/</guid>
+      <description>黑发不知勤学早，白首方悔读书迟！</description>
+    </item>
+    
+    <item>
+      <title>V2Ray 流量转发配置</title>
+      <link>https://www.huan.ml/blog/v2ray-traffic-forwarding/</link>
+      <pubDate>Tue, 02 Apr 2019 12:53:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/blog/v2ray-traffic-forwarding/</guid>
+      <description>Caddy 配置 修改Caddyfile文件 yourdomian.com { tls youremail@gmail.com proxy /www localhost:8990 { websocket header_upstream -Origin } } Apache 配置 修改/usr/local/apache/conf/vhost/yourdom</description>
+    </item>
     
     <item>
       <title>修改 Windows 命令提示符字体</title>
