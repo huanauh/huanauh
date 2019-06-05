@@ -151,7 +151,7 @@
       <pubDate>Tue, 23 Oct 2018 21:02:00 +0000</pubDate>
       
       <guid>https://www.huan.ml/blog/crt-and-key-convert-to-pem/</guid>
-      <description>执行 $ cat test.key test.crt &amp;gt; test.pem 即可转换为 pem 格式。</description>
+      <description>执行 $ cat test.key test.crt &amp;gt; test.pem 即可转换为 pem 格式。 注：因 pem 文件将 cer 和 key 文件内容合并，文件内容中END PRIVATE KEY与EBEGIN CERTIFICATE分别占用一行</description>
     </item>
     
     <item>
@@ -286,7 +286,7 @@
       <pubDate>Sun, 29 Apr 2018 18:52:00 +0000</pubDate>
       
       <guid>https://www.huan.ml/blog/debian-modify-login-prompt/</guid>
-      <description>清空/etc/motd即可。</description>
+      <description>清空/etc/motd文件的内容； 清空/etc/update-motd.d/目录中所有文件的内容，即可。</description>
     </item>
     
     <item>
