@@ -79,8 +79,11 @@
 <pre><code>$ cat test.key test.crt &gt; test.pem
 </code></pre>
 
-<p>即可转换为 pem 格式。
-注：因 pem 文件将 cer 和 key 文件内容合并，文件内容中<code>END PRIVATE KEY</code>与<code>EBEGIN CERTIFICATE</code>分别占用一行。不同 Web server 对 pem 文件内容格式要求不甚相同，可能需要将<code>END PRIVATE KEY</code>与<code>EBEGIN CERTIFICATE</code>合并在同一行。</p>
+<p>即可转换为 pem 格式。</p>
+
+<ul>
+<li>注：因 pem 文件将 cer 和 key 文件内容合并，文件内容中<code>END PRIVATE KEY</code>与<code>EBEGIN CERTIFICATE</code>分别占用一行。不同 Web server 对 pem 文件内容格式要求不甚相同，可能需要将<code>END PRIVATE KEY</code>与<code>EBEGIN CERTIFICATE</code>合并在同一行。</li>
+</ul>
 
   </div>
   <footer>
