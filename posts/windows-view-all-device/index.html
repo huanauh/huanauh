@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  
+  <meta name="author"
+        content="Han Leon"/>
+
+  
+  <meta name="description" content="进入命令提示符执行 $ set devmgr_show_nonpresent_devices=1 然后执行 $ Start DEVMGMT.MSC 即可进入设备管理，点击顶部菜单查看勾选显示隐藏的设备即可查看全部设备。 附：解决网络连接无法重命名的问题。 方法一： 按以上方法进入设备管理器，删除相应的灰色的同名称网"/>
+  
+
+  
+  
+  <meta name="keywords" content="Hugo, theme, zozo"/>
+  
+
+  
+  <link rel="canonical" href="https://www.huan.ml/posts/windows-view-all-device/"/>
+
+  
+
+  <title>Windows 查看设备管理器所有设备 &middot; 驩讙懽歡</title>
+
+  <link rel="shortcut icon" href="https://www.huan.ml/images/favicon.ico"/>
+  <link rel="stylesheet" href="https://www.huan.ml/css/animate.min.css"/>
+  <link rel="stylesheet" href="https://www.huan.ml/css/remixicon.css"/>
+  <link rel="stylesheet" href="https://www.huan.ml/css/zozo.css"/>
+  <link rel="stylesheet" href="https://www.huan.ml/css/highlight.css"/>
+
+  
+  
+</head>
+
+<body>
+<div class="main animated">
+  <div class="nav_container animated fadeInDown">
+  <div class="site_nav" id="site_nav">
+    <ul>
+      
+      <li>
+        <a href="/">首页</a>
+      </li>
+      
+      <li>
+        <a href="/posts/">归档</a>
+      </li>
+      
+      <li>
+        <a href="/tags/">标签</a>
+      </li>
+      
+      <li>
+        <a href="/about/">关于</a>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="menu_icon">
+    <a id="menu_icon"><i class="remixicon-links-line"></i></a>
+  </div>
+</div>
+
+  <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <h1>
+        <a href="https://www.huan.ml">
+          <span>驩讙懽歡</span>
+          <img src="https://www.huan.ml/images/logo.svg"/>
+        </a>
+      </h1>
+    </div>
+    <div class="description">
+      <p class="sub_title">黑发不知勤学早，白首方悔读书迟！</p>
+      <div class="my_socials">
+        
+        
+        <a href="https://github.com/huanauh" title="github" target="_blank"><i class="remixicon-github-fill"></i></a>
+        
+        
+        
+        <a href="https://instagram.com/huanauh" title="instagram" target="_blank"><i class="remixicon-instagram-fill"></i></a>
+        
+        
+        
+        <a href="https://twitter.com/huanauh" title="twitter" target="_blank"><i class="remixicon-twitter-fill"></i></a>
+        
+        
+        
+        <a href="https://weibo.com/huanauh" title="weibo" target="_blank"><i class="remixicon-weibo-fill"></i></a>
+        
+        
+        <a href="https://www.huan.ml/index.xml" type="application/rss+xml" title="rss" target="_blank"><i class="remixicon-rss-fill"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="content">
+    <div class="post_page">
+      <div class="post animated fadeInDown">
+        <div class="post_title post_detail_title">
+          <h2><a href='/posts/windows-view-all-device/'>Windows 查看设备管理器所有设备</a></h2>
+          <span class="date">2018.05.16</span>
+        </div>
+        <div class="post_content markdown">
+
+<p>进入命令提示符执行</p>
+
+<pre><code>$ set devmgr_show_nonpresent_devices=1
+</code></pre>
+
+<p>然后执行</p>
+
+<pre><code>$ Start DEVMGMT.MSC
+</code></pre>
+
+<p>即可进入设备管理，点击顶部菜单<code>查看</code>勾选<code>显示隐藏的设备</code>即可查看全部设备。</p>
+
+<h3 id="附-解决网络连接无法重命名的问题">附：解决网络连接无法重命名的问题。</h3>
+
+<h4 id="方法一">方法一：</h4>
+
+<p>按以上方法进入设备管理器，删除相应的灰色的同名称网卡（后缀一般为 #2，#3 之类）驱动，重启后即可重命名网络连接名称。</p>
+
+<h4 id="方法二">方法二：</h4>
+
+<p>进入注册表编辑器，定位到</p>
+
+<pre><code>HKEY_LOCAL_MCHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}
+</code></pre>
+
+<p>该目录下有多个目录，除<code>Descriptions</code>目录外其他均为网卡配置。每个网卡配置目录内均有<code>Connection</code>目录，选中<code>Connection</code>目录即可查看具体内容。依据实际情况可进行相应删除。</p>
+</div>
+        <div class="post_footer">
+          
+          <div class="meta">
+            <div class="info">
+              <span class="field tags">
+                <i class="remixicon-stack-line"></i>
+                
+                <a href="https://www.huan.ml/tags/windows/">Windows</a>
+                
+                <a href="https://www.huan.ml/tags/devices/">Devices</a>
+                
+              </span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+  <a id="back_to_top" href="#" class="back_to_top"><span>△</span></a>
+</div>
+<footer class="footer">
+  <div class="powered_by">
+    <a href="https://zeuk.me">Designed by Zeuk,</a>
+    <a href="http://www.gohugo.io/">Proudly published with Hugo</a>
+  </div>
+
+  <div class="footer_slogan">
+    <span>黑发不知勤学早，白首方悔读书迟！</span>
+  </div>
+</footer>
+
+
+
+<script src="https://www.huan.ml/js/jquery-3.3.1.min.js"></script>
+<script src="https://www.huan.ml/js/zozo.js"></script>
+<script src="https://www.huan.ml/js/highlight.pack.js"></script>
+<link  href="https://www.huan.ml/css/fancybox.min.css" rel="stylesheet">
+<script src="https://www.huan.ml/js/fancybox.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+
+
+
+
+
+
+</body>
+</html>

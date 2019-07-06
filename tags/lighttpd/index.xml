@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lighttpd on 驩讙懽歡</title>
+    <link>https://www.huan.ml/tags/lighttpd/</link>
+    <description>Recent content in Lighttpd on 驩讙懽歡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 24 Oct 2018 21:48:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.huan.ml/tags/lighttpd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lighttpd 下 Typecho 伪静态设置</title>
+      <link>https://www.huan.ml/posts/typecho-on-lighttps-pseudo-static/</link>
+      <pubDate>Wed, 24 Oct 2018 21:48:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/typecho-on-lighttps-pseudo-static/</guid>
+      <description>编辑lighttpd.conf文件，添加以下内容 #pseudo static url.rewrite = ( &amp;quot;^/(admin|usr)/(.*)&amp;quot; =&amp;gt; &amp;quot;/$1/$2&amp;quot;, &amp;quot;^/(.*).html$&amp;quot; =&amp;gt; &amp;quot;/index.php/$1.html&amp;quot;, &amp;quot;^/archives/(.*)&amp;quot; =&amp;gt; &amp;quot;/index.php/archives/$1&amp;quot;, &amp;quot;^/category/(.*)&amp;quot; =&amp;gt; &amp;quot;/index.php/category/$1&amp;quot;, &amp;quot;^/([0-9]+)/([0-9]+)/$&amp;quot; =&amp;gt; &amp;quot;/index.php/$1/$2/&amp;quot;, &amp;quot;^/tag/(.*)/$&amp;quot; =&amp;gt; &amp;quot;/index.php/tag/$1&amp;quot;, &amp;quot;^/search/(.*)/$&amp;quot; =&amp;gt; &amp;quot;/index.php/search/$1&amp;quot;, &amp;quot;^/(.*)page/(.*)&amp;quot; =&amp;gt; &amp;quot;/index.php/$1page/$2&amp;quot;, &amp;quot;^/(feed.*)&amp;quot; =&amp;gt; &amp;quot;/index.php/$1&amp;quot;, &amp;quot;^/action/(.*)&amp;quot; =&amp;gt; &amp;quot;/index.php/action/$1&amp;quot;, &amp;quot;^/(.*)comment&amp;quot; =&amp;gt; &amp;quot;/index.php/$1/comment&amp;quot; ) 即可。</description>
+    </item>
+    
+    <item>
+      <title>Lighttpd 强制 Https 访问</title>
+      <link>https://www.huan.ml/posts/lighttps-force-https/</link>
+      <pubDate>Wed, 24 Oct 2018 21:48:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/lighttps-force-https/</guid>
+      <description>编辑lighttpd.conf文件，添加以下内容 #force https $SERVER[&amp;quot;socket&amp;quot;] == &amp;quot;:80&amp;quot; { $HTTP[&amp;quot;host&amp;quot;] =~ &amp;quot;([^:/]+)&amp;quot; { url.redirect = ( &amp;quot;^/(.*)&amp;quot; =&amp;gt; &amp;quot;https://%0:443/$1&amp;quot; ) } } 即可。</description>
+    </item>
+    
+  </channel>
+</rss>

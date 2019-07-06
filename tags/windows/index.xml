@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on 驩讙懽歡</title>
+    <link>https://www.huan.ml/tags/windows/</link>
+    <description>Recent content in Windows on 驩讙懽歡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 02 Jun 2019 19:37:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.huan.ml/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DNS 53 端口被劫持的判断方法</title>
+      <link>https://www.huan.ml/posts/how-to-check-if-port-53-is-hijacked/</link>
+      <pubDate>Sun, 02 Jun 2019 19:37:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/how-to-check-if-port-53-is-hijacked/</guid>
+      <description>Windows 系统 在命令提示符中运行 $ nslookup dnscheck.not-available-sub.sgfu.org 非权威应答中 Address 如为123.45.67.89则未被劫持，如为127.0.0.1则被劫持。 Linux 系统 在终端中运行 $ dig dnscheck.not-available-sub.sgfu.org a</description>
+    </item>
+    
+    <item>
+      <title>修改 Windows 命令提示符字体</title>
+      <link>https://www.huan.ml/posts/modify-windows-cmd-fonts/</link>
+      <pubDate>Sat, 16 Feb 2019 15:45:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/modify-windows-cmd-fonts/</guid>
+      <description>Windows 的命令提示符默认使用点阵字体，该字体奇丑无比。更换方法如下： 字体下载 cmd 对字体的要求很多，很多字体都无法使用。推荐使用 Microsoft YaHei Mono 字体。 修改注册表 注册表定位到HKLM\SOFTWARE\Microsoft\</description>
+    </item>
+    
+    <item>
+      <title>修改火绒保护天数教程</title>
+      <link>https://www.huan.ml/posts/change-hips-protection-days/</link>
+      <pubDate>Sun, 23 Dec 2018 19:33:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/change-hips-protection-days/</guid>
+      <description>修改方法 找到位于注册表HKEY_LOCAL_MACHINE\SOFTWARE\Huorong\Sysdiag\app的InstallTime值，该值为火绒的安装时间。火绒通过安装时间来确定保护天数，修</description>
+    </item>
+    
+    <item>
+      <title>运行 bat 脚本时隐藏 cmd 窗口</title>
+      <link>https://www.huan.ml/posts/run-bat-hide-cmd-window/</link>
+      <pubDate>Tue, 18 Dec 2018 17:33:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/run-bat-hide-cmd-window/</guid>
+      <description>在需要运行的 bat 脚本前添加以下内容： @echo off if &amp;quot;%1&amp;quot; == &amp;quot;h&amp;quot; goto begin mshta vbscript:createobject(&amp;quot;wscript.shell&amp;quot;).run(&amp;quot;&amp;quot;&amp;quot;%~nx0&amp;quot;&amp;quot; h&amp;quot;,0)(window.close)&amp;amp;&amp;amp;exit :begin REM 即可。运行时 cmd 窗口会闪烁一下。</description>
+    </item>
+    
+    <item>
+      <title>如何使用符号链接</title>
+      <link>https://www.huan.ml/posts/how-to-use-symbolic-link/</link>
+      <pubDate>Sat, 27 Oct 2018 16:35:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/how-to-use-symbolic-link/</guid>
+      <description>使用缘由 Windows 电脑上有多个硬盘分区，但文件服务器又不支持虚拟目录，所以跨硬盘分区分享文件不太好操作。使用符号链接能方便的解决这个问题。 使用方法 以管理员身份运行cmd 假设服务器目录为www，位于c:\www</description>
+    </item>
+    
+    <item>
+      <title>KMS 激活 Windows 与 Office</title>
+      <link>https://www.huan.ml/posts/kms-activate-windows-and-office/</link>
+      <pubDate>Sun, 26 Aug 2018 21:09:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/kms-activate-windows-and-office/</guid>
+      <description>查看激活状态 查看 Office 激活状态： $ cscript.exe &amp;quot;C:\Program Files\Microsoft Office\Office14\OSPP.VBS&amp;quot; /dstatus 查看 Windows 激活状态： $ slmgr.vbs -dlv 激活方法 Windows 激活 $ slmgr.vbs -upk #卸载密钥 $ slmgr /ipk xxxx-xxxx-xxxx-xxxx #对应版本密钥 $ slmgr /skms 0.0.0.0 #激活服务器域名或 IP $ slmgr /ato $ slmgr /dli Office 激活 $ cd C:\Program Files\Microsoft Office\Office14 #实际 Office 安装目录 $ CSCRIPT OSPP.VBS /SETHST:0.0.0.0 #激活</description>
+    </item>
+    
+    <item>
+      <title>Windows Update 不能检测 Office 2010 的解决办法</title>
+      <link>https://www.huan.ml/posts/fix-windows-update-nocheck-office2010/</link>
+      <pubDate>Thu, 16 Aug 2018 20:56:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/fix-windows-update-nocheck-office2010/</guid>
+      <description>打开 Windows Update，点击“获取其他 Microsoft 产品的更新”进入后有“查找详细信息&amp;quot;，点击进入，同意条款。 如使用的 IE11，点击 IE11 “工具-兼容性视图设置”，将microsoft.com添加进去，确定。</description>
+    </item>
+    
+    <item>
+      <title>Windows 7 更新配置卡 35% 的解决方案</title>
+      <link>https://www.huan.ml/posts/fix-windows-7-update-always-35per/</link>
+      <pubDate>Mon, 16 Jul 2018 21:09:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/fix-windows-7-update-always-35per/</guid>
+      <description>进入 PE ，打开命令提示符 $ DISM /Image:X:\ /Cleanup-Image /RevertPendingActions X改为系统的实际盘符。</description>
+    </item>
+    
+    <item>
+      <title>Office 2010 Word 打开后卡顿几秒的解决办法</title>
+      <link>https://www.huan.ml/posts/fix-office2010-word-bug/</link>
+      <pubDate>Mon, 16 Jul 2018 20:56:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/fix-office2010-word-bug/</guid>
+      <description>打开 Word 依次点击文件-选项-信任中心-信任中心设置-个人信息选项，找到允许信息检索窗格检查并安装新服务取消勾选。</description>
+    </item>
+    
+    <item>
+      <title>Windows 查看设备管理器所有设备</title>
+      <link>https://www.huan.ml/posts/windows-view-all-device/</link>
+      <pubDate>Wed, 16 May 2018 21:09:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/windows-view-all-device/</guid>
+      <description>进入命令提示符执行 $ set devmgr_show_nonpresent_devices=1 然后执行 $ Start DEVMGMT.MSC 即可进入设备管理，点击顶部菜单查看勾选显示隐藏的设备即可查看全部设备。 附：解决网络连接无法重命名的问题。 方法一： 按以上方法进入设备管理器，删除相应的灰色的同名称网</description>
+    </item>
+    
+    <item>
+      <title>Teredo Tunneling Adapter 驱动黄色叹号解决方法</title>
+      <link>https://www.huan.ml/posts/fix-teredo-tunneling-adapter-yellow/</link>
+      <pubDate>Tue, 15 May 2018 20:56:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/fix-teredo-tunneling-adapter-yellow/</guid>
+      <description>打开注册表编辑器，定位到 HKEY_LOCAL_MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\TCPIP6\PARAMETERS 右键Disabled Components将值修改为0，重启电脑。</description>
+    </item>
+    
+  </channel>
+</rss>

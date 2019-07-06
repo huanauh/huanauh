@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 驩讙懽歡</title>
+    <link>https://www.huan.ml/categories/</link>
+    <description>Recent content in Categories on 驩讙懽歡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 02 Jun 2019 19:37:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.huan.ml/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows教程</title>
+      <link>https://www.huan.ml/categories/windows%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Sun, 02 Jun 2019 19:37:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/categories/windows%E6%95%99%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux教程</title>
+      <link>https://www.huan.ml/categories/linux%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Tue, 02 Apr 2019 12:53:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/categories/linux%E6%95%99%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

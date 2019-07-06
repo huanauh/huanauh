@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Screen on 驩讙懽歡</title>
+    <link>https://www.huan.ml/tags/screen/</link>
+    <description>Recent content in Screen on 驩讙懽歡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 16 Sep 2018 20:41:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.huan.ml/tags/screen/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux 进程后台运行的方法</title>
+      <link>https://www.huan.ml/posts/linux-process-run-background/</link>
+      <pubDate>Sun, 16 Sep 2018 20:41:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/linux-process-run-background/</guid>
+      <description>screen 命令 创建 screen $ screen -S test 保留 screen $ ctrl+a+d 按ctrl+a，然后再按d即可保留 screen 查看 screen $ screen -ls 恢复 screen $ screen -r test nohup 命令 后台运行 $ nohup server -c ./server.josn &amp;amp; 示例命令为server -c ./server.josn 后台运行并重定向标准输出 $ nohup server -c ./server.josn 2&amp;gt;&amp;amp;1 &amp;amp; 停止后台运行 $ eval $(ps</description>
+    </item>
+    
+    <item>
+      <title>Screen 命令的用法</title>
+      <link>https://www.huan.ml/posts/how-to-use-screen/</link>
+      <pubDate>Thu, 16 Nov 2017 18:56:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/how-to-use-screen/</guid>
+      <description>创建 Screen $ screen -S test 保留 Screen $ Ctrl+a+d 按Ctrl+a，然后再按d即可保留 Screen 查看 Screen $ screen -ls 恢复 Screen $ screen -r test</description>
+    </item>
+    
+  </channel>
+</rss>

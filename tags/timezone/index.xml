@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TimeZone on 驩讙懽歡</title>
+    <link>https://www.huan.ml/tags/timezone/</link>
+    <description>Recent content in TimeZone on 驩讙懽歡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 12 Feb 2018 18:56:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.huan.ml/tags/timezone/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux 修改时区的方法</title>
+      <link>https://www.huan.ml/posts/linux-modify-time-zone/</link>
+      <pubDate>Mon, 12 Feb 2018 18:56:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/linux-modify-time-zone/</guid>
+      <description>查看时区 $ date -R 调整时区 $ tzselect #根据提示选择时区 复制文件 $ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 更新时间 $ ntpdate time.windows.com</description>
+    </item>
+    
+  </channel>
+</rss>

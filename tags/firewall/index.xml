@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Firewall on 驩讙懽歡</title>
+    <link>https://www.huan.ml/tags/firewall/</link>
+    <description>Recent content in Firewall on 驩讙懽歡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 02 Dec 2017 18:56:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.huan.ml/tags/firewall/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS 7 中 Firewall 相关命令</title>
+      <link>https://www.huan.ml/posts/centos-7-firewall-commands/</link>
+      <pubDate>Sat, 02 Dec 2017 18:56:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/centos-7-firewall-commands/</guid>
+      <description>常用命令 查看 firewall 状态 $ firewall-cmd --state 查看 firewall 所有规则 $ firewall-cmd --list-all 添加规则 $ firewall-cmd --permanent --add-port=80/tcp $ firewall-cmd --permanent --add-port=80/udp 删除规则 $ firewall-cmd --permanent --remove-port=80/tcp $ firewall-cmd --permanent --remove-port=80/tcp 重启防火墙(修改配置后要重启防火墙) $ firewall-cmd --reload 高级命令 禁止 firewall 开机启动 $ systemctl disable firewalld.service 允许 firewall 开机启动 $ systemctl enable firewalld.service 查看 firewall 服务状态</description>
+    </item>
+    
+  </channel>
+</rss>

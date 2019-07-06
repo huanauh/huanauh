@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSH on 驩讙懽歡</title>
+    <link>https://www.huan.ml/tags/ssh/</link>
+    <description>Recent content in SSH on 驩讙懽歡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 19 Mar 2018 21:09:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.huan.ml/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SSH 使用密钥登录并禁止密码登录</title>
+      <link>https://www.huan.ml/posts/ssh-login-with-key/</link>
+      <pubDate>Mon, 19 Mar 2018 21:09:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/ssh-login-with-key/</guid>
+      <description>设置权限 修改.ssh目录及authorized_keys文件权限 $ chmod 700 ~/.ssh $ chmod 600 ~/.ssh/authorized_keys 编辑文件 将/etc/ssh/sshd_config文件中PasswordAuthentication项，由yes改为no</description>
+    </item>
+    
+    <item>
+      <title>SSH 私钥登陆提示 Server refused our key 的解决办法</title>
+      <link>https://www.huan.ml/posts/fix-server-refused-our-key/</link>
+      <pubDate>Sat, 10 Mar 2018 18:56:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/fix-server-refused-our-key/</guid>
+      <description>原因为authorized_keys文件没有 selinux 上下文属性，导致无法通过 selinux 认证。 执行以下命令： $ restorecon -R -v /root 即可解决。</description>
+    </item>
+    
+  </channel>
+</rss>

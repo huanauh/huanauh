@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  
+  <meta name="author"
+        content="Han Leon"/>
+
+  
+  <meta name="description" content="Windows 的命令提示符默认使用点阵字体，该字体奇丑无比。更换方法如下： 字体下载 cmd 对字体的要求很多，很多字体都无法使用。推荐使用 Microsoft YaHei Mono 字体。 修改注册表 注册表定位到HKLM\SOFTWARE\Microsoft\"/>
+  
+
+  
+  
+  <meta name="keywords" content="Hugo, theme, zozo"/>
+  
+
+  
+  <link rel="canonical" href="https://www.huan.ml/posts/modify-windows-cmd-fonts/"/>
+
+  
+
+  <title>修改 Windows 命令提示符字体 &middot; 驩讙懽歡</title>
+
+  <link rel="shortcut icon" href="https://www.huan.ml/images/favicon.ico"/>
+  <link rel="stylesheet" href="https://www.huan.ml/css/animate.min.css"/>
+  <link rel="stylesheet" href="https://www.huan.ml/css/remixicon.css"/>
+  <link rel="stylesheet" href="https://www.huan.ml/css/zozo.css"/>
+  <link rel="stylesheet" href="https://www.huan.ml/css/highlight.css"/>
+
+  
+  
+</head>
+
+<body>
+<div class="main animated">
+  <div class="nav_container animated fadeInDown">
+  <div class="site_nav" id="site_nav">
+    <ul>
+      
+      <li>
+        <a href="/">首页</a>
+      </li>
+      
+      <li>
+        <a href="/posts/">归档</a>
+      </li>
+      
+      <li>
+        <a href="/tags/">标签</a>
+      </li>
+      
+      <li>
+        <a href="/about/">关于</a>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="menu_icon">
+    <a id="menu_icon"><i class="remixicon-links-line"></i></a>
+  </div>
+</div>
+
+  <div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <h1>
+        <a href="https://www.huan.ml">
+          <span>驩讙懽歡</span>
+          <img src="https://www.huan.ml/images/logo.svg"/>
+        </a>
+      </h1>
+    </div>
+    <div class="description">
+      <p class="sub_title">黑发不知勤学早，白首方悔读书迟！</p>
+      <div class="my_socials">
+        
+        
+        <a href="https://github.com/huanauh" title="github" target="_blank"><i class="remixicon-github-fill"></i></a>
+        
+        
+        
+        <a href="https://instagram.com/huanauh" title="instagram" target="_blank"><i class="remixicon-instagram-fill"></i></a>
+        
+        
+        
+        <a href="https://twitter.com/huanauh" title="twitter" target="_blank"><i class="remixicon-twitter-fill"></i></a>
+        
+        
+        
+        <a href="https://weibo.com/huanauh" title="weibo" target="_blank"><i class="remixicon-weibo-fill"></i></a>
+        
+        
+        <a href="https://www.huan.ml/index.xml" type="application/rss+xml" title="rss" target="_blank"><i class="remixicon-rss-fill"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="content">
+    <div class="post_page">
+      <div class="post animated fadeInDown">
+        <div class="post_title post_detail_title">
+          <h2><a href='/posts/modify-windows-cmd-fonts/'>修改 Windows 命令提示符字体</a></h2>
+          <span class="date">2019.02.16</span>
+        </div>
+        <div class="post_content markdown">
+
+<p>Windows 的<code>命令提示符</code>默认使用点阵字体，该字体奇丑无比。更换方法如下：</p>
+
+<h3 id="字体下载">字体下载</h3>
+
+<p>cmd 对字体的要求很多，很多字体都无法使用。推荐使用 <a href="https://github.com/Microsoft/BashOnWindows/files/1362006/Microsoft.YaHei.Mono.zip">Microsoft YaHei Mono</a> 字体。</p>
+
+<h3 id="修改注册表">修改注册表</h3>
+
+<p>注册表定位到<code>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont</code>新建<code>0936</code>字符串值，填入<code>*Microsoft YaHei Mono</code></p>
+
+<ul>
+<li>注1：936 为简体中文代码页，自行添加字体时，需要在 936 前面加 0，所以添加第一个字体就是 0936，同理添加第二个字体就是 00936。</li>
+<li>注2：字体名称前面<code>*</code>必须加上。</li>
+</ul>
+
+<h3 id="切换字体">切换字体</h3>
+
+<p>经过以上两步，打开<code>命令提示符</code>，在<code>属性</code>-<code>字体</code>里面就可以将字体修改为 Microsoft YaHei Mono 了。</p>
+
+<h3 id="注意事项">注意事项</h3>
+
+<p>使用该字体时，建议<code>命令提示符</code>的字体大小不要使用 18 号。原因：使用 18 号大小时，数字 0 显示不正常。</p>
+</div>
+        <div class="post_footer">
+          
+          <div class="meta">
+            <div class="info">
+              <span class="field tags">
+                <i class="remixicon-stack-line"></i>
+                
+                <a href="https://www.huan.ml/tags/windows/">Windows</a>
+                
+                <a href="https://www.huan.ml/tags/cmd/">CMD</a>
+                
+              </span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+  <a id="back_to_top" href="#" class="back_to_top"><span>△</span></a>
+</div>
+<footer class="footer">
+  <div class="powered_by">
+    <a href="https://zeuk.me">Designed by Zeuk,</a>
+    <a href="http://www.gohugo.io/">Proudly published with Hugo</a>
+  </div>
+
+  <div class="footer_slogan">
+    <span>黑发不知勤学早，白首方悔读书迟！</span>
+  </div>
+</footer>
+
+
+
+<script src="https://www.huan.ml/js/jquery-3.3.1.min.js"></script>
+<script src="https://www.huan.ml/js/zozo.js"></script>
+<script src="https://www.huan.ml/js/highlight.pack.js"></script>
+<link  href="https://www.huan.ml/css/fancybox.min.css" rel="stylesheet">
+<script src="https://www.huan.ml/js/fancybox.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+
+
+
+
+
+
+</body>
+</html>

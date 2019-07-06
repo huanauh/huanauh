@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Office on 驩讙懽歡</title>
+    <link>https://www.huan.ml/tags/office/</link>
+    <description>Recent content in Office on 驩讙懽歡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 16 Aug 2018 20:56:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.huan.ml/tags/office/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows Update 不能检测 Office 2010 的解决办法</title>
+      <link>https://www.huan.ml/posts/fix-windows-update-nocheck-office2010/</link>
+      <pubDate>Thu, 16 Aug 2018 20:56:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/fix-windows-update-nocheck-office2010/</guid>
+      <description>打开 Windows Update，点击“获取其他 Microsoft 产品的更新”进入后有“查找详细信息&amp;quot;，点击进入，同意条款。 如使用的 IE11，点击 IE11 “工具-兼容性视图设置”，将microsoft.com添加进去，确定。</description>
+    </item>
+    
+  </channel>
+</rss>
