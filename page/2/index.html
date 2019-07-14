@@ -109,6 +109,39 @@
 
 <div class="post animated fadeInDown">
   <div class="post_title">
+    <h2><a href='/posts/httpd-ip-binding-domain/'>LAMP IP 绑定域名</a></h2>
+  </div>
+  
+  <div class="list">
+    <div class="post_content markdown">
+      <p>在 LAMP 添加的第一个网站根目录下.htaccess文件里添加： RewriteCond %{http_host} ^0.0.0.0 [NC] RewriteRule ^(.*)$ http://www.examples.com/$1 [R=301,L] 注意：0.0.0.0换成服务器的IP；www.examples.com更换为需要绑定的域名。......</p>
+    </div>
+  </div>
+  
+  <div class="post_footer">
+    <div class="meta">
+      <div class="info">
+        <span class="field">
+          <i class="remixicon-map-pin-time-line"></i>
+          <span class="date">2018.11.10</span>
+        </span>
+        
+        <span class="field tags">
+          <i class="remixicon-stack-line"></i>
+          
+          <a href="https://www.huan.ml/tags/linux/">Linux</a>
+          
+          <a href="https://www.huan.ml/tags/lamp/">LAMP</a>
+          
+        </span>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="post animated fadeInDown">
+  <div class="post_title">
     <h2><a href='/posts/linux-modified-default-editor-to-nano/'>修改 Linux 默认编辑器为 nano</a></h2>
   </div>
   
@@ -396,39 +429,6 @@
           <a href="https://www.huan.ml/tags/linux/">Linux</a>
           
           <a href="https://www.huan.ml/tags/screen/">Screen</a>
-          
-        </span>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="post animated fadeInDown">
-  <div class="post_title">
-    <h2><a href='/posts/debian-install-linux-kernel-and-open-bbr/'>Debian 手动安装 Linux 4.9&#43; 内核并开启 BBR</a></h2>
-  </div>
-  
-  <div class="list">
-    <div class="post_content markdown">
-      <p>安装内核 选择需要安装的内核版本下载地址 下载内核（以 Linux 4.9.0 内核为例） $ wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.9/linux-image-4.9.0-040900-generic_4.9.0-040900.201612111631_amd64.deb 安装内核 $ dpkg -i linux-image-4.*.deb 移除旧内核（可选） $ apt-get autoremove 更新引导文件 $ update-grub 重启 $ reboot 开启 BBR 查看内核 $ uname -r 查看 BBR 是否开启 $ lsmod | grep bbr 如果结果中没有tcp_......</p>
-    </div>
-  </div>
-  
-  <div class="post_footer">
-    <div class="meta">
-      <div class="info">
-        <span class="field">
-          <i class="remixicon-map-pin-time-line"></i>
-          <span class="date">2018.09.16</span>
-        </span>
-        
-        <span class="field tags">
-          <i class="remixicon-stack-line"></i>
-          
-          <a href="https://www.huan.ml/tags/linux/">Linux</a>
-          
-          <a href="https://www.huan.ml/tags/bbr/">bbr</a>
           
         </span>
         

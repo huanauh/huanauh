@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 02 Jun 2019 19:37:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jul 2019 11:20:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.huan.ml/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Excel 单元格数字变日期的解决方法</title>
+      <link>https://www.huan.ml/posts/fix-excel-number-to-date/</link>
+      <pubDate>Wed, 10 Jul 2019 11:20:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/posts/fix-excel-number-to-date/</guid>
+      <description>打开 Excel，选中任意单元格，右键选择设置单元格格式，在自定义类型中，找到前缀为[$-F400]的类型格式（或者类似的，例如[$-F800]），点击删除，保存即可。</description>
+    </item>
     
     <item>
       <title>DNS 53 端口被劫持的判断方法</title>
