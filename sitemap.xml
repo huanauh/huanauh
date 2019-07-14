@@ -9,14 +9,14 @@
   </url>
   
   <url>
-    <loc>https://www.huan.ml/tags/excel/</loc>
+    <loc>https://www.huan.ml/posts/fix-excel-number-to-date/</loc>
     <lastmod>2019-07-10T11:20:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.huan.ml/posts/fix-excel-number-to-date/</loc>
+    <loc>https://www.huan.ml/tags/office/</loc>
     <lastmod>2019-07-10T11:20:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -285,12 +285,6 @@
   </url>
   
   <url>
-    <loc>https://www.huan.ml/tags/office/</loc>
-    <lastmod>2018-08-16T20:56:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.huan.ml/posts/fix-windows-update-nocheck-office2010/</loc>
     <lastmod>2018-08-16T20:56:00+00:00</lastmod>
   </url>
@@ -309,12 +303,6 @@
   <url>
     <loc>https://www.huan.ml/posts/fix-office2010-word-bug/</loc>
     <lastmod>2018-07-16T20:56:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.huan.ml/tags/word/</loc>
-    <lastmod>2018-07-16T20:56:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
