@@ -109,6 +109,39 @@
 
 <div class="post animated fadeInDown">
   <div class="post_title">
+    <h2><a href='/posts/how-to-use-update-rc.d/'>Update-rc.d 命令的用法</a></h2>
+  </div>
+  
+  <div class="list">
+    <div class="post_content markdown">
+      <p>添加启动项 将脚本放入/etc/init.d文件夹，并给予可执行权限 $ mv xx.sh /etc/init.d $ chmod +x /etc/init.d/xx.sh 设置开机自启 $ update-rc.d xx.sh defaults 删除开机自启 $ update-rc.d -f xx.sh remove......</p>
+    </div>
+  </div>
+  
+  <div class="post_footer">
+    <div class="meta">
+      <div class="info">
+        <span class="field">
+          <i class="remixicon-map-pin-time-line"></i>
+          <span class="date">2019.09.23</span>
+        </span>
+        
+        <span class="field tags">
+          <i class="remixicon-stack-line"></i>
+          
+          <a href="https://www.huan.ml/tags/linux/">Linux</a>
+          
+          <a href="https://www.huan.ml/tags/update-rc.d/">update-rc.d</a>
+          
+        </span>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="post animated fadeInDown">
+  <div class="post_title">
     <h2><a href='/posts/fix-excel-number-to-date/'>Excel 单元格数字变日期的解决方法</a></h2>
   </div>
   
@@ -396,39 +429,6 @@
           <a href="https://www.huan.ml/tags/linux/">Linux</a>
           
           <a href="https://www.huan.ml/tags/php/">PHP</a>
-          
-        </span>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="post animated fadeInDown">
-  <div class="post_title">
-    <h2><a href='/posts/fix-lookingglass-not-use-on-lamp/'>修复 LookingGlass 在 LAMP 上无法使用的问题</a></h2>
-  </div>
-  
-  <div class="list">
-    <div class="post_content markdown">
-      <p>安装 LookingGlass 后发现 ping 和 mtr 等命令无法使用。发现是 PHP 的配置问题，解决方案如下： 编辑/usr/local/php目录下php.ini文件，找到 disable_functions = exec,system,dl,passthru,chown,shell_exec,popen,proc_open 将proc_open删掉，重启 Apache $ /etc/init.d/httpd restart 即可。......</p>
-    </div>
-  </div>
-  
-  <div class="post_footer">
-    <div class="meta">
-      <div class="info">
-        <span class="field">
-          <i class="remixicon-map-pin-time-line"></i>
-          <span class="date">2018.11.16</span>
-        </span>
-        
-        <span class="field tags">
-          <i class="remixicon-stack-line"></i>
-          
-          <a href="https://www.huan.ml/tags/linux/">Linux</a>
-          
-          <a href="https://www.huan.ml/tags/lamp/">LAMP</a>
           
         </span>
         

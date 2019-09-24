@@ -109,6 +109,39 @@
 
 <div class="post animated fadeInDown">
   <div class="post_title">
+    <h2><a href='/posts/linux-process-run-background/'>Linux 进程后台运行的方法</a></h2>
+  </div>
+  
+  <div class="list">
+    <div class="post_content markdown">
+      <p>screen 命令 创建 screen $ screen -S test 保留 screen $ ctrl+a+d 按ctrl+a，然后再按d即可保留 screen 查看 screen $ screen -ls 恢复 screen $ screen -r test nohup 命令 后台运行 $ nohup server -c ./server.josn &amp; 示例命令为server -c ./server.josn 后台运行并重定向标准输出 $ nohup server -c ./server.josn 2&gt;&amp;1 &amp; 停止后台运行 $ eval $(ps......</p>
+    </div>
+  </div>
+  
+  <div class="post_footer">
+    <div class="meta">
+      <div class="info">
+        <span class="field">
+          <i class="remixicon-map-pin-time-line"></i>
+          <span class="date">2018.09.16</span>
+        </span>
+        
+        <span class="field tags">
+          <i class="remixicon-stack-line"></i>
+          
+          <a href="https://www.huan.ml/tags/linux/">Linux</a>
+          
+          <a href="https://www.huan.ml/tags/screen/">Screen</a>
+          
+        </span>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="post animated fadeInDown">
+  <div class="post_title">
     <h2><a href='/posts/debian-install-linux-kernel-and-open-bbr/'>Debian 手动安装 Linux 4.9&#43; 内核并开启 BBR</a></h2>
   </div>
   
@@ -396,39 +429,6 @@
           <a href="https://www.huan.ml/tags/windows/">Windows</a>
           
           <a href="https://www.huan.ml/tags/driver/">Driver</a>
-          
-        </span>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="post animated fadeInDown">
-  <div class="post_title">
-    <h2><a href='/posts/debian-iptables-config/'>Debian 安装配置 iptables 防火墙</a></h2>
-  </div>
-  
-  <div class="list">
-    <div class="post_content markdown">
-      <p>查看规则 $ iptables -L 编辑规则 $ vim /etc/iptables.test.rules 使规则生效 $ iptables-restore &lt; /etc/iptables.test.rules 保存生效配置 $ iptables-save &gt; /etc/iptables.up.rules 设置开机自动载入配置 $ touch /etc/network/if-pre-up.d/iptables 在 iptables 文件中输入以下内容 #!/bin/bash /sbin/iptables-restore &lt; /etc/iptables.up.rules 设置执行仅限 $ chmod +x /etc/network/if-pre-up.d/iptables......</p>
-    </div>
-  </div>
-  
-  <div class="post_footer">
-    <div class="meta">
-      <div class="info">
-        <span class="field">
-          <i class="remixicon-map-pin-time-line"></i>
-          <span class="date">2018.04.29</span>
-        </span>
-        
-        <span class="field tags">
-          <i class="remixicon-stack-line"></i>
-          
-          <a href="https://www.huan.ml/tags/linux/">Linux</a>
-          
-          <a href="https://www.huan.ml/tags/iptables/">iptables</a>
           
         </span>
         

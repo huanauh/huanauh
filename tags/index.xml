@@ -6,10 +6,28 @@
     <description>Recent content in Tags on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 10 Jul 2019 11:20:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Sep 2019 12:36:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.huan.ml/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux</title>
+      <link>https://www.huan.ml/tags/linux/</link>
+      <pubDate>Mon, 23 Sep 2019 12:36:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>update-rc.d</title>
+      <link>https://www.huan.ml/tags/update-rc.d/</link>
+      <pubDate>Mon, 23 Sep 2019 12:36:00 +0000</pubDate>
+      
+      <guid>https://www.huan.ml/tags/update-rc.d/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Office</title>
@@ -35,15 +53,6 @@
       <pubDate>Sun, 02 Jun 2019 19:37:00 +0000</pubDate>
       
       <guid>https://www.huan.ml/tags/dns/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://www.huan.ml/tags/linux/</link>
-      <pubDate>Tue, 02 Apr 2019 12:53:00 +0000</pubDate>
-      
-      <guid>https://www.huan.ml/tags/linux/</guid>
       <description></description>
     </item>
     

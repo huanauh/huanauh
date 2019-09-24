@@ -4,7 +4,48 @@
   
   <url>
     <loc>https://www.huan.ml/categories/</loc>
-    <lastmod>2019-07-10T11:20:00+00:00</lastmod>
+    <lastmod>2019-09-23T12:36:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/tags/linux/</loc>
+    <lastmod>2019-09-23T12:36:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/categories/linux%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2019-09-23T12:36:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/posts/</loc>
+    <lastmod>2019-09-23T12:36:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/tags/</loc>
+    <lastmod>2019-09-23T12:36:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/posts/how-to-use-update-rc.d/</loc>
+    <lastmod>2019-09-23T12:36:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/tags/update-rc.d/</loc>
+    <lastmod>2019-09-23T12:36:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.huan.ml/</loc>
+    <lastmod>2019-09-23T12:36:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -20,18 +61,6 @@
   </url>
   
   <url>
-    <loc>https://www.huan.ml/posts/</loc>
-    <lastmod>2019-07-10T11:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.huan.ml/tags/</loc>
-    <lastmod>2019-07-10T11:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.huan.ml/tags/windows/</loc>
     <lastmod>2019-07-10T11:20:00+00:00</lastmod>
     <priority>0</priority>
@@ -39,12 +68,6 @@
   
   <url>
     <loc>https://www.huan.ml/categories/windows%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2019-07-10T11:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.huan.ml/</loc>
     <lastmod>2019-07-10T11:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -63,18 +86,6 @@
   <url>
     <loc>https://www.huan.ml/about/</loc>
     <lastmod>2019-05-12T10:25:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.huan.ml/tags/linux/</loc>
-    <lastmod>2019-04-02T12:53:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.huan.ml/categories/linux%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2019-04-02T12:53:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

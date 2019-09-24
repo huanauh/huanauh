@@ -109,6 +109,39 @@
 
 <div class="post animated fadeInDown">
   <div class="post_title">
+    <h2><a href='/posts/fix-lookingglass-not-use-on-lamp/'>修复 LookingGlass 在 LAMP 上无法使用的问题</a></h2>
+  </div>
+  
+  <div class="list">
+    <div class="post_content markdown">
+      <p>安装 LookingGlass 后发现 ping 和 mtr 等命令无法使用。发现是 PHP 的配置问题，解决方案如下： 编辑/usr/local/php目录下php.ini文件，找到 disable_functions = exec,system,dl,passthru,chown,shell_exec,popen,proc_open 将proc_open删掉，重启 Apache $ /etc/init.d/httpd restart 即可。......</p>
+    </div>
+  </div>
+  
+  <div class="post_footer">
+    <div class="meta">
+      <div class="info">
+        <span class="field">
+          <i class="remixicon-map-pin-time-line"></i>
+          <span class="date">2018.11.16</span>
+        </span>
+        
+        <span class="field tags">
+          <i class="remixicon-stack-line"></i>
+          
+          <a href="https://www.huan.ml/tags/linux/">Linux</a>
+          
+          <a href="https://www.huan.ml/tags/lamp/">LAMP</a>
+          
+        </span>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="post animated fadeInDown">
+  <div class="post_title">
     <h2><a href='/posts/httpd-ip-binding-domain/'>LAMP IP 绑定域名</a></h2>
   </div>
   
@@ -396,39 +429,6 @@
           <a href="https://www.huan.ml/tags/linux/">Linux</a>
           
           <a href="https://www.huan.ml/tags/kms/">KMS</a>
-          
-        </span>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="post animated fadeInDown">
-  <div class="post_title">
-    <h2><a href='/posts/linux-process-run-background/'>Linux 进程后台运行的方法</a></h2>
-  </div>
-  
-  <div class="list">
-    <div class="post_content markdown">
-      <p>screen 命令 创建 screen $ screen -S test 保留 screen $ ctrl+a+d 按ctrl+a，然后再按d即可保留 screen 查看 screen $ screen -ls 恢复 screen $ screen -r test nohup 命令 后台运行 $ nohup server -c ./server.josn &amp; 示例命令为server -c ./server.josn 后台运行并重定向标准输出 $ nohup server -c ./server.josn 2&gt;&amp;1 &amp; 停止后台运行 $ eval $(ps......</p>
-    </div>
-  </div>
-  
-  <div class="post_footer">
-    <div class="meta">
-      <div class="info">
-        <span class="field">
-          <i class="remixicon-map-pin-time-line"></i>
-          <span class="date">2018.09.16</span>
-        </span>
-        
-        <span class="field tags">
-          <i class="remixicon-stack-line"></i>
-          
-          <a href="https://www.huan.ml/tags/linux/">Linux</a>
-          
-          <a href="https://www.huan.ml/tags/screen/">Screen</a>
           
         </span>
         
