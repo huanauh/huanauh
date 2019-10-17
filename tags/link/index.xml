@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Link on 驩讙懽歡</title>
-    <link>https://www.huan.ml/tags/link/</link>
+    <link>https://leonhan.ml/tags/link/</link>
     <description>Recent content in Link on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 27 Oct 2018 16:35:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.huan.ml/tags/link/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leonhan.ml/tags/link/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>如何使用符号链接</title>
-      <link>https://www.huan.ml/posts/how-to-use-symbolic-link/</link>
+      <link>https://leonhan.ml/posts/how-to-use-symbolic-link/</link>
       <pubDate>Sat, 27 Oct 2018 16:35:00 +0000</pubDate>
       
-      <guid>https://www.huan.ml/posts/how-to-use-symbolic-link/</guid>
+      <guid>https://leonhan.ml/posts/how-to-use-symbolic-link/</guid>
       <description>使用缘由 Windows 电脑上有多个硬盘分区，但文件服务器又不支持虚拟目录，所以跨硬盘分区分享文件不太好操作。使用符号链接能方便的解决这个问题。 使用方法 以管理员身份运行cmd 假设服务器目录为www，位于c:\www</description>
     </item>
     

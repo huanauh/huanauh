@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Telnet on 驩讙懽歡</title>
-    <link>https://www.huan.ml/tags/telnet/</link>
+    <link>https://leonhan.ml/tags/telnet/</link>
     <description>Recent content in Telnet on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 23 Oct 2018 12:25:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.huan.ml/tags/telnet/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leonhan.ml/tags/telnet/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Android 开启 Telnet 服务</title>
-      <link>https://www.huan.ml/posts/android-open-telnet-service/</link>
+      <link>https://leonhan.ml/posts/android-open-telnet-service/</link>
       <pubDate>Tue, 23 Oct 2018 12:25:00 +0000</pubDate>
       
-      <guid>https://www.huan.ml/posts/android-open-telnet-service/</guid>
+      <guid>https://leonhan.ml/posts/android-open-telnet-service/</guid>
       <description>前提条件 1.需要 Root 2.安装 Busybox 3.安装终端模拟器 开启服务器 在终端模拟器执行 $ su $ telnetd -l /system/bin/sh 即可开启 telnet 服务器。 关闭服务器 执行 $ ps 找到COMMAND是telnetd -l /system/bin/sh的进程的 pid，</description>
     </item>
     

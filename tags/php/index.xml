@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PHP on 驩讙懽歡</title>
-    <link>https://www.huan.ml/tags/php/</link>
+    <link>https://leonhan.ml/tags/php/</link>
     <description>Recent content in PHP on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 03 Dec 2018 20:20:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.huan.ml/tags/php/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leonhan.ml/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>修复 LookingGlass 在 PHP7 上无法使用的问题</title>
-      <link>https://www.huan.ml/posts/fix-lookingglass-not-use-on-php7/</link>
+      <link>https://leonhan.ml/posts/fix-lookingglass-not-use-on-php7/</link>
       <pubDate>Mon, 03 Dec 2018 20:20:00 +0000</pubDate>
       
-      <guid>https://www.huan.ml/posts/fix-lookingglass-not-use-on-php7/</guid>
+      <guid>https://leonhan.ml/posts/fix-lookingglass-not-use-on-php7/</guid>
       <description>LookingGlass 在 PHP7 环境无法使用，解决方案如下： 在根目录下ajax.php文件中找到以下内容 // execute command $output = $lg-&amp;gt;$_GET[&#39;cmd&#39;]($_GET[&#39;host&#39;]); 修改为 // execute command $output = $lg-&amp;gt;{$_GET[&#39;cmd&#39;]}($_GET[&#39;host&#39;]); 即可。</description>
     </item>
     
