@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Crontab on 驩讙懽歡</title>
-    <link>https://leonhan.ml/tags/crontab/</link>
+    <link>https://i.huan.ml/tags/crontab/</link>
     <description>Recent content in Crontab on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 10 Mar 2018 18:56:00 +0000</lastBuildDate>
     
-	<atom:link href="https://leonhan.ml/tags/crontab/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://i.huan.ml/tags/crontab/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Crontab 的安装及使用</title>
-      <link>https://leonhan.ml/posts/crontab-install-and-use/</link>
+      <link>https://i.huan.ml/posts/crontab-install-and-use/</link>
       <pubDate>Sat, 10 Mar 2018 18:56:00 +0000</pubDate>
       
-      <guid>https://leonhan.ml/posts/crontab-install-and-use/</guid>
+      <guid>https://i.huan.ml/posts/crontab-install-and-use/</guid>
       <description>安装 crontab $ yum install vixie-cron crontabs 添加开机启动 $ chkconfig –level 35 crond on crontab 文件位置（root） /var/spool/cron/root 查看 corntab 服务状态 $ service crond status 启动 corntab 服务 $ service crond start 查看 crontab 列表 $ crontab -l 编辑 crontab $ crontab -e</description>
     </item>
     

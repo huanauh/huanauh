@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devices on 驩讙懽歡</title>
-    <link>https://leonhan.ml/tags/devices/</link>
+    <link>https://i.huan.ml/tags/devices/</link>
     <description>Recent content in Devices on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 16 May 2018 21:09:00 +0000</lastBuildDate>
     
-	<atom:link href="https://leonhan.ml/tags/devices/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://i.huan.ml/tags/devices/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Windows 查看设备管理器所有设备</title>
-      <link>https://leonhan.ml/posts/windows-view-all-device/</link>
+      <link>https://i.huan.ml/posts/windows-view-all-device/</link>
       <pubDate>Wed, 16 May 2018 21:09:00 +0000</pubDate>
       
-      <guid>https://leonhan.ml/posts/windows-view-all-device/</guid>
+      <guid>https://i.huan.ml/posts/windows-view-all-device/</guid>
       <description>进入命令提示符执行 $ set devmgr_show_nonpresent_devices=1 然后执行 $ Start DEVMGMT.MSC 即可进入设备管理，点击顶部菜单查看勾选显示隐藏的设备即可查看全部设备。 附：解决网络连接无法重命名的问题。 方法一： 按以上方法进入设备管理器，删除相应的灰色的同名称网</description>
     </item>
     

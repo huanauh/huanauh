@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shadowsocks on 驩讙懽歡</title>
-    <link>https://leonhan.ml/tags/shadowsocks/</link>
+    <link>https://i.huan.ml/tags/shadowsocks/</link>
     <description>Recent content in Shadowsocks on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 18 Dec 2017 18:56:00 +0000</lastBuildDate>
     
-	<atom:link href="https://leonhan.ml/tags/shadowsocks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://i.huan.ml/tags/shadowsocks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ubuntu 安装 Shadowsocks 教程</title>
-      <link>https://leonhan.ml/posts/ubuntu-install-shadowsocks/</link>
+      <link>https://i.huan.ml/posts/ubuntu-install-shadowsocks/</link>
       <pubDate>Mon, 18 Dec 2017 18:56:00 +0000</pubDate>
       
-      <guid>https://leonhan.ml/posts/ubuntu-install-shadowsocks/</guid>
+      <guid>https://i.huan.ml/posts/ubuntu-install-shadowsocks/</guid>
       <description>写在前面：建议直接使用网上各种一键脚本，本教程仅适用于 Python 版 Shadowsocks 安装 PIP $ apt update $ apt install python-pip $ apt install python-setuptools m2crypto 安装 Shadowsocks $ pip install shadowsocks $ apt install shadowsocks 如果报错执行以下命令 $ python -m pip install --upgrade pip 配置参数 新建/home/shadowsocks.jso</description>
     </item>
     

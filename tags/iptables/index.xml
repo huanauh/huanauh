@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>iptables on 驩讙懽歡</title>
-    <link>https://leonhan.ml/tags/iptables/</link>
+    <link>https://i.huan.ml/tags/iptables/</link>
     <description>Recent content in iptables on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 29 Apr 2018 18:56:00 +0000</lastBuildDate>
     
-	<atom:link href="https://leonhan.ml/tags/iptables/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://i.huan.ml/tags/iptables/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Debian 安装配置 iptables 防火墙</title>
-      <link>https://leonhan.ml/posts/debian-iptables-config/</link>
+      <link>https://i.huan.ml/posts/debian-iptables-config/</link>
       <pubDate>Sun, 29 Apr 2018 18:56:00 +0000</pubDate>
       
-      <guid>https://leonhan.ml/posts/debian-iptables-config/</guid>
+      <guid>https://i.huan.ml/posts/debian-iptables-config/</guid>
       <description>查看规则 $ iptables -L 编辑规则 $ vim /etc/iptables.test.rules 使规则生效 $ iptables-restore &amp;lt; /etc/iptables.test.rules 保存生效配置 $ iptables-save &amp;gt; /etc/iptables.up.rules 设置开机自动载入配置 $ touch /etc/network/if-pre-up.d/iptables 在 iptables 文件中输入以下内容 #!/bin/bash /sbin/iptables-restore &amp;lt; /etc/iptables.up.rules 设置执行仅限 $ chmod +x /etc/network/if-pre-up.d/iptables</description>
     </item>
     
