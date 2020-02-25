@@ -3,8 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://i.huan.ml/tags/adb/</loc>
+    <lastmod>2020-02-24T12:12:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://i.huan.ml/categories/</loc>
-    <lastmod>2019-09-23T12:36:00+00:00</lastmod>
+    <lastmod>2020-02-24T12:12:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://i.huan.ml/posts/</loc>
+    <lastmod>2020-02-24T12:12:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://i.huan.ml/tags/</loc>
+    <lastmod>2020-02-24T12:12:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://i.huan.ml/tags/windows/</loc>
+    <lastmod>2020-02-24T12:12:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://i.huan.ml/categories/windows%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2020-02-24T12:12:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://i.huan.ml/posts/how-to-find-adb-device/</loc>
+    <lastmod>2020-02-24T12:12:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://i.huan.ml/</loc>
+    <lastmod>2020-02-24T12:12:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -21,18 +62,6 @@
   </url>
   
   <url>
-    <loc>https://i.huan.ml/posts/</loc>
-    <lastmod>2019-09-23T12:36:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://i.huan.ml/tags/</loc>
-    <lastmod>2019-09-23T12:36:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://i.huan.ml/posts/how-to-use-update-rc.d/</loc>
     <lastmod>2019-09-23T12:36:00+00:00</lastmod>
   </url>
@@ -44,30 +73,12 @@
   </url>
   
   <url>
-    <loc>https://i.huan.ml/</loc>
-    <lastmod>2019-09-23T12:36:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://i.huan.ml/posts/fix-excel-number-to-date/</loc>
     <lastmod>2019-07-10T11:20:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://i.huan.ml/tags/office/</loc>
-    <lastmod>2019-07-10T11:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://i.huan.ml/tags/windows/</loc>
-    <lastmod>2019-07-10T11:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://i.huan.ml/categories/windows%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2019-07-10T11:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
