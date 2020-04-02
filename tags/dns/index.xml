@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DNS on 驩讙懽歡</title>
-    <link>https://i.huan.ml/tags/dns/</link>
+    <link>https://i.cofco.ml/tags/dns/</link>
     <description>Recent content in DNS on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sun, 02 Jun 2019 19:37:00 +0000</lastBuildDate>
     
-	<atom:link href="https://i.huan.ml/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://i.cofco.ml/tags/dns/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DNS 53 端口被劫持的判断方法</title>
-      <link>https://i.huan.ml/posts/how-to-check-if-port-53-is-hijacked/</link>
+      <link>https://i.cofco.ml/how-to-check-if-port-53-is-hijacked/</link>
       <pubDate>Sun, 02 Jun 2019 19:37:00 +0000</pubDate>
       
-      <guid>https://i.huan.ml/posts/how-to-check-if-port-53-is-hijacked/</guid>
-      <description>Windows 系统 在命令提示符中运行 $ nslookup dnscheck.not-available-sub.sgfu.org 非权威应答中 Address 如为123.45.67.89则未被劫持，如为127.0.0.1则被劫持。 Linux 系统 在终端中运行 $ dig dnscheck.not-available-sub.sgfu.org a</description>
+      <guid>https://i.cofco.ml/how-to-check-if-port-53-is-hijacked/</guid>
+      <description>Windows 系统 在命令提示符中运行 1 $ nslookup dnscheck.not-available-sub.sgfu.org 非权威应答中 Address 如为123.45.67.89则未被劫持，如为127.0.0.1则被劫持。 Linux 系统 在终端中运行 1 $</description>
     </item>
     
   </channel>

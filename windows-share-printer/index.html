@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Windows 局域网连接共享打印机方法 | 驩讙懽歡</title>
+        <meta name="Description" content="黑发不知勤学早，白首方悔读书迟！"><meta property="og:title" content="Windows 局域网连接共享打印机方法" />
+<meta property="og:description" content="写在前面：本文针对在设备和打印机里面添加打印机时，无法搜索到目标打印机的解决方法。 查看目标打印机IP地址 桌面任务栏右下角网络图标-右键-打开" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://i.cofco.ml/windows-share-printer/" />
+<meta property="article:published_time" content="2018-06-16T20:56:00+00:00" />
+<meta property="article:modified_time" content="2018-06-16T20:56:00+00:00" /><meta property="og:site_name" content="驩讙懽歡" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Windows 局域网连接共享打印机方法"/>
+<meta name="twitter:description" content="写在前面：本文针对在设备和打印机里面添加打印机时，无法搜索到目标打印机的解决方法。 查看目标打印机IP地址 桌面任务栏右下角网络图标-右键-打开"/>
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#da532c">
+<link rel="canonical" href="https://i.cofco.ml/windows-share-printer/" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="prev" href="https://i.cofco.ml/windows-view-all-device/" /><link rel="next" href="https://i.cofco.ml/fix-office2010-word-bug/" /><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Windows 局域网连接共享打印机方法",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/i.cofco.ml\/windows-share-printer\/"
+        },"genre": "posts","keywords": "Linux, LAN","wordcount":  275 ,
+        "url": "https:\/\/i.cofco.ml\/windows-share-printer\/","datePublished": "2018-06-16","dateModified": "2018-06-16","author": {
+                "@type": "Person",
+                "name": "Leon"
+            },"description": ""
+    }
+    </script></head>
+    <body><script>
+            if (!window.localStorage || !window.localStorage.getItem('theme')) {window.isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;} else {
+                window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
+            }
+            window.isDark && document.body.classList.add('dark-theme');
+        </script><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/">驩讙懽歡</a>
+        </div>
+        <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh/huanauh.github.io" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><span class="menu-item">|</span>
+            <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/windows-share-printer/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-wrapper">
+        <div class="header-container">
+            <div class="header-title">
+                <a href="/">驩讙懽歡</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh/huanauh.github.io" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/windows-share-printer/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header>
+
+<script>
+    window.desktopHeaderMode = "fixed";
+    window.mobileHeaderMode = "auto";
+</script>
+<main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Windows 局域网连接共享打印机方法</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Leon</a>
+</span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/windows%E6%95%99%E7%A8%8B">
+                                <i class="far fa-folder fa-fw"></i>Windows教程
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2018-06-16>2018-06-16</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 275 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;</div>
+        </div><div class="content" id="content"><p>写在前面：本文针对在<code>设备和打印机</code>里面<code>添加打印机</code>时，无法搜索到目标打印机的解决方法。</p>
+<h3 id="查看目标打印机ip地址">查看目标打印机IP地址</h3>
+<p>桌面任务栏右下角网络图标-右键-<code>打开网络和共享中心</code>-<code>更改适配器设置</code>-<code>本地连接</code>-右键-<code>状态</code>-<code>详细信息</code>。窗口中<code>IPv4 地址</code>即为目标打印机 IP 地址，记住此 IP 地址。假设 IP 地址为<code>0.0.0.0</code>。</p>
+<h3 id="连接目标打印机">连接目标打印机</h3>
+<p>在需连接打印机的电脑，Win 键+R 键，在弹出的运行窗口输入<code>\\0.0.0.0</code>，回车即可看到目标打印机，双击此打印机即可自动完成连接。</p>
+<h3 id="可能存在的问题">可能存在的问题</h3>
+<p>有部分电脑双击打印机后会要求输入用户名密码，解决方法：用户名填<code>guest</code>，密码留空不填，勾选记住此凭据。</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2018-06-16 更新</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux">Linux</a>,&nbsp;<a href="/tags/lan">LAN</a></section>
+        <section>
+            <span><a href="javascript:window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/windows-view-all-device/" class="prev" rel="prev" title="Windows 查看设备管理器所有设备"><i class="fas fa-angle-left fa-fw"></i>Windows 查看设备管理器所有设备</a>
+            <a href="/fix-office2010-word-bug/" class="next" rel="next" title="Office 2010 Word 打开后卡顿几秒的解决办法">Office 2010 Word 打开后卡顿几秒的解决办法<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div class="comment"></div>
+    </article></div>
+            </main><footer class="footer">
+    <div class="copyright"><div class="copyright-line">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer"><i class="far fa-heart fa-fw"></i> LoveIt</a>
+        </div>
+
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Leon</a></span></div>
+    </div>
+</footer>
+</div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
+            <i class="fas fa-chevron-up fa-fw"></i>
+        </a><script>
+        document.addEventListener('DOMContentLoaded', function () {
+            lightGallery(document.getElementById('content'), {
+                selector: '.lightgallery',
+                speed: 400,
+                hideBarsDelay: 2000,
+                thumbnail: true,
+                exThumbImage: 'data-thumbnail',
+                thumbWidth: 80,
+                thumbContHeight: 80,
+            });
+        });
+    </script><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/js/theme.min.js"></script></body>
+</html>

@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>update-rc.d on 驩讙懽歡</title>
-    <link>https://i.huan.ml/tags/update-rc.d/</link>
+    <link>https://i.cofco.ml/tags/update-rc.d/</link>
     <description>Recent content in update-rc.d on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Mon, 23 Sep 2019 12:36:00 +0000</lastBuildDate>
     
-	<atom:link href="https://i.huan.ml/tags/update-rc.d/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://i.cofco.ml/tags/update-rc.d/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Update-rc.d 命令的用法</title>
-      <link>https://i.huan.ml/posts/how-to-use-update-rc.d/</link>
+      <link>https://i.cofco.ml/how-to-use-update-rc.d/</link>
       <pubDate>Mon, 23 Sep 2019 12:36:00 +0000</pubDate>
       
-      <guid>https://i.huan.ml/posts/how-to-use-update-rc.d/</guid>
-      <description>添加启动项 将脚本放入/etc/init.d文件夹，并给予可执行权限 $ mv xx.sh /etc/init.d $ chmod +x /etc/init.d/xx.sh 设置开机自启 $ update-rc.d xx.sh defaults 删除开机自启 $ update-rc.d -f xx.sh remove</description>
+      <guid>https://i.cofco.ml/how-to-use-update-rc.d/</guid>
+      <description>添加启动项 将脚本放入/etc/init.d文件夹，并给予可执行权限 1 2 $ mv xx.sh /etc/init.d $ chmod +x /etc/init.d/xx.sh 设置开机自启 1 $ update-rc.d xx.sh defaults 删除开机自启 1 $ update-rc.d -f xx.sh remove</description>
     </item>
     
   </channel>

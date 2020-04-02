@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bioset on 驩讙懽歡</title>
-    <link>https://i.huan.ml/tags/bioset/</link>
+    <link>https://i.cofco.ml/tags/bioset/</link>
     <description>Recent content in bioset on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sun, 16 Sep 2018 20:27:00 +0000</lastBuildDate>
     
-	<atom:link href="https://i.huan.ml/tags/bioset/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://i.cofco.ml/tags/bioset/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux 出现大量 bioset 进程的解决办法</title>
-      <link>https://i.huan.ml/posts/linux-fix-too-mang-bioset-processes/</link>
+      <link>https://i.cofco.ml/linux-fix-too-mang-bioset-processes/</link>
       <pubDate>Sun, 16 Sep 2018 20:27:00 +0000</pubDate>
       
-      <guid>https://i.huan.ml/posts/linux-fix-too-mang-bioset-processes/</guid>
+      <guid>https://i.cofco.ml/linux-fix-too-mang-bioset-processes/</guid>
       <description>此为 linux 4.x 内核的 bug。 解决办法： linux 内核在 4.13 及以上版本修复了该 bug，故安装 4.13 以上 linux 内核即可。</description>
     </item>
     

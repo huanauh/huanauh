@@ -1,40 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Office on 驩讙懽歡</title>
-    <link>https://i.huan.ml/tags/office/</link>
+    <link>https://i.cofco.ml/tags/office/</link>
     <description>Recent content in Office on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Wed, 10 Jul 2019 11:20:00 +0000</lastBuildDate>
     
-	<atom:link href="https://i.huan.ml/tags/office/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://i.cofco.ml/tags/office/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Excel 单元格数字变日期的解决方法</title>
-      <link>https://i.huan.ml/posts/fix-excel-number-to-date/</link>
+      <link>https://i.cofco.ml/fix-excel-number-to-date/</link>
       <pubDate>Wed, 10 Jul 2019 11:20:00 +0000</pubDate>
       
-      <guid>https://i.huan.ml/posts/fix-excel-number-to-date/</guid>
-      <description>打开 Excel，选中任意单元格，右键选择设置单元格格式，在自定义类型中，找到前缀为[$-F400]的类型格式（或者类似的，例如[$-F800]），点击删除，保存即可。</description>
+      <guid>https://i.cofco.ml/fix-excel-number-to-date/</guid>
+      <description>打开 Excel，选中任意单元格，右键选择设置单元格格式，在自定义类型中，找到前缀为[$-F400]的类型格式（或者类似的，例如[$-F800</description>
     </item>
     
     <item>
       <title>Windows Update 不能检测 Office 2010 的解决办法</title>
-      <link>https://i.huan.ml/posts/fix-windows-update-nocheck-office2010/</link>
+      <link>https://i.cofco.ml/fix-windows-update-nocheck-office2010/</link>
       <pubDate>Thu, 16 Aug 2018 20:56:00 +0000</pubDate>
       
-      <guid>https://i.huan.ml/posts/fix-windows-update-nocheck-office2010/</guid>
-      <description>打开 Windows Update，点击“获取其他 Microsoft 产品的更新”进入后有“查找详细信息&amp;quot;，点击进入，同意条款。 如使用的 IE11，点击 IE11 “工具-兼容性视图设置”，将microsoft.com添加进去，确定。</description>
+      <guid>https://i.cofco.ml/fix-windows-update-nocheck-office2010/</guid>
+      <description>打开 Windows Update，点击“获取其他 Microsoft 产品的更新”进入后有“查找详细信息&amp;rdquo;，点击进入，同意条款。 如使用的 IE11，点击 IE11 “工具-兼</description>
     </item>
     
     <item>
       <title>Office 2010 Word 打开后卡顿几秒的解决办法</title>
-      <link>https://i.huan.ml/posts/fix-office2010-word-bug/</link>
+      <link>https://i.cofco.ml/fix-office2010-word-bug/</link>
       <pubDate>Mon, 16 Jul 2018 20:56:00 +0000</pubDate>
       
-      <guid>https://i.huan.ml/posts/fix-office2010-word-bug/</guid>
+      <guid>https://i.cofco.ml/fix-office2010-word-bug/</guid>
       <description>打开 Word 依次点击文件-选项-信任中心-信任中心设置-个人信息选项，找到允许信息检索窗格检查并安装新服务取消勾选。</description>
     </item>
     

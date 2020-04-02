@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Ubuntu 安装 Shadowsocks 教程 | 驩讙懽歡</title>
+        <meta name="Description" content="黑发不知勤学早，白首方悔读书迟！"><meta property="og:title" content="Ubuntu 安装 Shadowsocks 教程" />
+<meta property="og:description" content="写在前面：建议直接使用网上各种一键脚本，本教程仅适用于 Python 版 Shadowsocks 安装 PIP 1 2 3 $ apt update $ apt install python-pip $ apt install python-setuptools m2crypto 安装 Shadowsocks 1 2 $ pip install shadowsocks $ apt install shadowsocks 如果报错执行以下命" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://i.cofco.ml/ubuntu-install-shadowsocks/" />
+<meta property="article:published_time" content="2017-12-18T18:56:00+00:00" />
+<meta property="article:modified_time" content="2017-12-18T18:56:00+00:00" /><meta property="og:site_name" content="驩讙懽歡" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ubuntu 安装 Shadowsocks 教程"/>
+<meta name="twitter:description" content="写在前面：建议直接使用网上各种一键脚本，本教程仅适用于 Python 版 Shadowsocks 安装 PIP 1 2 3 $ apt update $ apt install python-pip $ apt install python-setuptools m2crypto 安装 Shadowsocks 1 2 $ pip install shadowsocks $ apt install shadowsocks 如果报错执行以下命"/>
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#da532c">
+<link rel="canonical" href="https://i.cofco.ml/ubuntu-install-shadowsocks/" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="prev" href="https://i.cofco.ml/centos-7-firewall-commands/" /><link rel="next" href="https://i.cofco.ml/ubuntu-disable-update-prompts/" /><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Ubuntu 安装 Shadowsocks 教程",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/i.cofco.ml\/ubuntu-install-shadowsocks\/"
+        },"genre": "posts","keywords": "Linux, Shadowsocks","wordcount":  193 ,
+        "url": "https:\/\/i.cofco.ml\/ubuntu-install-shadowsocks\/","datePublished": "2017-12-18","dateModified": "2017-12-18","author": {
+                "@type": "Person",
+                "name": "Leon"
+            },"description": ""
+    }
+    </script></head>
+    <body><script>
+            if (!window.localStorage || !window.localStorage.getItem('theme')) {window.isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;} else {
+                window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
+            }
+            window.isDark && document.body.classList.add('dark-theme');
+        </script><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/">驩讙懽歡</a>
+        </div>
+        <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh/huanauh.github.io" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><span class="menu-item">|</span>
+            <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/ubuntu-install-shadowsocks/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-wrapper">
+        <div class="header-container">
+            <div class="header-title">
+                <a href="/">驩讙懽歡</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh/huanauh.github.io" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/ubuntu-install-shadowsocks/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header>
+
+<script>
+    window.desktopHeaderMode = "fixed";
+    window.mobileHeaderMode = "auto";
+</script>
+<main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Ubuntu 安装 Shadowsocks 教程</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Leon</a>
+</span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/linux%E6%95%99%E7%A8%8B">
+                                <i class="far fa-folder fa-fw"></i>Linux教程
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2017-12-18>2017-12-18</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 193 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;</div>
+        </div><div class="content" id="content"><p>写在前面：建议直接使用网上各种一键脚本，本教程仅适用于 Python 版 Shadowsocks</p>
+<h3 id="安装-pip">安装 PIP</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ apt update
+$ apt install python-pip
+$ apt install python-setuptools m2crypto
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="安装-shadowsocks">安装 Shadowsocks</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ pip install shadowsocks
+$ apt install shadowsocks
+</code></pre></td></tr></table>
+</div>
+</div><p>如果报错执行以下命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ python -m pip install --upgrade pip
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="配置参数">配置参数</h3>
+<p>新建<code>/home/shadowsocks.json</code>文件，并键入以下内容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="o">{</span>
+<span class="s2">&#34;server&#34;</span>:<span class="s2">&#34;11.22.33.44&#34;</span>  <span class="c1">#服务器IP</span>
+<span class="s2">&#34;server_port&#34;</span>:443  <span class="c1">#服务端口</span>
+<span class="s2">&#34;local_port&#34;</span>:1080  <span class="c1">#本地端口</span>
+<span class="s2">&#34;password&#34;</span>:<span class="s2">&#34;123456&#34;</span>  <span class="c1">#密码</span>
+<span class="s2">&#34;timeout&#34;</span>:300,  <span class="c1">#超时设置</span>
+<span class="s2">&#34;method&#34;</span>:<span class="s2">&#34;aes-256-cfb&#34;</span>  <span class="c1">#加密方法</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="设置开机启动">设置开机启动</h2>
+<p>在<code>/etc/rc.local</code>文件中添加</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">ssserver -c /home/shadowsocks.json -d start
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2017-12-18 更新</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux">Linux</a>,&nbsp;<a href="/tags/shadowsocks">Shadowsocks</a></section>
+        <section>
+            <span><a href="javascript:window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/centos-7-firewall-commands/" class="prev" rel="prev" title="CentOS 7 中 Firewall 相关命令"><i class="fas fa-angle-left fa-fw"></i>CentOS 7 中 Firewall 相关命令</a>
+            <a href="/ubuntu-disable-update-prompts/" class="next" rel="next" title="Ubuntu 禁止升级提示">Ubuntu 禁止升级提示<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div class="comment"></div>
+    </article></div>
+            </main><footer class="footer">
+    <div class="copyright"><div class="copyright-line">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer"><i class="far fa-heart fa-fw"></i> LoveIt</a>
+        </div>
+
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Leon</a></span></div>
+    </div>
+</footer>
+</div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
+            <i class="fas fa-chevron-up fa-fw"></i>
+        </a><script>
+        document.addEventListener('DOMContentLoaded', function () {
+            lightGallery(document.getElementById('content'), {
+                selector: '.lightgallery',
+                speed: 400,
+                hideBarsDelay: 2000,
+                thumbnail: true,
+                exThumbImage: 'data-thumbnail',
+                thumbWidth: 80,
+                thumbContHeight: 80,
+            });
+        });
+    </script><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/js/theme.min.js"></script></body>
+</html>

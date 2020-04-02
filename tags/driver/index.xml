@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Driver on 驩讙懽歡</title>
-    <link>https://i.huan.ml/tags/driver/</link>
+    <link>https://i.cofco.ml/tags/driver/</link>
     <description>Recent content in Driver on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Tue, 15 May 2018 20:56:00 +0000</lastBuildDate>
     
-	<atom:link href="https://i.huan.ml/tags/driver/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://i.cofco.ml/tags/driver/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Teredo Tunneling Adapter 驱动黄色叹号解决方法</title>
-      <link>https://i.huan.ml/posts/fix-teredo-tunneling-adapter-yellow/</link>
+      <link>https://i.cofco.ml/fix-teredo-tunneling-adapter-yellow/</link>
       <pubDate>Tue, 15 May 2018 20:56:00 +0000</pubDate>
       
-      <guid>https://i.huan.ml/posts/fix-teredo-tunneling-adapter-yellow/</guid>
-      <description>打开注册表编辑器，定位到 HKEY_LOCAL_MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\TCPIP6\PARAMETERS 右键Disabled Components将值修改为0，重启电脑。</description>
+      <guid>https://i.cofco.ml/fix-teredo-tunneling-adapter-yellow/</guid>
+      <description>打开注册表编辑器，定位到 1 HKEY_LOCAL_MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\TCPIP6\PARAMETERS 右键Disabled Components将值修改为0，重启电脑。</description>
     </item>
     
   </channel>
