@@ -2,24 +2,6 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://i.cofco.ml/posts/</loc><lastmod>2020-04-02T14:33:59&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://i.cofco.ml/en/posts/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://i.cofco.ml/posts/"
-                    /></url><url>
-            <loc>https://i.cofco.ml/hello-world/</loc><lastmod>2020-04-02T14:33:59&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://i.cofco.ml/en/hello-world/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://i.cofco.ml/hello-world/"
-                    /></url><url>
             <loc>https://i.cofco.ml/tags/adb/</loc><lastmod>2020-02-24T12:12:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://i.cofco.ml/categories/</loc><lastmod>2020-02-24T12:12:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
@@ -29,6 +11,15 @@
                     rel="alternate"
                     hreflang="zh-cn"
                     href="https://i.cofco.ml/categories/"
+                    /></url><url>
+            <loc>https://i.cofco.ml/posts/</loc><lastmod>2020-02-24T12:12:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://i.cofco.ml/en/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://i.cofco.ml/posts/"
                     /></url><url>
             <loc>https://i.cofco.ml/tags/</loc><lastmod>2020-02-24T12:12:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
@@ -136,4 +127,13 @@
             <loc>https://i.cofco.ml/ubuntu-install-shadowsocks/</loc><lastmod>2017-12-18T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://i.cofco.ml/centos-7-firewall-commands/</loc><lastmod>2017-12-02T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://i.cofco.ml/tags/firewall/</loc><lastmod>2017-12-02T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://i.cofco.ml/how-to-use-screen/</loc><lastmod>2017-11-16T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
+            <loc>https://i.cofco.ml/how-to-use-screen/</loc><lastmod>2017-11-16T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.cofco.ml/hello-world/</loc><lastmod>2017-11-10T14:33:59&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://i.cofco.ml/en/hello-world/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-cn"
+                    href="https://i.cofco.ml/hello-world/"
+                    /></url></urlset>

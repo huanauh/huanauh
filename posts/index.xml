@@ -6,19 +6,10 @@
     <description>Recent content in Posts on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 02 Apr 2020 14:33:59 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 12:12:00 +0000</lastBuildDate>
     
 	<atom:link href="https://i.cofco.ml/posts/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>你好 世界</title>
-      <link>https://i.cofco.ml/hello-world/</link>
-      <pubDate>Thu, 02 Apr 2020 14:33:59 +0800</pubDate>
-      
-      <guid>https://i.cofco.ml/hello-world/</guid>
-      <description>你好 世界 你好 世界</description>
-    </item>
     
     <item>
       <title>无法找到 ADB 设备的解决办法</title>
@@ -405,6 +396,15 @@
       
       <guid>https://i.cofco.ml/how-to-use-screen/</guid>
       <description>创建 Screen 1 $ screen -S test 保留 Screen 1 $ Ctrl+a+d 按Ctrl+a，然后再按d即可保留 Screen 查看 Screen 1 $ screen -ls 恢复 Screen 1 $ screen -r test</description>
+    </item>
+    
+    <item>
+      <title>你好 世界</title>
+      <link>https://i.cofco.ml/hello-world/</link>
+      <pubDate>Fri, 10 Nov 2017 14:33:59 +0800</pubDate>
+      
+      <guid>https://i.cofco.ml/hello-world/</guid>
+      <description>你好 世界 你好 世界</description>
     </item>
     
   </channel>
