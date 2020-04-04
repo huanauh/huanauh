@@ -1,7 +1,7 @@
 # LAMP 禁止 IP 直接访问
 
 针对开启了虚拟主机的 LAMP，修改`conf/extra/httpd-vhosts.conf`文件，添加以下内容：
-```
+```html
 <virtualhost 1.1.1.1:80>  #1.1.1.1为你的 IP
 ServerName 1.1.1.1
 <Directory />

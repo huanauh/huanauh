@@ -35,7 +35,7 @@
         },"genre": "posts","keywords": "Linux, Screen","wordcount":  116 ,
         "url": "https:\/\/i.cofco.ml\/linux-process-run-background\/","datePublished": "2018-09-16","dateModified": "2018-09-16","author": {
                 "@type": "Person",
-                "name": "Leon"
+                "name": "驩讙懽歡"
             },"description": ""
     }
     </script></head>
@@ -49,7 +49,7 @@
         <div class="header-title">
             <a href="/">驩讙懽歡</a>
         </div>
-        <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh/huanauh.github.io" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><span class="menu-item">|</span>
+        <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><span class="menu-item">|</span>
             <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
@@ -66,7 +66,7 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh/huanauh.github.io" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
                     <select class="language-select" onchange="location = this.value;"><option value="/linux-process-run-background/" selected>简体中文</option></select>
@@ -80,22 +80,60 @@
 </script>
 <main class="main">
                 <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Linux 进程后台运行的方法</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Leon</a>
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="far fa-id-badge fa-fw"></i>驩讙懽歡</a>
 </span>&nbsp;
                     <span class="post-category">收录于<a href="/categories/linux%E6%95%99%E7%A8%8B">
                                 <i class="far fa-folder fa-fw"></i>Linux教程
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2018-09-16>2018-09-16</time>&nbsp;
                 <i class="fas fa-pencil-alt fa-fw"></i>约 116 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;</div>
-        </div><div class="content" id="content"><h3 id="screen-命令">screen 命令</h3>
+                <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;<span id="/linux-process-run-background/" class="leancloud_visitors" data-flag-title="Linux 进程后台运行的方法">
+                        <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="toc" id="toc-auto">
+                <h2 class="toc-title">目录</h2>
+                <div class="toc-content" id="toc-content-auto"></div>
+            </div>
+            <div class="toc" id="toc-static">
+                <details>
+                    <summary>
+                        <div class="toc-title">
+                            <span>目录</span>
+                            <span><i class="details icon fas fa-angle-down"></i></span>
+                        </div>
+                    </summary>
+                    <div class="toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#screen-命令">screen 命令</a>
+          <ul>
+            <li><a href="#创建-screen">创建 screen</a></li>
+            <li><a href="#保留-screen">保留 screen</a></li>
+            <li><a href="#查看-screen">查看 screen</a></li>
+            <li><a href="#恢复-screen">恢复 screen</a></li>
+          </ul>
+        </li>
+        <li><a href="#nohup-命令">nohup 命令</a>
+          <ul>
+            <li><a href="#后台运行">后台运行</a></li>
+            <li><a href="#后台运行并重定向标准输出">后台运行并重定向标准输出</a></li>
+            <li><a href="#停止后台运行">停止后台运行</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                </details>
+            </div><div class="content" id="content"><h3 id="screen-命令">screen 命令</h3>
 <h4 id="创建-screen">创建 screen</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ screen -S test
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ screen -S <span class="nb">test</span>
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="保留-screen">保留 screen</h4>
@@ -104,7 +142,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ ctrl+a+d
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ ctrl+a+d
 </code></pre></td></tr></table>
 </div>
 </div><p><em>按<code>ctrl+a</code>，然后再按<code>d</code>即可保留 screen</em></p>
@@ -114,7 +152,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ screen -ls
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ screen -ls
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="恢复-screen">恢复 screen</h4>
@@ -123,7 +161,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ screen -r test
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ screen -r <span class="nb">test</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="nohup-命令">nohup 命令</h3>
@@ -133,7 +171,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ nohup server -c ./server.josn &amp;
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ nohup server -c ./server.josn <span class="p">&amp;</span>
 </code></pre></td></tr></table>
 </div>
 </div><p><em>示例命令为<code>server -c ./server.josn</code></em></p>
@@ -143,7 +181,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ nohup server -c ./server.josn 2&gt;&amp;1 &amp;
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ nohup server -c ./server.josn 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">&amp;</span>
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="停止后台运行">停止后台运行</h4>
@@ -152,7 +190,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ eval $(ps -ef | grep &#34;server&#34; | awk &#39;{print &#34;kill &#34;$2}&#39;)
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">eval</span> <span class="k">$(</span>ps -ef <span class="p">|</span> grep <span class="s2">&#34;server&#34;</span> <span class="p">|</span> awk <span class="s1">&#39;{print &#34;kill &#34;$2}&#39;</span><span class="k">)</span>
 </code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
@@ -181,15 +219,23 @@
     <div class="post-nav"><a href="/debian-install-linux-kernel-and-open-bbr/" class="prev" rel="prev" title="Debian 手动安装 Linux 4.9&#43; 内核并开启 BBR"><i class="fas fa-angle-left fa-fw"></i>Debian 手动安装 Linux 4.9&#43; 内核并开启 BBR</a>
             <a href="/linux-build-kms-server/" class="next" rel="next" title="Linux 搭建 KMS 服务器教程">Linux 搭建 KMS 服务器教程<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
-<div class="comment"><div id="disqus_thread"></div><noscript>
-            Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+<div class="comment"><div id="valine"></div><script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                new Valine({
+                    el: '#valine',
+                    appId: 'Bsktx34GV4hMOOIEITDLxVNG-MdYXbMMI',
+                    appKey: 'p1zSrNN2VsBM6TDkmQorhkH3',placeholder: '你的评论 ...',verify: true,avatar: 'mp',pageSize: 10,lang: 'zh-cn',visitor: true,recordIP: true,});
+            });
+        </script>
+        <noscript>
+            Please enable JavaScript to view the <a href="https://valine.js.org/">comments powered by Valine.</a>
         </noscript></div>
     </article></div>
             </main><footer class="footer">
     <div class="copyright"><div class="copyright-line">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer"><i class="far fa-heart fa-fw"></i> LoveIt</a>
         </div>
 
-        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Leon</a></span></div>
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">驩讙懽歡</a></span></div>
     </div>
 </footer>
 </div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
@@ -206,5 +252,5 @@
                 thumbContHeight: 80,
             });
         });
-    </script><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script defer src="https://blog-alt.disqus.com/embed.js"></script><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/js/theme.min.js"></script></body>
+    </script><link rel="stylesheet" href="/lib/valine/valine.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script src="/lib/valine/Valine.min.js"></script><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/js/theme.min.js"></script></body>
 </html>

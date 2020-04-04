@@ -17,7 +17,7 @@
       <pubDate>Mon, 12 Feb 2018 18:56:00 +0000</pubDate>
       
       <guid>https://i.cofco.ml/linux-modify-time-zone/</guid>
-      <description>查看时区 1 $ date -R 调整时区 1 $ tzselect #根据提示选择时区 复制文件 1 $ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 更新时间 1 $ ntpdate time.windows.com</description>
+      <description>查看时区 1 $ date -R 调整时区 1 $ tzselect #根据提示选择时区 复制文件 1 $ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 更新时间 1 $ ntpdate cn.ntp.org.cn</description>
     </item>
     
   </channel>

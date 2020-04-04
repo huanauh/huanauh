@@ -1,7 +1,7 @@
 # LAMP IP 绑定域名
 
 在 LAMP 添加的第一个网站根目录下`.htaccess`文件里添加：
-```
+```shell
 RewriteCond %{http_host} ^0.0.0.0 [NC]
 RewriteRule ^(.*)$ http://www.examples.com/$1 [R=301,L]
 ```

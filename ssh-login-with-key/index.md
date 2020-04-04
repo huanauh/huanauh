@@ -2,7 +2,7 @@
 
 ### 设置权限
 修改`.ssh`目录及`authorized_keys`文件权限
-```
+```bash
 $ chmod 700 ~/.ssh
 $ chmod 600 ~/.ssh/authorized_keys
 ```

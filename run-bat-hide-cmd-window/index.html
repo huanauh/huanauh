@@ -35,7 +35,7 @@
         },"genre": "posts","keywords": "Windows, CMD","wordcount":  50 ,
         "url": "https:\/\/i.cofco.ml\/run-bat-hide-cmd-window\/","datePublished": "2018-12-18","dateModified": "2018-12-18","author": {
                 "@type": "Person",
-                "name": "Leon"
+                "name": "驩讙懽歡"
             },"description": ""
     }
     </script></head>
@@ -49,7 +49,7 @@
         <div class="header-title">
             <a href="/">驩讙懽歡</a>
         </div>
-        <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh/huanauh.github.io" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><span class="menu-item">|</span>
+        <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><span class="menu-item">|</span>
             <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
@@ -66,7 +66,7 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh/huanauh.github.io" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
                     <select class="language-select" onchange="location = this.value;"><option value="/run-bat-hide-cmd-window/" selected>简体中文</option></select>
@@ -80,14 +80,16 @@
 </script>
 <main class="main">
                 <div class="container"><article class="page single"><h1 class="single-title animated flipInX">运行 bat 脚本时隐藏 cmd 窗口</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Leon</a>
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="far fa-id-badge fa-fw"></i>驩讙懽歡</a>
 </span>&nbsp;
                     <span class="post-category">收录于<a href="/categories/windows%E6%95%99%E7%A8%8B">
                                 <i class="far fa-folder fa-fw"></i>Windows教程
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2018-12-18>2018-12-18</time>&nbsp;
                 <i class="fas fa-pencil-alt fa-fw"></i>约 50 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;</div>
+                <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;<span id="/run-bat-hide-cmd-window/" class="leancloud_visitors" data-flag-title="运行 bat 脚本时隐藏 cmd 窗口">
+                        <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
         </div><div class="content" id="content"><p>在需要运行的 bat 脚本前添加以下内容：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -98,11 +100,11 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">@echo off
-if &#34;%1&#34; == &#34;h&#34; goto begin
-mshta vbscript:createobject(&#34;wscript.shell&#34;).run(&#34;&#34;&#34;%~nx0&#34;&#34; h&#34;,0)(window.close)&amp;&amp;exit
-:begin
-REM
+<pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">@</span><span class="k">echo</span> off
+<span class="k">if</span> <span class="s2">&#34;</span><span class="nv">%1</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;h&#34;</span> <span class="k">goto</span> <span class="nl">begin</span><span class="c1"></span>
+mshta vbscript:createobject(<span class="s2">&#34;wscript.shell&#34;</span>).run(<span class="s2">&#34;&#34;&#34;</span><span class="nv">%~nx0</span><span class="s2">&#34;&#34; h&#34;</span>,0)(window.close)<span class="p">&amp;&amp;</span><span class="k">exit</span>
+<span class="p">:</span><span class="nl">begin</span><span class="c1"></span>
+<span class="c1">REM</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>即可。运行时 cmd 窗口会闪烁一下。</p>
@@ -132,15 +134,23 @@ REM
     <div class="post-nav"><a href="/lamp-set-reverse-proxy/" class="prev" rel="prev" title="LAMP 设置反向代理"><i class="fas fa-angle-left fa-fw"></i>LAMP 设置反向代理</a>
             <a href="/change-hips-protection-days/" class="next" rel="next" title="修改火绒保护天数教程">修改火绒保护天数教程<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
-<div class="comment"><div id="disqus_thread"></div><noscript>
-            Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+<div class="comment"><div id="valine"></div><script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                new Valine({
+                    el: '#valine',
+                    appId: 'Bsktx34GV4hMOOIEITDLxVNG-MdYXbMMI',
+                    appKey: 'p1zSrNN2VsBM6TDkmQorhkH3',placeholder: '你的评论 ...',verify: true,avatar: 'mp',pageSize: 10,lang: 'zh-cn',visitor: true,recordIP: true,});
+            });
+        </script>
+        <noscript>
+            Please enable JavaScript to view the <a href="https://valine.js.org/">comments powered by Valine.</a>
         </noscript></div>
     </article></div>
             </main><footer class="footer">
     <div class="copyright"><div class="copyright-line">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer"><i class="far fa-heart fa-fw"></i> LoveIt</a>
         </div>
 
-        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Leon</a></span></div>
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">驩讙懽歡</a></span></div>
     </div>
 </footer>
 </div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
@@ -157,5 +167,5 @@ REM
                 thumbContHeight: 80,
             });
         });
-    </script><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script defer src="https://blog-alt.disqus.com/embed.js"></script><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/js/theme.min.js"></script></body>
+    </script><link rel="stylesheet" href="/lib/valine/valine.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script src="/lib/valine/Valine.min.js"></script><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/js/theme.min.js"></script></body>
 </html>

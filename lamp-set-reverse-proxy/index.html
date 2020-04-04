@@ -35,7 +35,7 @@
         },"genre": "posts","keywords": "Linux, Proxy","wordcount":  128 ,
         "url": "https:\/\/i.cofco.ml\/lamp-set-reverse-proxy\/","datePublished": "2018-12-03","dateModified": "2018-12-03","author": {
                 "@type": "Person",
-                "name": "Leon"
+                "name": "驩讙懽歡"
             },"description": ""
     }
     </script></head>
@@ -49,7 +49,7 @@
         <div class="header-title">
             <a href="/">驩讙懽歡</a>
         </div>
-        <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh/huanauh.github.io" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><span class="menu-item">|</span>
+        <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><span class="menu-item">|</span>
             <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
@@ -66,7 +66,7 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh/huanauh.github.io" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
                     <select class="language-select" onchange="location = this.value;"><option value="/lamp-set-reverse-proxy/" selected>简体中文</option></select>
@@ -80,14 +80,16 @@
 </script>
 <main class="main">
                 <div class="container"><article class="page single"><h1 class="single-title animated flipInX">LAMP 设置反向代理</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Leon</a>
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="far fa-id-badge fa-fw"></i>驩讙懽歡</a>
 </span>&nbsp;
                     <span class="post-category">收录于<a href="/categories/linux%E6%95%99%E7%A8%8B">
                                 <i class="far fa-folder fa-fw"></i>Linux教程
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2018-12-03>2018-12-03</time>&nbsp;
                 <i class="fas fa-pencil-alt fa-fw"></i>约 128 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;</div>
+                <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;<span id="/lamp-set-reverse-proxy/" class="leancloud_visitors" data-flag-title="LAMP 设置反向代理">
+                        <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
         </div><div class="content" id="content"><p>举例说明，将 1.test.com 和 2.test.com 两个域名通过反向代理指向 localhost:8080 端口
 首先在 LAMP 添加任意域名，假设为 0.test.com
 修改<code>/usr/local/apache/conf/vhost</code>目录下<code>0.test.com.conf</code>的配置文件，将文件修改为</p>
@@ -103,14 +105,14 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;VirtualHost *:80&gt;
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">VirtualHost</span> <span class="err">*</span><span class="na">:80</span><span class="p">&gt;</span>
 ServerAdmin mail@mail.com
 ServerName 0.test.com
 ServerAlias 1.test.com 2.test.com
 ProxyPreserveHost On
 ProxyPass / http://localhost:8088/
 ProxyPassReverse / http://localhost:8088/
-&lt;/VirtualHost&gt;
+<span class="p">&lt;/</span><span class="nt">VirtualHost</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>即可。</p>
@@ -140,15 +142,23 @@ ProxyPassReverse / http://localhost:8088/
     <div class="post-nav"><a href="/fix-lookingglass-not-use-on-php7/" class="prev" rel="prev" title="修复 LookingGlass 在 PHP7 上无法使用的问题"><i class="fas fa-angle-left fa-fw"></i>修复 LookingGlass 在 PHP7 上无法使用的问题</a>
             <a href="/run-bat-hide-cmd-window/" class="next" rel="next" title="运行 bat 脚本时隐藏 cmd 窗口">运行 bat 脚本时隐藏 cmd 窗口<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
-<div class="comment"><div id="disqus_thread"></div><noscript>
-            Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+<div class="comment"><div id="valine"></div><script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                new Valine({
+                    el: '#valine',
+                    appId: 'Bsktx34GV4hMOOIEITDLxVNG-MdYXbMMI',
+                    appKey: 'p1zSrNN2VsBM6TDkmQorhkH3',placeholder: '你的评论 ...',verify: true,avatar: 'mp',pageSize: 10,lang: 'zh-cn',visitor: true,recordIP: true,});
+            });
+        </script>
+        <noscript>
+            Please enable JavaScript to view the <a href="https://valine.js.org/">comments powered by Valine.</a>
         </noscript></div>
     </article></div>
             </main><footer class="footer">
     <div class="copyright"><div class="copyright-line">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer"><i class="far fa-heart fa-fw"></i> LoveIt</a>
         </div>
 
-        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Leon</a></span></div>
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">驩讙懽歡</a></span></div>
     </div>
 </footer>
 </div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
@@ -165,5 +175,5 @@ ProxyPassReverse / http://localhost:8088/
                 thumbContHeight: 80,
             });
         });
-    </script><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script defer src="https://blog-alt.disqus.com/embed.js"></script><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/js/theme.min.js"></script></body>
+    </script><link rel="stylesheet" href="/lib/valine/valine.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script src="/lib/valine/Valine.min.js"></script><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/js/theme.min.js"></script></body>
 </html>

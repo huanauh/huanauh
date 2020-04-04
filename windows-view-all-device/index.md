@@ -1,11 +1,11 @@
 # Windows 查看设备管理器所有设备
 
 进入命令提示符执行
-```
+```cmd
 $ set devmgr_show_nonpresent_devices=1
 ```
 然后执行
-```
+```cmd
 $ Start DEVMGMT.MSC
 ```
 即可进入设备管理，点击顶部菜单`查看`勾选`显示隐藏的设备`即可查看全部设备。

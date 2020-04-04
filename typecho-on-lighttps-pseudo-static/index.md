@@ -1,7 +1,7 @@
 # Lighttpd 下 Typecho 伪静态设置
 
 编辑`lighttpd.conf`文件，添加以下内容
-```
+```html
 #pseudo static
 url.rewrite = (
 "^/(admin|usr)/(.*)"  => "/$1/$2",

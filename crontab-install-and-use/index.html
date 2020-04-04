@@ -35,7 +35,7 @@
         },"genre": "posts","keywords": "Linux, Crontab","wordcount":  78 ,
         "url": "https:\/\/i.cofco.ml\/crontab-install-and-use\/","datePublished": "2018-03-10","dateModified": "2018-03-10","author": {
                 "@type": "Person",
-                "name": "Leon"
+                "name": "驩讙懽歡"
             },"description": ""
     }
     </script></head>
@@ -49,7 +49,7 @@
         <div class="header-title">
             <a href="/">驩讙懽歡</a>
         </div>
-        <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh/huanauh.github.io" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><span class="menu-item">|</span>
+        <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><span class="menu-item">|</span>
             <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
@@ -66,7 +66,7 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh/huanauh.github.io" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
                     <select class="language-select" onchange="location = this.value;"><option value="/crontab-install-and-use/" selected>简体中文</option></select>
@@ -80,21 +80,51 @@
 </script>
 <main class="main">
                 <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Crontab 的安装及使用</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Leon</a>
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="far fa-id-badge fa-fw"></i>驩讙懽歡</a>
 </span>&nbsp;
                     <span class="post-category">收录于<a href="/categories/linux%E6%95%99%E7%A8%8B">
                                 <i class="far fa-folder fa-fw"></i>Linux教程
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2018-03-10>2018-03-10</time>&nbsp;
                 <i class="fas fa-pencil-alt fa-fw"></i>约 78 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;</div>
-        </div><div class="content" id="content"><h3 id="安装-crontab">安装 crontab</h3>
+                <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;<span id="/crontab-install-and-use/" class="leancloud_visitors" data-flag-title="Crontab 的安装及使用">
+                        <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="toc" id="toc-auto">
+                <h2 class="toc-title">目录</h2>
+                <div class="toc-content" id="toc-content-auto"></div>
+            </div>
+            <div class="toc" id="toc-static">
+                <details>
+                    <summary>
+                        <div class="toc-title">
+                            <span>目录</span>
+                            <span><i class="details icon fas fa-angle-down"></i></span>
+                        </div>
+                    </summary>
+                    <div class="toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#安装-crontab">安装 crontab</a></li>
+        <li><a href="#添加开机启动">添加开机启动</a></li>
+        <li><a href="#crontab-文件位置root">crontab 文件位置（root）</a></li>
+        <li><a href="#查看-corntab-服务状态">查看 corntab 服务状态</a></li>
+        <li><a href="#启动-corntab-服务">启动 corntab 服务</a></li>
+        <li><a href="#查看-crontab-列表">查看 crontab 列表</a></li>
+        <li><a href="#编辑-crontab">编辑 crontab</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                </details>
+            </div><div class="content" id="content"><h3 id="安装-crontab">安装 crontab</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ yum install vixie-cron crontabs
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ yum install vixie-cron crontabs
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="添加开机启动">添加开机启动</h3>
@@ -103,7 +133,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ chkconfig –level 35 crond on
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ chkconfig –level <span class="m">35</span> crond on
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="crontab-文件位置root">crontab 文件位置（root）</h3>
@@ -112,7 +142,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">/var/spool/cron/root
+<pre class="chroma"><code class="language-bash" data-lang="bash">/var/spool/cron/root
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="查看-corntab-服务状态">查看 corntab 服务状态</h3>
@@ -121,7 +151,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ service crond status
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ service crond status
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="启动-corntab-服务">启动 corntab 服务</h3>
@@ -130,7 +160,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ service crond start
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ service crond start
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="查看-crontab-列表">查看 crontab 列表</h3>
@@ -139,7 +169,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ crontab -l
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ crontab -l
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="编辑-crontab">编辑 crontab</h3>
@@ -148,7 +178,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ crontab -e
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ crontab -e
 </code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
@@ -177,15 +207,23 @@
     <div class="post-nav"><a href="/fix-server-refused-our-key/" class="prev" rel="prev" title="SSH 私钥登陆提示 Server refused our key 的解决办法"><i class="fas fa-angle-left fa-fw"></i>SSH 私钥登陆提示 Server refused our key 的解决办法</a>
             <a href="/ssh-login-with-key/" class="next" rel="next" title="SSH 使用密钥登录并禁止密码登录">SSH 使用密钥登录并禁止密码登录<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
-<div class="comment"><div id="disqus_thread"></div><noscript>
-            Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+<div class="comment"><div id="valine"></div><script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                new Valine({
+                    el: '#valine',
+                    appId: 'Bsktx34GV4hMOOIEITDLxVNG-MdYXbMMI',
+                    appKey: 'p1zSrNN2VsBM6TDkmQorhkH3',placeholder: '你的评论 ...',verify: true,avatar: 'mp',pageSize: 10,lang: 'zh-cn',visitor: true,recordIP: true,});
+            });
+        </script>
+        <noscript>
+            Please enable JavaScript to view the <a href="https://valine.js.org/">comments powered by Valine.</a>
         </noscript></div>
     </article></div>
             </main><footer class="footer">
     <div class="copyright"><div class="copyright-line">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer"><i class="far fa-heart fa-fw"></i> LoveIt</a>
         </div>
 
-        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Leon</a></span></div>
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">驩讙懽歡</a></span></div>
     </div>
 </footer>
 </div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
@@ -202,5 +240,5 @@
                 thumbContHeight: 80,
             });
         });
-    </script><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script defer src="https://blog-alt.disqus.com/embed.js"></script><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/js/theme.min.js"></script></body>
+    </script><link rel="stylesheet" href="/lib/valine/valine.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script src="/lib/valine/Valine.min.js"></script><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/js/theme.min.js"></script></body>
 </html>

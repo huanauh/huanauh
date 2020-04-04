@@ -2,7 +2,7 @@
 
 ### Caddy 配置
 修改`Caddyfile`文件
-```
+```json
 yourdomian.com {
   tls youremail@gmail.com
   proxy /www localhost:8990 {
@@ -13,7 +13,7 @@ yourdomian.com {
 ```
 ### Apache 配置一
 编辑`/usr/local/apache/conf/vhost`目录下`yourdomian.com.conf`文件，将 443 端口配置修改为
-```
+```html
 <VirtualHost *:443>
     ServerAdmin youremail@gmail.com
     ServerName yourdomian.com
@@ -34,7 +34,7 @@ yourdomian.com {
 以上配置会造成 https 网页无法正常访问。建议使用下面配置二。
 ### Apache 配置二
 同配置一，编辑`yourdomian.com.conf`文件。在原配置文件内容不变的情况下，在 443 端口配置中添加以下内容
-```
+```html
 <LocationMatch "/www">
     ProxyPass ws://127.0.0.1:8990/www upgrade=WebSocket
     ProxyAddHeaders Off

@@ -143,7 +143,7 @@
       <pubDate>Sun, 16 Sep 2018 20:27:00 +0000</pubDate>
       
       <guid>https://i.cofco.ml/linux-fix-too-mang-bioset-processes/</guid>
-      <description>此为 linux 4.x 内核的 bug。 解决办法： linux 内核在 4.13 及以上版本修复了该 bug，故安装 4.13 以上 linux 内核即可。</description>
+      <description>此为 linux 4.x 内核的 bug。 解决办法：linux 内核在 4.13 及以上版本修复了该 bug，故安装 4.13 以上 linux 内核即可。</description>
     </item>
     
     <item>
@@ -215,7 +215,7 @@
       <pubDate>Mon, 12 Feb 2018 18:56:00 +0000</pubDate>
       
       <guid>https://i.cofco.ml/linux-modify-time-zone/</guid>
-      <description>查看时区 1 $ date -R 调整时区 1 $ tzselect #根据提示选择时区 复制文件 1 $ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 更新时间 1 $ ntpdate time.windows.com</description>
+      <description>查看时区 1 $ date -R 调整时区 1 $ tzselect #根据提示选择时区 复制文件 1 $ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 更新时间 1 $ ntpdate cn.ntp.org.cn</description>
     </item>
     
     <item>
@@ -234,15 +234,6 @@
       
       <guid>https://i.cofco.ml/ubuntu-disable-update-prompts/</guid>
       <description>禁用更新 修改/etc/update-manager/release-upgrades中的配置项Prompt=lts为Prompt=never</description>
-    </item>
-    
-    <item>
-      <title>Ubuntu 安装 Shadowsocks 教程</title>
-      <link>https://i.cofco.ml/ubuntu-install-shadowsocks/</link>
-      <pubDate>Mon, 18 Dec 2017 18:56:00 +0000</pubDate>
-      
-      <guid>https://i.cofco.ml/ubuntu-install-shadowsocks/</guid>
-      <description>写在前面：建议直接使用网上各种一键脚本，本教程仅适用于 Python 版 Shadowsocks 安装 PIP 1 2 3 $ apt update $ apt install python-pip $ apt install python-setuptools m2crypto 安装 Shadowsocks 1 2 $ pip install shadowsocks $ apt install shadowsocks 如果报错执行以下命</description>
     </item>
     
     <item>

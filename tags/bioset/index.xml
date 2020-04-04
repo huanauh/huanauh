@@ -17,7 +17,7 @@
       <pubDate>Sun, 16 Sep 2018 20:27:00 +0000</pubDate>
       
       <guid>https://i.cofco.ml/linux-fix-too-mang-bioset-processes/</guid>
-      <description>此为 linux 4.x 内核的 bug。 解决办法： linux 内核在 4.13 及以上版本修复了该 bug，故安装 4.13 以上 linux 内核即可。</description>
+      <description>此为 linux 4.x 内核的 bug。 解决办法：linux 内核在 4.13 及以上版本修复了该 bug，故安装 4.13 以上 linux 内核即可。</description>
     </item>
     
   </channel>

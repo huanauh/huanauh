@@ -1,7 +1,7 @@
 # Crt 与 key 格式证书转换为 pem 格式
 
 执行
-```
+```bash
 $ cat test.key test.crt > test.pem
 ```
 即可转换为 pem 格式。
