@@ -1,18 +1,91 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	
-	<sitemap>
-	   	<loc>https://i.cofco.ml/zh-cn/sitemap.xml</loc>
-		
-	   	<lastmod>2020-02-24T12:12:00+00:00</lastmod>
-		
-	</sitemap>
-	
-	<sitemap>
-	   	<loc>https://i.cofco.ml/en/sitemap.xml</loc>
-		
-	   	<lastmod>2019-05-12T10:25:00+00:00</lastmod>
-		
-	</sitemap>
-	
-</sitemapindex>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    ><url>
+            <loc>https://i.huan.ml/tags/adb/</loc><lastmod>2020-02-24T12:12:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/categories/</loc><lastmod>2020-02-24T12:12:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/posts/</loc><lastmod>2020-02-24T12:12:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/</loc><lastmod>2020-02-24T12:12:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/windows/</loc><lastmod>2020-02-24T12:12:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/categories/windows%E6%95%99%E7%A8%8B/</loc><lastmod>2020-02-24T12:12:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/how-to-find-adb-device/</loc><lastmod>2020-02-24T12:12:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/linux/</loc><lastmod>2019-09-23T12:36:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/categories/linux%E6%95%99%E7%A8%8B/</loc><lastmod>2019-09-23T12:36:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/update/</loc><lastmod>2019-09-23T12:36:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/update-rc.d/</loc><lastmod>2019-09-23T12:36:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/how-to-use-update-rc.d/</loc><lastmod>2019-09-23T12:36:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/fix-excel-number-to-date/</loc><lastmod>2019-07-10T11:20:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/office/</loc><lastmod>2019-07-10T11:20:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/dns/</loc><lastmod>2019-06-02T19:37:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/how-to-check-if-port-53-is-hijacked/</loc><lastmod>2019-06-02T19:37:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/about.en/</loc><lastmod>2019-05-12T10:25:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/about/</loc><lastmod>2019-05-12T10:25:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/</loc><lastmod>2019-05-12T10:25:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/v2ray/</loc><lastmod>2019-04-02T12:53:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/v2ray-traffic-forwarding/</loc><lastmod>2019-04-02T12:53:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/cmd/</loc><lastmod>2019-02-16T15:45:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/modify-windows-cmd-fonts/</loc><lastmod>2019-02-16T15:45:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/lamp/</loc><lastmod>2019-01-16T14:45:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/lamp-prohibits-ip-access/</loc><lastmod>2019-01-16T14:45:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/huorong/</loc><lastmod>2018-12-23T19:33:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/change-hips-protection-days/</loc><lastmod>2018-12-23T19:33:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/run-bat-hide-cmd-window/</loc><lastmod>2018-12-18T17:33:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/lamp-set-reverse-proxy/</loc><lastmod>2018-12-03T20:30:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/proxy/</loc><lastmod>2018-12-03T20:30:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/php/</loc><lastmod>2018-12-03T20:20:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/fix-lookingglass-not-use-on-php7/</loc><lastmod>2018-12-03T20:20:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/fix-lookingglass-not-use-on-lamp/</loc><lastmod>2018-11-16T19:31:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/httpd-ip-binding-domain/</loc><lastmod>2018-11-10T15:12:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/nano/</loc><lastmod>2018-11-10T15:12:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/linux-modified-default-editor-to-nano/</loc><lastmod>2018-11-10T15:12:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/link/</loc><lastmod>2018-10-27T16:35:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/how-to-use-symbolic-link/</loc><lastmod>2018-10-27T16:35:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/lighttpd/</loc><lastmod>2018-10-24T21:48:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/typecho-on-lighttps-pseudo-static/</loc><lastmod>2018-10-24T21:48:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/lighttps-force-https/</loc><lastmod>2018-10-24T21:48:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/crt-and-key-convert-to-pem/</loc><lastmod>2018-10-23T21:02:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/pem/</loc><lastmod>2018-10-23T21:02:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/android/</loc><lastmod>2018-10-23T12:25:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/android-open-telnet-service/</loc><lastmod>2018-10-23T12:25:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/telnet/</loc><lastmod>2018-10-23T12:25:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/termux/</loc><lastmod>2018-10-21T09:50:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/how-to-use-termux/</loc><lastmod>2018-10-21T09:50:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/kms/</loc><lastmod>2018-09-16T20:50:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/linux-build-kms-server/</loc><lastmod>2018-09-16T20:50:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/linux-process-run-background/</loc><lastmod>2018-09-16T20:41:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/screen/</loc><lastmod>2018-09-16T20:41:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/bbr/</loc><lastmod>2018-09-16T20:36:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/debian-install-linux-kernel-and-open-bbr/</loc><lastmod>2018-09-16T20:36:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/bioset/</loc><lastmod>2018-09-16T20:27:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/linux-fix-too-mang-bioset-processes/</loc><lastmod>2018-09-16T20:27:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/kms-activate-windows-and-office/</loc><lastmod>2018-08-26T21:09:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/fix-windows-update-nocheck-office2010/</loc><lastmod>2018-08-16T20:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/fix-windows-7-update-always-35per/</loc><lastmod>2018-07-16T21:09:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/fix-office2010-word-bug/</loc><lastmod>2018-07-16T20:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/lan/</loc><lastmod>2018-06-16T20:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/windows-share-printer/</loc><lastmod>2018-06-16T20:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/devices/</loc><lastmod>2018-05-16T21:09:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/windows-view-all-device/</loc><lastmod>2018-05-16T21:09:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/driver/</loc><lastmod>2018-05-15T20:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/fix-teredo-tunneling-adapter-yellow/</loc><lastmod>2018-05-15T20:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/debian-iptables-config/</loc><lastmod>2018-04-29T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/iptables/</loc><lastmod>2018-04-29T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/motd/</loc><lastmod>2018-04-29T18:52:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/debian-modify-login-prompt/</loc><lastmod>2018-04-29T18:52:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/centos-6-change-kernel/</loc><lastmod>2018-03-23T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/kernel/</loc><lastmod>2018-03-23T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/ssh/</loc><lastmod>2018-03-19T21:09:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/ssh-login-with-key/</loc><lastmod>2018-03-19T21:09:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/crontab/</loc><lastmod>2018-03-10T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/crontab-install-and-use/</loc><lastmod>2018-03-10T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/fix-server-refused-our-key/</loc><lastmod>2018-03-10T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/linux-modify-time-zone/</loc><lastmod>2018-02-12T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/timezone/</loc><lastmod>2018-02-12T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/hostname/</loc><lastmod>2018-01-20T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/linux-modify-hostname/</loc><lastmod>2018-01-20T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/ubuntu-disable-update-prompts/</loc><lastmod>2018-01-13T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/centos-7-firewall-commands/</loc><lastmod>2017-12-02T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/tags/firewall/</loc><lastmod>2017-12-02T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/how-to-use-screen/</loc><lastmod>2017-11-16T18:56:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/hello-world.en/</loc><lastmod>2017-11-10T14:33:59&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://i.huan.ml/hello-world/</loc><lastmod>2017-11-10T14:33:59&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>

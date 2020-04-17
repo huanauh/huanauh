@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LAN on 驩讙懽歡</title>
-    <link>https://i.cofco.ml/tags/lan/</link>
+    <link>https://i.huan.ml/tags/lan/</link>
     <description>Recent content in LAN on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 16 Jun 2018 20:56:00 +0000</lastBuildDate>
     
-	<atom:link href="https://i.cofco.ml/tags/lan/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://i.huan.ml/tags/lan/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Windows 局域网连接共享打印机方法</title>
-      <link>https://i.cofco.ml/windows-share-printer/</link>
+      <link>https://i.huan.ml/windows-share-printer/</link>
       <pubDate>Sat, 16 Jun 2018 20:56:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/windows-share-printer/</guid>
+      <guid>https://i.huan.ml/windows-share-printer/</guid>
       <description>写在前面：本文针对在设备和打印机里面添加打印机时，无法搜索到目标打印机的解决方法。 查看目标打印机IP地址 桌面任务栏右下角网络图标-右键-打开</description>
     </item>
     

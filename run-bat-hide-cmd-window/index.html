@@ -9,16 +9,16 @@
         <meta name="Description" content="黑发不知勤学早，白首方悔读书迟！"><meta property="og:title" content="运行 bat 脚本时隐藏 cmd 窗口" />
 <meta property="og:description" content="在需要运行的 bat 脚本前添加以下内容： 1 2 3 4 5 @echo off if &#34;%1&#34; == &#34;h&#34; goto begin mshta vbscript:createobject(&#34;wscript.shell&#34;).run(&#34;&#34;&#34;%~nx0&#34;&#34; h&#34;,0)(window.close)&amp;&amp;exit :begin REM 即可。运行时 cmd 窗口会闪烁一下。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://i.cofco.ml/run-bat-hide-cmd-window/" />
+<meta property="og:url" content="https://i.huan.ml/run-bat-hide-cmd-window/" />
 <meta property="article:published_time" content="2018-12-18T17:33:00+00:00" />
-<meta property="article:modified_time" content="2018-12-18T17:33:00+00:00" /><meta property="og:site_name" content="驩讙懽歡" />
+<meta property="article:modified_time" content="2018-12-18T17:33:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="运行 bat 脚本时隐藏 cmd 窗口"/>
 <meta name="twitter:description" content="在需要运行的 bat 脚本前添加以下内容： 1 2 3 4 5 @echo off if &#34;%1&#34; == &#34;h&#34; goto begin mshta vbscript:createobject(&#34;wscript.shell&#34;).run(&#34;&#34;&#34;%~nx0&#34;&#34; h&#34;,0)(window.close)&amp;&amp;exit :begin REM 即可。运行时 cmd 窗口会闪烁一下。"/>
 <meta name="theme-color" content="#ffffff">
 <meta name="msapplication-TileColor" content="#da532c">
-<link rel="canonical" href="https://i.cofco.ml/run-bat-hide-cmd-window/" />
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><link rel="prev" href="https://i.cofco.ml/lamp-set-reverse-proxy/" /><link rel="next" href="https://i.cofco.ml/change-hips-protection-days/" /><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">
+<link rel="canonical" href="https://i.huan.ml/run-bat-hide-cmd-window/" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><link rel="prev" href="https://i.huan.ml/lamp-set-reverse-proxy/" /><link rel="next" href="https://i.huan.ml/change-hips-protection-days/" /><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -26,9 +26,9 @@
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/i.cofco.ml\/run-bat-hide-cmd-window\/"
+            "@id": "https:\/\/i.huan.ml\/run-bat-hide-cmd-window\/"
         },"genre": "posts","keywords": "Windows, CMD","wordcount":  50 ,
-        "url": "https:\/\/i.cofco.ml\/run-bat-hide-cmd-window\/","datePublished": "2018-12-18","dateModified": "2018-12-18","author": {
+        "url": "https:\/\/i.huan.ml\/run-bat-hide-cmd-window\/","datePublished": "2018-12-18","dateModified": "2018-12-18","author": {
                 "@type": "Person",
                 "name": "驩讙懽歡"
             },"description": ""
@@ -47,9 +47,7 @@
         <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><span class="menu-item">|</span>
             <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
-            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
-                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/run-bat-hide-cmd-window/" selected>简体中文</option></select>
-                </a></div>
+            </a></div>
     </div>
 </header><header class="mobile" id="header-mobile">
     <div class="header-wrapper">
@@ -63,9 +61,7 @@
         </div>
         <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
-            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
-                    <select class="language-select" onchange="location = this.value;"><option value="/run-bat-hide-cmd-window/" selected>简体中文</option></select>
-                </a></div>
+            </a></div>
     </div>
 </header>
 

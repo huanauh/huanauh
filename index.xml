@@ -1,17 +1,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>驩讙懽歡 | 驩讙懽歡</title>
-        <link>https://i.cofco.ml/</link>
+        <link>https://i.huan.ml/</link>
         <description>驩讙懽歡 | 驩讙懽歡</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 12 May 2019 10:25:00 &#43;0000</lastBuildDate><atom:link href="https://i.cofco.ml/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 12 May 2019 10:25:00 &#43;0000</lastBuildDate><atom:link href="https://i.huan.ml/" rel="self" type="application/rss+xml" /><item>
                 <title>Posts</title>
-                <link>https://i.cofco.ml/posts/</link>
-                <pubDate>Mon, 24 Feb 2020 12:12:00 &#43;0000</pubDate><guid>https://i.cofco.ml/posts/</guid>
+                <link>https://i.huan.ml/posts/</link>
+                <pubDate>Mon, 24 Feb 2020 12:12:00 &#43;0000</pubDate><guid>https://i.huan.ml/posts/</guid>
                 <description></description>
             </item><item>
+                <title>About</title>
+                <link>https://i.huan.ml/about.en/</link>
+                <pubDate>Sun, 12 May 2019 10:25:00 &#43;0000</pubDate><guid>https://i.huan.ml/about.en/</guid>
+                <description>&lt;blockquote&gt;
+&lt;p&gt;Black hair does not know to study hard early, white head Fang regrets to study late.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+            </item><item>
                 <title>关于</title>
-                <link>https://i.cofco.ml/about/</link>
-                <pubDate>Sun, 12 May 2019 10:25:00 &#43;0000</pubDate><guid>https://i.cofco.ml/about/</guid>
+                <link>https://i.huan.ml/about/</link>
+                <pubDate>Sun, 12 May 2019 10:25:00 &#43;0000</pubDate><guid>https://i.huan.ml/about/</guid>
                 <description>&lt;blockquote&gt;
 &lt;p&gt;黑发不知勤学早，白首方悔读书迟！&lt;/p&gt;
 &lt;/blockquote&gt;

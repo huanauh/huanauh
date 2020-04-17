@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LAMP on 驩讙懽歡</title>
-    <link>https://i.cofco.ml/tags/lamp/</link>
+    <link>https://i.huan.ml/tags/lamp/</link>
     <description>Recent content in LAMP on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 16 Jan 2019 14:45:00 +0000</lastBuildDate>
     
-	<atom:link href="https://i.cofco.ml/tags/lamp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://i.huan.ml/tags/lamp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LAMP 禁止 IP 直接访问</title>
-      <link>https://i.cofco.ml/lamp-prohibits-ip-access/</link>
+      <link>https://i.huan.ml/lamp-prohibits-ip-access/</link>
       <pubDate>Wed, 16 Jan 2019 14:45:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/lamp-prohibits-ip-access/</guid>
+      <guid>https://i.huan.ml/lamp-prohibits-ip-access/</guid>
       <description>针对开启了虚拟主机的 LAMP，修改conf/extra/httpd-vhosts.conf文件，添加以下内容： 1 2 3 4 5 6 7 &amp;lt;virtualhost 1.1.1.1:80&amp;gt; #1.1.1</description>
     </item>
     
     <item>
       <title>修复 LookingGlass 在 LAMP 上无法使用的问题</title>
-      <link>https://i.cofco.ml/fix-lookingglass-not-use-on-lamp/</link>
+      <link>https://i.huan.ml/fix-lookingglass-not-use-on-lamp/</link>
       <pubDate>Fri, 16 Nov 2018 19:31:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/fix-lookingglass-not-use-on-lamp/</guid>
+      <guid>https://i.huan.ml/fix-lookingglass-not-use-on-lamp/</guid>
       <description>安装 LookingGlass 后发现 ping 和 mtr 等命令无法使用。发现是 PHP 的配置问题，解决方案如下： 编辑/usr/local/php目录下php.ini文件，找到 1 disable_functions = exec,system,dl,passthru,chown,shell_exec,popen,proc_open 将</description>
     </item>
     
     <item>
       <title>LAMP IP 绑定域名</title>
-      <link>https://i.cofco.ml/httpd-ip-binding-domain/</link>
+      <link>https://i.huan.ml/httpd-ip-binding-domain/</link>
       <pubDate>Sat, 10 Nov 2018 15:12:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/httpd-ip-binding-domain/</guid>
+      <guid>https://i.huan.ml/httpd-ip-binding-domain/</guid>
       <description>在 LAMP 添加的第一个网站根目录下.htaccess文件里添加： 1 2 RewriteCond %{http_host} ^0.0.0.0 [NC] RewriteRule ^(.*)$ http://www.examples.com/$1 [R=301,L] 注意：0.0.0.0换成服务器的IP；www.examples</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bbr on 驩讙懽歡</title>
-    <link>https://i.cofco.ml/tags/bbr/</link>
+    <link>https://i.huan.ml/tags/bbr/</link>
     <description>Recent content in bbr on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sun, 16 Sep 2018 20:36:00 +0000</lastBuildDate>
     
-	<atom:link href="https://i.cofco.ml/tags/bbr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://i.huan.ml/tags/bbr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Debian 手动安装 Linux 4.9&#43; 内核并开启 BBR</title>
-      <link>https://i.cofco.ml/debian-install-linux-kernel-and-open-bbr/</link>
+      <link>https://i.huan.ml/debian-install-linux-kernel-and-open-bbr/</link>
       <pubDate>Sun, 16 Sep 2018 20:36:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/debian-install-linux-kernel-and-open-bbr/</guid>
+      <guid>https://i.huan.ml/debian-install-linux-kernel-and-open-bbr/</guid>
       <description>安装内核 选择需要安装的内核版本下载地址 下载内核（以 Linux 4.9.0 内核为例） 1 $ wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.9/linux-image-4.9.0-040900-generic_4.9.0-040900.201612111631_amd64.deb 安装内核 1 $ dpkg -i linux-image-4.*.deb 移除旧内核（可选） 1 $ apt-get autoremove 更新引导文件 1 $ update-grub 重启 1</description>
     </item>
     

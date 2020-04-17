@@ -2,255 +2,255 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on 驩讙懽歡</title>
-    <link>https://i.cofco.ml/tags/linux/</link>
+    <link>https://i.huan.ml/tags/linux/</link>
     <description>Recent content in Linux on 驩讙懽歡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 23 Sep 2019 12:36:00 +0000</lastBuildDate>
     
-	<atom:link href="https://i.cofco.ml/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://i.huan.ml/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Update-rc.d 命令的用法</title>
-      <link>https://i.cofco.ml/how-to-use-update-rc.d/</link>
+      <link>https://i.huan.ml/how-to-use-update-rc.d/</link>
       <pubDate>Mon, 23 Sep 2019 12:36:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/how-to-use-update-rc.d/</guid>
+      <guid>https://i.huan.ml/how-to-use-update-rc.d/</guid>
       <description>添加启动项 将脚本放入/etc/init.d文件夹，并给予可执行权限 1 2 $ mv xx.sh /etc/init.d $ chmod +x /etc/init.d/xx.sh 设置开机自启 1 $ update-rc.d xx.sh defaults 删除开机自启 1 $ update-rc.d -f xx.sh remove</description>
     </item>
     
     <item>
       <title>V2Ray 流量转发配置</title>
-      <link>https://i.cofco.ml/v2ray-traffic-forwarding/</link>
+      <link>https://i.huan.ml/v2ray-traffic-forwarding/</link>
       <pubDate>Tue, 02 Apr 2019 12:53:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/v2ray-traffic-forwarding/</guid>
+      <guid>https://i.huan.ml/v2ray-traffic-forwarding/</guid>
       <description>Caddy 配置 修改Caddyfile文件 1 2 3 4 5 6 7 yourdomian.com { tls youremail@gmail.com proxy /www localhost:8990 { websocket header_upstream -Origin } } Apache 配置一 编辑/usr/local/apache/conf/vhost</description>
     </item>
     
     <item>
       <title>LAMP 禁止 IP 直接访问</title>
-      <link>https://i.cofco.ml/lamp-prohibits-ip-access/</link>
+      <link>https://i.huan.ml/lamp-prohibits-ip-access/</link>
       <pubDate>Wed, 16 Jan 2019 14:45:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/lamp-prohibits-ip-access/</guid>
+      <guid>https://i.huan.ml/lamp-prohibits-ip-access/</guid>
       <description>针对开启了虚拟主机的 LAMP，修改conf/extra/httpd-vhosts.conf文件，添加以下内容： 1 2 3 4 5 6 7 &amp;lt;virtualhost 1.1.1.1:80&amp;gt; #1.1.1</description>
     </item>
     
     <item>
       <title>LAMP 设置反向代理</title>
-      <link>https://i.cofco.ml/lamp-set-reverse-proxy/</link>
+      <link>https://i.huan.ml/lamp-set-reverse-proxy/</link>
       <pubDate>Mon, 03 Dec 2018 20:30:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/lamp-set-reverse-proxy/</guid>
+      <guid>https://i.huan.ml/lamp-set-reverse-proxy/</guid>
       <description>举例说明，将 1.test.com 和 2.test.com 两个域名通过反向代理指向 localhost:8080 端口 首先在 LAMP 添加任意域名，假设为 0.test.com 修改/usr/local/apache/conf/vhost目</description>
     </item>
     
     <item>
       <title>修复 LookingGlass 在 PHP7 上无法使用的问题</title>
-      <link>https://i.cofco.ml/fix-lookingglass-not-use-on-php7/</link>
+      <link>https://i.huan.ml/fix-lookingglass-not-use-on-php7/</link>
       <pubDate>Mon, 03 Dec 2018 20:20:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/fix-lookingglass-not-use-on-php7/</guid>
+      <guid>https://i.huan.ml/fix-lookingglass-not-use-on-php7/</guid>
       <description>LookingGlass 在 PHP7 环境无法使用，解决方案如下： 在根目录下ajax.php文件中找到以下内容 1 2 // execute command $output = $lg-&amp;gt;$_GET[&amp;#39;cmd&amp;#39;]($_GET[&amp;#39;host&amp;#39;]); 修改为 1 2 // execute command $output = $lg-&amp;gt;{$_GET[&amp;#39;cmd&amp;#39;]}($_GET[&amp;#39;host&amp;#39;]); 即可。</description>
     </item>
     
     <item>
       <title>修复 LookingGlass 在 LAMP 上无法使用的问题</title>
-      <link>https://i.cofco.ml/fix-lookingglass-not-use-on-lamp/</link>
+      <link>https://i.huan.ml/fix-lookingglass-not-use-on-lamp/</link>
       <pubDate>Fri, 16 Nov 2018 19:31:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/fix-lookingglass-not-use-on-lamp/</guid>
+      <guid>https://i.huan.ml/fix-lookingglass-not-use-on-lamp/</guid>
       <description>安装 LookingGlass 后发现 ping 和 mtr 等命令无法使用。发现是 PHP 的配置问题，解决方案如下： 编辑/usr/local/php目录下php.ini文件，找到 1 disable_functions = exec,system,dl,passthru,chown,shell_exec,popen,proc_open 将</description>
     </item>
     
     <item>
       <title>LAMP IP 绑定域名</title>
-      <link>https://i.cofco.ml/httpd-ip-binding-domain/</link>
+      <link>https://i.huan.ml/httpd-ip-binding-domain/</link>
       <pubDate>Sat, 10 Nov 2018 15:12:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/httpd-ip-binding-domain/</guid>
+      <guid>https://i.huan.ml/httpd-ip-binding-domain/</guid>
       <description>在 LAMP 添加的第一个网站根目录下.htaccess文件里添加： 1 2 RewriteCond %{http_host} ^0.0.0.0 [NC] RewriteRule ^(.*)$ http://www.examples.com/$1 [R=301,L] 注意：0.0.0.0换成服务器的IP；www.examples</description>
     </item>
     
     <item>
       <title>修改 Linux 默认编辑器为 nano</title>
-      <link>https://i.cofco.ml/linux-modified-default-editor-to-nano/</link>
+      <link>https://i.huan.ml/linux-modified-default-editor-to-nano/</link>
       <pubDate>Sat, 10 Nov 2018 15:12:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/linux-modified-default-editor-to-nano/</guid>
+      <guid>https://i.huan.ml/linux-modified-default-editor-to-nano/</guid>
       <description>在终端执行 1 $ export EDITOR=&amp;#34;/usr/bin/nano&amp;#34; 即可将编辑器临时改为 nano 编辑器。</description>
     </item>
     
     <item>
       <title>Lighttpd 下 Typecho 伪静态设置</title>
-      <link>https://i.cofco.ml/typecho-on-lighttps-pseudo-static/</link>
+      <link>https://i.huan.ml/typecho-on-lighttps-pseudo-static/</link>
       <pubDate>Wed, 24 Oct 2018 21:48:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/typecho-on-lighttps-pseudo-static/</guid>
+      <guid>https://i.huan.ml/typecho-on-lighttps-pseudo-static/</guid>
       <description>编辑lighttpd.conf文件，添加以下内容 1 2 3 4 5 6 7 8 9 10 11 12 13 14 #pseudo static url.rewrite = ( &amp;#34;^/(admin|usr)/(.*)&amp;#34; =&amp;gt; &amp;#34;/$1/$2&amp;#34;, &amp;#34;^/(.*).html$&amp;#34; =&amp;gt; &amp;#34;/index.php/$1.html&amp;#34;, &amp;#34;^/archives/(.*)&amp;#34; =&amp;gt; &amp;#34;/index.php/archives/$1&amp;#34;, &amp;#34;^/category/(.*)&amp;#34; =&amp;gt; &amp;#34;/index.php/category/$1&amp;#34;, &amp;#34;^/([0-9]+)/([0-9]+)/$&amp;#34; =&amp;gt; &amp;#34;/index.php/$1/$2/&amp;#34;, &amp;#34;^/tag/(.*)/$&amp;#34; =&amp;gt; &amp;#34;/index.php/tag/$1&amp;#34;, &amp;#34;^/search/(.*)/$&amp;#34; =&amp;gt; &amp;#34;/index.php/search/$1&amp;#34;, &amp;#34;^/(.*)page/(.*)&amp;#34; =&amp;gt; &amp;#34;/index.php/$1page/$2&amp;#34;, &amp;#34;^/(feed.*)&amp;#34; =&amp;gt; &amp;#34;/index.php/$1&amp;#34;,</description>
     </item>
     
     <item>
       <title>Lighttpd 强制 Https 访问</title>
-      <link>https://i.cofco.ml/lighttps-force-https/</link>
+      <link>https://i.huan.ml/lighttps-force-https/</link>
       <pubDate>Wed, 24 Oct 2018 21:48:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/lighttps-force-https/</guid>
+      <guid>https://i.huan.ml/lighttps-force-https/</guid>
       <description>编辑lighttpd.conf文件，添加以下内容 1 2 3 4 5 6 #force https $SERVER[&amp;#34;socket&amp;#34;] == &amp;#34;:80&amp;#34; { $HTTP[&amp;#34;host&amp;#34;] =~ &amp;#34;([^:/]+)&amp;#34; { url.redirect = ( &amp;#34;^/(.*)&amp;#34; =&amp;gt; &amp;#34;https://%0:443/$1&amp;#34; ) } } 即可。</description>
     </item>
     
     <item>
       <title>Crt 与 key 格式证书转换为 pem 格式</title>
-      <link>https://i.cofco.ml/crt-and-key-convert-to-pem/</link>
+      <link>https://i.huan.ml/crt-and-key-convert-to-pem/</link>
       <pubDate>Tue, 23 Oct 2018 21:02:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/crt-and-key-convert-to-pem/</guid>
+      <guid>https://i.huan.ml/crt-and-key-convert-to-pem/</guid>
       <description>执行 1 $ cat test.key test.crt &amp;gt; test.pem 即可转换为 pem 格式。 注：因 pem 文件将 cer 和 key 文件内容合并，文件内容中END PRIVATE KEY与EBEGIN CERTIFICATE分别占用一</description>
     </item>
     
     <item>
       <title>Linux 搭建 KMS 服务器教程</title>
-      <link>https://i.cofco.ml/linux-build-kms-server/</link>
+      <link>https://i.huan.ml/linux-build-kms-server/</link>
       <pubDate>Sun, 16 Sep 2018 20:50:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/linux-build-kms-server/</guid>
+      <guid>https://i.huan.ml/linux-build-kms-server/</guid>
       <description>以下教程以 CentOS 7 为例。 软件下载 vlmcsd 软件 Github下载 ，下载后自行编译。嫌麻烦的，可以从 GitHub 页面的链接进入作者的论坛发布页面，下载编译好的二进制文</description>
     </item>
     
     <item>
       <title>Linux 进程后台运行的方法</title>
-      <link>https://i.cofco.ml/linux-process-run-background/</link>
+      <link>https://i.huan.ml/linux-process-run-background/</link>
       <pubDate>Sun, 16 Sep 2018 20:41:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/linux-process-run-background/</guid>
+      <guid>https://i.huan.ml/linux-process-run-background/</guid>
       <description>screen 命令 创建 screen 1 $ screen -S test 保留 screen 1 $ ctrl+a+d 按ctrl+a，然后再按d即可保留 screen 查看 screen 1 $ screen -ls 恢复 screen 1 $ screen -r test nohup 命令 后台运行 1 $ nohup server -c ./server.josn &amp;amp; 示例命令为s</description>
     </item>
     
     <item>
       <title>Debian 手动安装 Linux 4.9&#43; 内核并开启 BBR</title>
-      <link>https://i.cofco.ml/debian-install-linux-kernel-and-open-bbr/</link>
+      <link>https://i.huan.ml/debian-install-linux-kernel-and-open-bbr/</link>
       <pubDate>Sun, 16 Sep 2018 20:36:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/debian-install-linux-kernel-and-open-bbr/</guid>
+      <guid>https://i.huan.ml/debian-install-linux-kernel-and-open-bbr/</guid>
       <description>安装内核 选择需要安装的内核版本下载地址 下载内核（以 Linux 4.9.0 内核为例） 1 $ wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.9/linux-image-4.9.0-040900-generic_4.9.0-040900.201612111631_amd64.deb 安装内核 1 $ dpkg -i linux-image-4.*.deb 移除旧内核（可选） 1 $ apt-get autoremove 更新引导文件 1 $ update-grub 重启 1</description>
     </item>
     
     <item>
       <title>Linux 出现大量 bioset 进程的解决办法</title>
-      <link>https://i.cofco.ml/linux-fix-too-mang-bioset-processes/</link>
+      <link>https://i.huan.ml/linux-fix-too-mang-bioset-processes/</link>
       <pubDate>Sun, 16 Sep 2018 20:27:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/linux-fix-too-mang-bioset-processes/</guid>
+      <guid>https://i.huan.ml/linux-fix-too-mang-bioset-processes/</guid>
       <description>此为 linux 4.x 内核的 bug。 解决办法：linux 内核在 4.13 及以上版本修复了该 bug，故安装 4.13 以上 linux 内核即可。</description>
     </item>
     
     <item>
       <title>Windows 局域网连接共享打印机方法</title>
-      <link>https://i.cofco.ml/windows-share-printer/</link>
+      <link>https://i.huan.ml/windows-share-printer/</link>
       <pubDate>Sat, 16 Jun 2018 20:56:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/windows-share-printer/</guid>
+      <guid>https://i.huan.ml/windows-share-printer/</guid>
       <description>写在前面：本文针对在设备和打印机里面添加打印机时，无法搜索到目标打印机的解决方法。 查看目标打印机IP地址 桌面任务栏右下角网络图标-右键-打开</description>
     </item>
     
     <item>
       <title>Debian 安装配置 iptables 防火墙</title>
-      <link>https://i.cofco.ml/debian-iptables-config/</link>
+      <link>https://i.huan.ml/debian-iptables-config/</link>
       <pubDate>Sun, 29 Apr 2018 18:56:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/debian-iptables-config/</guid>
+      <guid>https://i.huan.ml/debian-iptables-config/</guid>
       <description>查看规则 1 $ iptables -L 编辑规则 1 $ vim /etc/iptables.test.rules 使规则生效 1 $ iptables-restore &amp;lt; /etc/iptables.test.rules 保存生效配置 1 $ iptables-save &amp;gt; /etc/iptables.up.rules 设置开机自动载入配置 1 $ touch /etc/network/if-pre-up.d/iptables 在 iptables 文件中输入以下内容 1 2 #!/bin/bash /sbin/iptables-restore &amp;lt; /etc/iptables.up.rules 设置</description>
     </item>
     
     <item>
       <title>修改 Debian 登录提示</title>
-      <link>https://i.cofco.ml/debian-modify-login-prompt/</link>
+      <link>https://i.huan.ml/debian-modify-login-prompt/</link>
       <pubDate>Sun, 29 Apr 2018 18:52:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/debian-modify-login-prompt/</guid>
+      <guid>https://i.huan.ml/debian-modify-login-prompt/</guid>
       <description>清空/etc/motd文件的内容； 清空/etc/update-motd.d/目录中所有文件的内容，即可。</description>
     </item>
     
     <item>
       <title>CentOS 6 更换内核</title>
-      <link>https://i.cofco.ml/centos-6-change-kernel/</link>
+      <link>https://i.huan.ml/centos-6-change-kernel/</link>
       <pubDate>Fri, 23 Mar 2018 18:56:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/centos-6-change-kernel/</guid>
+      <guid>https://i.huan.ml/centos-6-change-kernel/</guid>
       <description>查看 CentOS 版本 1 $ cat /etc/issue 查看内核版本 1 $ uname -a 下载需要更换的内核 1 $ wget http://ftp.scientificlinux.org/linux/scientific/6.6/x86_64/updates/security/kernel-2.6.32-504.3.3.el6.x86_64.rpm 安装内核 1 $ rpm -ivh kernel-2.6.32-504.3.3.el6.x86_64.rpm --force 重启 1 $ reboot</description>
     </item>
     
     <item>
       <title>SSH 使用密钥登录并禁止密码登录</title>
-      <link>https://i.cofco.ml/ssh-login-with-key/</link>
+      <link>https://i.huan.ml/ssh-login-with-key/</link>
       <pubDate>Mon, 19 Mar 2018 21:09:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/ssh-login-with-key/</guid>
+      <guid>https://i.huan.ml/ssh-login-with-key/</guid>
       <description>设置权限 修改.ssh目录及authorized_keys文件权限 1 2 $ chmod 700 ~/.ssh $ chmod 600 ~/.ssh/authorized_keys 编辑文件 将/etc/ssh/sshd_config文件中</description>
     </item>
     
     <item>
       <title>Crontab 的安装及使用</title>
-      <link>https://i.cofco.ml/crontab-install-and-use/</link>
+      <link>https://i.huan.ml/crontab-install-and-use/</link>
       <pubDate>Sat, 10 Mar 2018 18:56:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/crontab-install-and-use/</guid>
+      <guid>https://i.huan.ml/crontab-install-and-use/</guid>
       <description>安装 crontab 1 $ yum install vixie-cron crontabs 添加开机启动 1 $ chkconfig –level 35 crond on crontab 文件位置（root） 1 /var/spool/cron/root 查看 corntab 服务状态 1 $ service crond status 启动 corntab 服务 1 $ service crond start 查看 crontab 列表 1 $ crontab</description>
     </item>
     
     <item>
       <title>SSH 私钥登陆提示 Server refused our key 的解决办法</title>
-      <link>https://i.cofco.ml/fix-server-refused-our-key/</link>
+      <link>https://i.huan.ml/fix-server-refused-our-key/</link>
       <pubDate>Sat, 10 Mar 2018 18:56:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/fix-server-refused-our-key/</guid>
+      <guid>https://i.huan.ml/fix-server-refused-our-key/</guid>
       <description>原因为authorized_keys文件没有 selinux 上下文属性，导致无法通过 selinux 认证。 执行以下命令： 1 $ restorecon -R -v /root 即可解决。</description>
     </item>
     
     <item>
       <title>Linux 修改时区的方法</title>
-      <link>https://i.cofco.ml/linux-modify-time-zone/</link>
+      <link>https://i.huan.ml/linux-modify-time-zone/</link>
       <pubDate>Mon, 12 Feb 2018 18:56:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/linux-modify-time-zone/</guid>
+      <guid>https://i.huan.ml/linux-modify-time-zone/</guid>
       <description>查看时区 1 $ date -R 调整时区 1 $ tzselect #根据提示选择时区 复制文件 1 $ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 更新时间 1 $ ntpdate cn.ntp.org.cn</description>
     </item>
     
     <item>
       <title>Linux 修改主机名</title>
-      <link>https://i.cofco.ml/linux-modify-hostname/</link>
+      <link>https://i.huan.ml/linux-modify-hostname/</link>
       <pubDate>Sat, 20 Jan 2018 18:56:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/linux-modify-hostname/</guid>
+      <guid>https://i.huan.ml/linux-modify-hostname/</guid>
       <description>CentOS 修改以下文件相关内容 1 2 $ nano /etc/hosts $ nano /etc/sysconfig/network Debian 修改以下文件相关内容 1 2 $ nano /etc/hosts $ nano /etc/hostname</description>
     </item>
     
     <item>
       <title>Ubuntu 禁止升级提示</title>
-      <link>https://i.cofco.ml/ubuntu-disable-update-prompts/</link>
+      <link>https://i.huan.ml/ubuntu-disable-update-prompts/</link>
       <pubDate>Sat, 13 Jan 2018 18:56:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/ubuntu-disable-update-prompts/</guid>
+      <guid>https://i.huan.ml/ubuntu-disable-update-prompts/</guid>
       <description>禁用更新 修改/etc/update-manager/release-upgrades中的配置项Prompt=lts为Prompt=never</description>
     </item>
     
     <item>
       <title>CentOS 7 中 Firewall 相关命令</title>
-      <link>https://i.cofco.ml/centos-7-firewall-commands/</link>
+      <link>https://i.huan.ml/centos-7-firewall-commands/</link>
       <pubDate>Sat, 02 Dec 2017 18:56:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/centos-7-firewall-commands/</guid>
+      <guid>https://i.huan.ml/centos-7-firewall-commands/</guid>
       <description>常用命令 查看 firewall 状态 1 $ firewall-cmd --state 查看 firewall 所有规则 1 $ firewall-cmd --list-all 添加规则 1 2 $ firewall-cmd --permanent --add-port=80/tcp $ firewall-cmd --permanent --add-port=80/udp 删除规则 1 2 $ firewall-cmd --permanent --remove-port=80/tcp $ firewall-cmd --permanent --remove-port=80/tcp 重启防火墙(修改配置后要重启防火墙)</description>
     </item>
     
     <item>
       <title>Screen 命令的用法</title>
-      <link>https://i.cofco.ml/how-to-use-screen/</link>
+      <link>https://i.huan.ml/how-to-use-screen/</link>
       <pubDate>Thu, 16 Nov 2017 18:56:00 +0000</pubDate>
       
-      <guid>https://i.cofco.ml/how-to-use-screen/</guid>
+      <guid>https://i.huan.ml/how-to-use-screen/</guid>
       <description>创建 Screen 1 $ screen -S test 保留 Screen 1 $ Ctrl+a+d 按Ctrl+a，然后再按d即可保留 Screen 查看 Screen 1 $ screen -ls 恢复 Screen 1 $ screen -r test</description>
     </item>
     
