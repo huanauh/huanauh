@@ -15,10 +15,8 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Lighttpd 下 Typecho 伪静态设置"/>
 <meta name="twitter:description" content="编辑lighttpd.conf文件，添加以下内容 1 2 3 4 5 6 7 8 9 10 11 12 13 14 #pseudo static url.rewrite = ( &#34;^/(admin|usr)/(.*)&#34; =&gt; &#34;/$1/$2&#34;, &#34;^/(.*).html$&#34; =&gt; &#34;/index.php/$1.html&#34;, &#34;^/archives/(.*)&#34; =&gt; &#34;/index.php/archives/$1&#34;, &#34;^/category/(.*)&#34; =&gt; &#34;/index.php/category/$1&#34;, &#34;^/([0-9]&#43;)/([0-9]&#43;)/$&#34; =&gt; &#34;/index.php/$1/$2/&#34;, &#34;^/tag/(.*)/$&#34; =&gt; &#34;/index.php/tag/$1&#34;, &#34;^/search/(.*)/$&#34; =&gt; &#34;/index.php/search/$1&#34;, &#34;^/(.*)page/(.*)&#34; =&gt; &#34;/index.php/$1page/$2&#34;, &#34;^/(feed.*)&#34; =&gt; &#34;/index.php/$1&#34;,"/>
-<meta name="theme-color" content="#ffffff">
-<meta name="msapplication-TileColor" content="#da532c">
-<link rel="canonical" href="https://i.huan.ml/typecho-on-lighttps-pseudo-static/" />
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><link rel="prev" href="https://i.huan.ml/lighttps-force-https/" /><link rel="next" href="https://i.huan.ml/how-to-use-symbolic-link/" /><link href="https://cdn.bootcss.com/font-awesome/5.12.1/css/all.min.css" rel="stylesheet"><link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">
+<meta name="application-name" content="驩讙懽歡">
+<meta name="apple-mobile-web-app-title" content="驩讙懽歡"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><link rel="canonical" href="https://i.huan.ml/typecho-on-lighttps-pseudo-static/" /><link rel="prev" href="https://i.huan.ml/lighttps-force-https/" /><link rel="next" href="https://i.huan.ml/how-to-use-symbolic-link/" /><link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"><link rel="stylesheet" href="/css/style.min.css"><link href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"><link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -28,52 +26,90 @@
             "@type": "WebPage",
             "@id": "https:\/\/i.huan.ml\/typecho-on-lighttps-pseudo-static\/"
         },"genre": "posts","keywords": "Linux, Lighttpd","wordcount":  80 ,
-        "url": "https:\/\/i.huan.ml\/typecho-on-lighttps-pseudo-static\/","datePublished": "2018-10-24","dateModified": "2018-10-24","author": {
+        "url": "https:\/\/i.huan.ml\/typecho-on-lighttps-pseudo-static\/","datePublished": "2018-10-24T21:48:00+00:00","dateModified": "2018-10-24T21:48:00+00:00","publisher": {
+                "@type": "Organization",
+                "name": "驩讙懽歡",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/i.huan.ml",
+                "width":  null ,
+                "height":  null 
+                }
+            },"author": {
                 "@type": "Person",
                 "name": "驩讙懽歡"
             },"description": ""
     }
     </script></head>
-    <body><script>
-            if (!window.localStorage || !window.localStorage.getItem('theme')) {window.isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;} else {
-                window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
-            }
-            window.isDark && document.body.classList.add('dark-theme');
-        </script><div class="wrapper"><header class="desktop" id="header-desktop">
+    <body><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/">驩讙懽歡</a>
+            <a href="/" title="驩讙懽歡">驩讙懽歡</a>
         </div>
-        <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><span class="menu-item">|</span>
-            <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
-                <i class="fas fa-adjust fa-fw"></i>
-            </a></div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/huanauh" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
     </div>
 </header><header class="mobile" id="header-mobile">
-    <div class="header-wrapper">
-        <div class="header-container">
+    <div class="header-container">
+        <div class="header-wrapper">
             <div class="header-title">
-                <a href="/">驩讙懽歡</a>
+                <a href="/" title="驩讙懽歡">驩讙懽歡</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a class="menu-item" href="https://github.com/huanauh" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/huanauh" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
 </header>
-
-<script>
-    window.desktopHeaderMode = "fixed";
-    window.mobileHeaderMode = "auto";
-</script>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
 <main class="main">
-                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Lighttpd 下 Typecho 伪静态设置</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="far fa-id-badge fa-fw"></i>驩讙懽歡</a>
-</span>&nbsp;
-                    <span class="post-category">收录于<a href="/categories/linux%E6%95%99%E7%A8%8B">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Lighttpd 下 Typecho 伪静态设置</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="far fa-id-badge fa-fw"></i>驩讙懽歡</a></span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/linux%E6%95%99%E7%A8%8B/">
                                 <i class="far fa-folder fa-fw"></i>Linux教程
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2018-10-24>2018-10-24</time>&nbsp;
@@ -81,7 +117,13 @@
                 <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;<span id="/typecho-on-lighttps-pseudo-static/" class="leancloud_visitors" data-flag-title="Lighttpd 下 Typecho 伪静态设置">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
-        </div><div class="content" id="content"><p>编辑<code>lighttpd.conf</code>文件，添加以下内容</p>
+        </div><div class="details toc" id="toc-static">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>编辑<code>lighttpd.conf</code>文件，添加以下内容</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -134,47 +176,30 @@ url.rewrite = (
     </div>
 
     <div class="post-info-more">
-        <section><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux">Linux</a>,&nbsp;<a href="/tags/lighttpd">Lighttpd</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/lighttpd/">Lighttpd</a></section>
         <section>
-            <span><a href="javascript:window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
     <div class="post-nav"><a href="/lighttps-force-https/" class="prev" rel="prev" title="Lighttpd 强制 Https 访问"><i class="fas fa-angle-left fa-fw"></i>Lighttpd 强制 Https 访问</a>
             <a href="/how-to-use-symbolic-link/" class="next" rel="next" title="如何使用符号链接">如何使用符号链接<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
-<div class="comment"><div id="valine"></div><script>
-            document.addEventListener("DOMContentLoaded", function(event) {
-                new Valine({
-                    el: '#valine',
-                    appId: 'Bsktx34GV4hMOOIEITDLxVNG-MdYXbMMI',
-                    appKey: 'p1zSrNN2VsBM6TDkmQorhkH3',placeholder: '你的评论 ...',verify: true,avatar: 'mp',pageSize: 10,lang: 'zh-cn',visitor: true,recordIP: true,});
-            });
-        </script>
-        <noscript>
-            Please enable JavaScript to view the <a href="https://valine.js.org/">comments powered by Valine.</a>
-        </noscript></div>
-    </article></div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
             </main><footer class="footer">
-    <div class="copyright"><div class="copyright-line">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer"><i class="far fa-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.69.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">驩讙懽歡</a></span></div>
         </div>
+    </footer></div>
 
-        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">驩讙懽歡</a></span></div>
-    </div>
-</footer>
-</div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
-            <i class="fas fa-chevron-up fa-fw"></i>
-        </a><script>
-        document.addEventListener('DOMContentLoaded', function () {
-            lightGallery(document.getElementById('content'), {
-                selector: '.lightgallery',
-                speed: 400,
-                hideBarsDelay: 2000,
-                thumbnail: true,
-                exThumbImage: 'data-thumbnail',
-                thumbWidth: 80,
-                thumbContHeight: 80,
-            });
-        });
-    </script><link href="https://cdn.bootcss.com/lightgallery/1.6.12/css/lightgallery.min.css" rel="stylesheet"><link rel="stylesheet" href="/lib/valine/valine.css"><script src="https://cdn.bootcss.com/valine/1.3.10/Valine.min.js"></script><script src="https://cdn.bootcss.com/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script><script src="https://cdn.bootcss.com/lazysizes/5.2.0/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/js/theme.min.js"></script></body>
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript">
+    window.config = {"code":{"maxShownLines":10},"comment":{"valine":{"appId":"Bsktx34GV4hMOOIEITDLxVNG-MdYXbMMI","appKey":"p1zSrNN2VsBM6TDkmQorhkH3","avatar":"mp","el":"#valine","enableQQ":false,"highlight":true,"lang":"zh-cn","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"visitor":true}},"headerMode":{"desktop":"fixed","mobile":"auto"},"search":{"algoliaAppID":"L8NC47ROJD","algoliaIndex":"hugo","algoliaSearchKey":"0540baa90dbd6f53d5d4065fd67d5321","noResultsFound":"没有找到结果","type":"algolia"}};
+</script><script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=Element.prototype.closest%2CrequestAnimationFrame%2CCustomEvent%2CPromise%2CObject.entries%2CObject.assign%2CObject.values%2Cfetch%2CElement.prototype.after%2CArray.prototype.fill%2CIntersectionObserver%2CArray.from%2CArray.prototype.find%2CMath.sign"></script><script src="https://cdn.bootcss.com/valine/1.3.10/Valine.min.js"></script><script src="https://cdn.bootcss.com/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/autocomplete.js/0.37.1/autocomplete.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/algoliasearch/4.2.0/algoliasearch.umd.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

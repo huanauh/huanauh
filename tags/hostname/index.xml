@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>HostName on 驩讙懽歡</title>
-    <link>https://i.huan.ml/tags/hostname/</link>
-    <description>Recent content in HostName on 驩讙懽歡</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Sat, 20 Jan 2018 18:56:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://i.huan.ml/tags/hostname/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Linux 修改主机名</title>
-      <link>https://i.huan.ml/linux-modify-hostname/</link>
-      <pubDate>Sat, 20 Jan 2018 18:56:00 +0000</pubDate>
-      
-      <guid>https://i.huan.ml/linux-modify-hostname/</guid>
-      <description>CentOS 修改以下文件相关内容 1 2 $ nano /etc/hosts $ nano /etc/sysconfig/network Debian 修改以下文件相关内容 1 2 $ nano /etc/hosts $ nano /etc/hostname</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>HostName | 标签 | 驩讙懽歡</title>
+        <link>https://i.huan.ml/tags/hostname/</link>
+        <description>HostName | 标签 | 驩讙懽歡</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 20 Jan 2018 18:56:00 &#43;0000</lastBuildDate><atom:link href="https://i.huan.ml/tags/hostname/" rel="self" type="application/rss+xml" /><item>
+                <title>Linux 修改主机名</title>
+                <link>https://i.huan.ml/linux-modify-hostname/</link>
+                <pubDate>Sat, 20 Jan 2018 18:56:00 &#43;0000</pubDate>
+                <author>驩讙懽歡</author>
+                <guid>https://i.huan.ml/linux-modify-hostname/</guid>
+                <description>CentOS 修改以下文件相关内容 1 2 $ nano /etc/hosts $ nano /etc/sysconfig/network Debian 修改以下文件相关内容 1 2 $ nano /etc/hosts $ nano /etc/hostname</description>
+            </item></channel>
 </rss>
