@@ -3,7 +3,8 @@
         <title>PHP | 标签 | 驩讙懽歡</title>
         <link>https://i.huan.ml/tags/php/</link>
         <description>PHP | 标签 | 驩讙懽歡</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 03 Dec 2018 20:20:00 &#43;0000</lastBuildDate><atom:link href="https://i.huan.ml/tags/php/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
+            <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Mon, 03 Dec 2018 20:20:00 &#43;0000</lastBuildDate><atom:link href="https://i.huan.ml/tags/php/" rel="self" type="application/rss+xml" /><item>
                 <title>修复 LookingGlass 在 PHP7 上无法使用的问题</title>
                 <link>https://i.huan.ml/fix-lookingglass-not-use-on-php7/</link>
                 <pubDate>Mon, 03 Dec 2018 20:20:00 &#43;0000</pubDate>
