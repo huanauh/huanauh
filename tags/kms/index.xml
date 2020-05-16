@@ -1,22 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>KMS | 标签 | 驩讙懽歡</title>
-        <link>https://i.huan.ml/tags/kms/</link>
+        <link>https://huan.ml/tags/kms/</link>
         <description>KMS | 标签 | 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
-            <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Sun, 16 Sep 2018 20:50:00 &#43;0000</lastBuildDate><atom:link href="https://i.huan.ml/tags/kms/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Sun, 16 Sep 2018 20:50:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/kms/" rel="self" type="application/rss+xml" /><item>
                 <title>Linux 搭建 KMS 服务器教程</title>
-                <link>https://i.huan.ml/linux-build-kms-server/</link>
+                <link>https://huan.ml/linux-build-kms-server/</link>
                 <pubDate>Sun, 16 Sep 2018 20:50:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/linux-build-kms-server/</guid>
+                <guid>https://huan.ml/linux-build-kms-server/</guid>
                 <description>以下教程以 CentOS 7 为例。 软件下载 vlmcsd 软件 Github下载，下载后自行编译。嫌麻烦的，可以从 GitHub 页面的链接进入作者的论坛发布页面，下载编译好的二进制文</description>
             </item><item>
                 <title>KMS 激活 Windows 与 Office</title>
-                <link>https://i.huan.ml/kms-activate-windows-and-office/</link>
+                <link>https://huan.ml/kms-activate-windows-and-office/</link>
                 <pubDate>Sun, 26 Aug 2018 21:09:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/kms-activate-windows-and-office/</guid>
+                <guid>https://huan.ml/kms-activate-windows-and-office/</guid>
                 <description>查看激活状态 查看 Office 激活状态： 1 $ cscript.exe &amp;#34;C:\Program Files\Microsoft Office\Office14\OSPP.VBS&amp;#34; /dstatus 查看 Windows 激活状态： 1 $ slmgr.vbs -dlv 激活方法 Windows 激活 1 2 3 4 5 $ slmgr.vbs -upk #卸载密钥 $ slmgr /ipk xxxx-xxxx-xxxx-xxxx #对应版本密钥 $ slmgr /skms 0.0.0.0 #激</description>
             </item></channel>
 </rss>

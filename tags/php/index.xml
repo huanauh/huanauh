@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>PHP | 标签 | 驩讙懽歡</title>
-        <link>https://i.huan.ml/tags/php/</link>
+        <link>https://huan.ml/tags/php/</link>
         <description>PHP | 标签 | 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
-            <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Mon, 03 Dec 2018 20:20:00 &#43;0000</lastBuildDate><atom:link href="https://i.huan.ml/tags/php/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Mon, 03 Dec 2018 20:20:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/php/" rel="self" type="application/rss+xml" /><item>
                 <title>修复 LookingGlass 在 PHP7 上无法使用的问题</title>
-                <link>https://i.huan.ml/fix-lookingglass-not-use-on-php7/</link>
+                <link>https://huan.ml/fix-lookingglass-not-use-on-php7/</link>
                 <pubDate>Mon, 03 Dec 2018 20:20:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/fix-lookingglass-not-use-on-php7/</guid>
+                <guid>https://huan.ml/fix-lookingglass-not-use-on-php7/</guid>
                 <description>LookingGlass 在 PHP7 环境无法使用，解决方案如下： 在根目录下ajax.php文件中找到以下内容 1 2 // execute command $output = $lg-&amp;gt;$_GET[&amp;#39;cmd&amp;#39;]($_GET[&amp;#39;host&amp;#39;]); 修改为 1 2 // execute command $output = $lg-&amp;gt;{$_GET[&amp;#39;cmd&amp;#39;]}($_GET[&amp;#39;host&amp;#39;]); 即可。</description>
             </item></channel>
 </rss>

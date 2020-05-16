@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Termux | 标签 | 驩讙懽歡</title>
-        <link>https://i.huan.ml/tags/termux/</link>
+        <link>https://huan.ml/tags/termux/</link>
         <description>Termux | 标签 | 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
-            <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Sun, 21 Oct 2018 09:50:00 &#43;0000</lastBuildDate><atom:link href="https://i.huan.ml/tags/termux/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Sun, 21 Oct 2018 09:50:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/termux/" rel="self" type="application/rss+xml" /><item>
                 <title>Termux 使用教程</title>
-                <link>https://i.huan.ml/how-to-use-termux/</link>
+                <link>https://huan.ml/how-to-use-termux/</link>
                 <pubDate>Sun, 21 Oct 2018 09:50:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/how-to-use-termux/</guid>
+                <guid>https://huan.ml/how-to-use-termux/</guid>
                 <description>安装部署 因为 Termux 官方服务器在国外，第一次打开可能需要科学上网 进入后更新一下 1 2 $ apt update $ apt upgrade 安装nano编辑器 1 $ apt install nano #非必须，我个人喜欢使用</description>
             </item></channel>
 </rss>

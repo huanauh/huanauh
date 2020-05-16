@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>ADB | 标签 | 驩讙懽歡</title>
-        <link>https://i.huan.ml/tags/adb/</link>
+        <link>https://huan.ml/tags/adb/</link>
         <description>ADB | 标签 | 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
-            <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Mon, 24 Feb 2020 12:12:00 &#43;0000</lastBuildDate><atom:link href="https://i.huan.ml/tags/adb/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Mon, 24 Feb 2020 12:12:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/adb/" rel="self" type="application/rss+xml" /><item>
                 <title>无法找到 ADB 设备的解决办法</title>
-                <link>https://i.huan.ml/how-to-find-adb-device/</link>
+                <link>https://huan.ml/how-to-find-adb-device/</link>
                 <pubDate>Mon, 24 Feb 2020 12:12:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/how-to-find-adb-device/</guid>
+                <guid>https://huan.ml/how-to-find-adb-device/</guid>
                 <description>安卓手机连接电脑进行 ADB 调试时，有时无法找到对应的 ADB 设备。解决方法如下：计算机- 右键 -管理-设备管理器-便携设备-[你的手机]- 右键 -详细信息</description>
             </item></channel>
 </rss>

@@ -1,78 +1,78 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Linux | 标签 | 驩讙懽歡</title>
-        <link>https://i.huan.ml/tags/linux/</link>
+        <link>https://huan.ml/tags/linux/</link>
         <description>Linux | 标签 | 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
-            <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Mon, 23 Sep 2019 12:36:00 &#43;0000</lastBuildDate><atom:link href="https://i.huan.ml/tags/linux/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Mon, 23 Sep 2019 12:36:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/linux/" rel="self" type="application/rss+xml" /><item>
                 <title>Update-rc.d 命令的用法</title>
-                <link>https://i.huan.ml/how-to-use-update-rc.d/</link>
+                <link>https://huan.ml/how-to-use-update-rc.d/</link>
                 <pubDate>Mon, 23 Sep 2019 12:36:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/how-to-use-update-rc.d/</guid>
+                <guid>https://huan.ml/how-to-use-update-rc.d/</guid>
                 <description>添加启动项 将脚本放入/etc/init.d文件夹，并给予可执行权限 1 2 $ mv xx.sh /etc/init.d $ chmod &#43;x /etc/init.d/xx.sh 设置开机自启 1 $ update-rc.d xx.sh defaults 删除开机自启 1 $ update-rc.d -f xx.sh remove</description>
             </item><item>
                 <title>V2Ray 流量转发配置</title>
-                <link>https://i.huan.ml/v2ray-traffic-forwarding/</link>
+                <link>https://huan.ml/v2ray-traffic-forwarding/</link>
                 <pubDate>Tue, 02 Apr 2019 12:53:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/v2ray-traffic-forwarding/</guid>
+                <guid>https://huan.ml/v2ray-traffic-forwarding/</guid>
                 <description>Caddy 配置 修改Caddyfile文件 1 2 3 4 5 6 7 yourdomian.com { tls youremail@gmail.com proxy /www localhost:8990 { websocket header_upstream -Origin } } Apache 配置一 编辑/usr/local/apache/conf/vhost</description>
             </item><item>
                 <title>LAMP 禁止 IP 直接访问</title>
-                <link>https://i.huan.ml/lamp-prohibits-ip-access/</link>
+                <link>https://huan.ml/lamp-prohibits-ip-access/</link>
                 <pubDate>Wed, 16 Jan 2019 14:45:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/lamp-prohibits-ip-access/</guid>
+                <guid>https://huan.ml/lamp-prohibits-ip-access/</guid>
                 <description>针对开启了虚拟主机的 LAMP，修改conf/extra/httpd-vhosts.conf文件，添加以下内容： 1 2 3 4 5 6 7 &amp;lt;virtualhost 1.1.1.1:80&amp;gt; #1.1.1</description>
             </item><item>
                 <title>LAMP 设置反向代理</title>
-                <link>https://i.huan.ml/lamp-set-reverse-proxy/</link>
+                <link>https://huan.ml/lamp-set-reverse-proxy/</link>
                 <pubDate>Mon, 03 Dec 2018 20:30:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/lamp-set-reverse-proxy/</guid>
+                <guid>https://huan.ml/lamp-set-reverse-proxy/</guid>
                 <description>举例说明，将 1.test.com 和 2.test.com 两个域名通过反向代理指向 localhost:8080 端口 首先在 LAMP 添加任意域名，假设为 0.test.com 修改/usr/local/apache/conf/vhost目</description>
             </item><item>
                 <title>修复 LookingGlass 在 PHP7 上无法使用的问题</title>
-                <link>https://i.huan.ml/fix-lookingglass-not-use-on-php7/</link>
+                <link>https://huan.ml/fix-lookingglass-not-use-on-php7/</link>
                 <pubDate>Mon, 03 Dec 2018 20:20:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/fix-lookingglass-not-use-on-php7/</guid>
+                <guid>https://huan.ml/fix-lookingglass-not-use-on-php7/</guid>
                 <description>LookingGlass 在 PHP7 环境无法使用，解决方案如下： 在根目录下ajax.php文件中找到以下内容 1 2 // execute command $output = $lg-&amp;gt;$_GET[&amp;#39;cmd&amp;#39;]($_GET[&amp;#39;host&amp;#39;]); 修改为 1 2 // execute command $output = $lg-&amp;gt;{$_GET[&amp;#39;cmd&amp;#39;]}($_GET[&amp;#39;host&amp;#39;]); 即可。</description>
             </item><item>
                 <title>修复 LookingGlass 在 LAMP 上无法使用的问题</title>
-                <link>https://i.huan.ml/fix-lookingglass-not-use-on-lamp/</link>
+                <link>https://huan.ml/fix-lookingglass-not-use-on-lamp/</link>
                 <pubDate>Fri, 16 Nov 2018 19:31:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/fix-lookingglass-not-use-on-lamp/</guid>
+                <guid>https://huan.ml/fix-lookingglass-not-use-on-lamp/</guid>
                 <description>安装 LookingGlass 后发现 ping 和 mtr 等命令无法使用。发现是 PHP 的配置问题，解决方案如下： 编辑/usr/local/php目录下php.ini文件，找到 1 disable_functions = exec,system,dl,passthru,chown,shell_exec,popen,proc_open 将</description>
             </item><item>
                 <title>LAMP IP 绑定域名</title>
-                <link>https://i.huan.ml/httpd-ip-binding-domain/</link>
+                <link>https://huan.ml/httpd-ip-binding-domain/</link>
                 <pubDate>Sat, 10 Nov 2018 15:12:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/httpd-ip-binding-domain/</guid>
+                <guid>https://huan.ml/httpd-ip-binding-domain/</guid>
                 <description>在 LAMP 添加的第一个网站根目录下.htaccess文件里添加： 1 2 RewriteCond %{http_host} ^0.0.0.0 [NC] RewriteRule ^(.*)$ http://www.examples.com/$1 [R=301,L] 注意：0.0.0.0换成服务器的IP；www.examples</description>
             </item><item>
                 <title>修改 Linux 默认编辑器为 nano</title>
-                <link>https://i.huan.ml/linux-modified-default-editor-to-nano/</link>
+                <link>https://huan.ml/linux-modified-default-editor-to-nano/</link>
                 <pubDate>Sat, 10 Nov 2018 15:12:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/linux-modified-default-editor-to-nano/</guid>
+                <guid>https://huan.ml/linux-modified-default-editor-to-nano/</guid>
                 <description>在终端执行 1 $ export EDITOR=&amp;#34;/usr/bin/nano&amp;#34; 即可将编辑器临时改为 nano 编辑器。</description>
             </item><item>
                 <title>Lighttpd 下 Typecho 伪静态设置</title>
-                <link>https://i.huan.ml/typecho-on-lighttps-pseudo-static/</link>
+                <link>https://huan.ml/typecho-on-lighttps-pseudo-static/</link>
                 <pubDate>Wed, 24 Oct 2018 21:48:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/typecho-on-lighttps-pseudo-static/</guid>
+                <guid>https://huan.ml/typecho-on-lighttps-pseudo-static/</guid>
                 <description>编辑lighttpd.conf文件，添加以下内容 1 2 3 4 5 6 7 8 9 10 11 12 13 14 #pseudo static url.rewrite = ( &amp;#34;^/(admin|usr)/(.*)&amp;#34; =&amp;gt; &amp;#34;/$1/$2&amp;#34;, &amp;#34;^/(.*).html$&amp;#34; =&amp;gt; &amp;#34;/index.php/$1.html&amp;#34;, &amp;#34;^/archives/(.*)&amp;#34; =&amp;gt; &amp;#34;/index.php/archives/$1&amp;#34;, &amp;#34;^/category/(.*)&amp;#34; =&amp;gt; &amp;#34;/index.php/category/$1&amp;#34;, &amp;#34;^/([0-9]&#43;)/([0-9]&#43;)/$&amp;#34; =&amp;gt; &amp;#34;/index.php/$1/$2/&amp;#34;, &amp;#34;^/tag/(.*)/$&amp;#34; =&amp;gt; &amp;#34;/index.php/tag/$1&amp;#34;, &amp;#34;^/search/(.*)/$&amp;#34; =&amp;gt; &amp;#34;/index.php/search/$1&amp;#34;, &amp;#34;^/(.*)page/(.*)&amp;#34; =&amp;gt; &amp;#34;/index.php/$1page/$2&amp;#34;, &amp;#34;^/(feed.*)&amp;#34; =&amp;gt; &amp;#34;/index.php/$1&amp;#34;,</description>
             </item><item>
                 <title>Lighttpd 强制 Https 访问</title>
-                <link>https://i.huan.ml/lighttps-force-https/</link>
+                <link>https://huan.ml/lighttps-force-https/</link>
                 <pubDate>Wed, 24 Oct 2018 21:48:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/lighttps-force-https/</guid>
+                <guid>https://huan.ml/lighttps-force-https/</guid>
                 <description>编辑lighttpd.conf文件，添加以下内容 1 2 3 4 5 6 #force https $SERVER[&amp;#34;socket&amp;#34;] == &amp;#34;:80&amp;#34; { $HTTP[&amp;#34;host&amp;#34;] =~ &amp;#34;([^:/]&#43;)&amp;#34; { url.redirect = ( &amp;#34;^/(.*)&amp;#34; =&amp;gt; &amp;#34;https://%0:443/$1&amp;#34; ) } } 即可。</description>
             </item></channel>
 </rss>

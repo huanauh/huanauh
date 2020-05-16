@@ -1,1 +1,1 @@
-### [驩讙懽歡](https://i.huan.ml) | 博客
+### [驩讙懽歡](https://huan.ml) | 博客

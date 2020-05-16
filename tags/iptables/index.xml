@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>iptables | 标签 | 驩讙懽歡</title>
-        <link>https://i.huan.ml/tags/iptables/</link>
+        <link>https://huan.ml/tags/iptables/</link>
         <description>iptables | 标签 | 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
-            <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Sun, 29 Apr 2018 18:56:00 &#43;0000</lastBuildDate><atom:link href="https://i.huan.ml/tags/iptables/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Sun, 29 Apr 2018 18:56:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/iptables/" rel="self" type="application/rss+xml" /><item>
                 <title>Debian 安装配置 iptables 防火墙</title>
-                <link>https://i.huan.ml/debian-iptables-config/</link>
+                <link>https://huan.ml/debian-iptables-config/</link>
                 <pubDate>Sun, 29 Apr 2018 18:56:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/debian-iptables-config/</guid>
+                <guid>https://huan.ml/debian-iptables-config/</guid>
                 <description>查看规则 1 $ iptables -L 编辑规则 1 $ vim /etc/iptables.test.rules 使规则生效 1 $ iptables-restore &amp;lt; /etc/iptables.test.rules 保存生效配置 1 $ iptables-save &amp;gt; /etc/iptables.up.rules 设置开机自动载入配置 1 $ touch /etc/network/if-pre-up.d/iptables 在 iptables 文件中输入以下内容 1 2 #!/bin/bash /sbin/iptables-restore &amp;lt; /etc/iptables.up.rules 设置</description>
             </item></channel>
 </rss>

@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Huorong | 标签 | 驩讙懽歡</title>
-        <link>https://i.huan.ml/tags/huorong/</link>
+        <link>https://huan.ml/tags/huorong/</link>
         <description>Huorong | 标签 | 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
-            <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Sun, 23 Dec 2018 19:33:00 &#43;0000</lastBuildDate><atom:link href="https://i.huan.ml/tags/huorong/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Sun, 23 Dec 2018 19:33:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/huorong/" rel="self" type="application/rss+xml" /><item>
                 <title>修改火绒保护天数教程</title>
-                <link>https://i.huan.ml/change-hips-protection-days/</link>
+                <link>https://huan.ml/change-hips-protection-days/</link>
                 <pubDate>Sun, 23 Dec 2018 19:33:00 &#43;0000</pubDate>
                 <author>驩讙懽歡</author>
-                <guid>https://i.huan.ml/change-hips-protection-days/</guid>
+                <guid>https://huan.ml/change-hips-protection-days/</guid>
                 <description>修改方法 找到位于注册表HKEY_LOCAL_MACHINE\SOFTWARE\Huorong\Sysdiag\app的InstallTime</description>
             </item></channel>
 </rss>
