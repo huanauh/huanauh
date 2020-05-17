@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Kernel | 标签 | 驩讙懽歡</title>
+        <title>Kernel - 标签 - 驩讙懽歡</title>
         <link>https://huan.ml/tags/kernel/</link>
-        <description>Kernel | 标签 | 驩讙懽歡</description>
+        <description>Kernel - 标签 - 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
             <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Fri, 23 Mar 2018 18:56:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/kernel/" rel="self" type="application/rss+xml" /><item>
-                <title>CentOS 6 更换内核</title>
-                <link>https://huan.ml/centos-6-change-kernel/</link>
-                <pubDate>Fri, 23 Mar 2018 18:56:00 &#43;0000</pubDate>
-                <author>驩讙懽歡</author>
-                <guid>https://huan.ml/centos-6-change-kernel/</guid>
-                <description>查看 CentOS 版本 1 $ cat /etc/issue 查看内核版本 1 $ uname -a 下载需要更换的内核 1 $ wget http://ftp.scientificlinux.org/linux/scientific/6.6/x86_64/updates/security/kernel-2.6.32-504.3.3.el6.x86_64.rpm 安装内核 1 $ rpm -ivh kernel-2.6.32-504.3.3.el6.x86_64.rpm --force 重启 1 $ reboot</description>
-            </item></channel>
+    <title>CentOS 6 更换内核</title>
+    <link>https://huan.ml/centos-6-change-kernel/</link>
+    <pubDate>Fri, 23 Mar 2018 18:56:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://huan.ml/centos-6-change-kernel/</guid>
+    <description><![CDATA[查看 CentOS 版本 1 $ cat /etc/issue 查看内核版本 1 $ uname -a 下载需要更换的内核 1 $ wget http://ftp.scientificlinux.org/linux/scientific/6.6/x86_64/updates/security/kernel-2.6.32-504.3.3.el6.x86_64.rpm 安装内核 1 $ rpm -ivh kernel-2.6.32-504.3.3.el6.x86_64.rpm --force 重启 1 $ reboot]]></description>
+</item></channel>
 </rss>

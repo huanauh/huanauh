@@ -1,22 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Android | 标签 | 驩讙懽歡</title>
+        <title>Android - 标签 - 驩讙懽歡</title>
         <link>https://huan.ml/tags/android/</link>
-        <description>Android | 标签 | 驩讙懽歡</description>
+        <description>Android - 标签 - 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
             <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Tue, 23 Oct 2018 12:25:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/android/" rel="self" type="application/rss+xml" /><item>
-                <title>Android 开启 Telnet 服务</title>
-                <link>https://huan.ml/android-open-telnet-service/</link>
-                <pubDate>Tue, 23 Oct 2018 12:25:00 &#43;0000</pubDate>
-                <author>驩讙懽歡</author>
-                <guid>https://huan.ml/android-open-telnet-service/</guid>
-                <description>前提条件 1.需要 Root 2.安装 Busybox 3.安装终端模拟器 开启服务器 在终端模拟器执行 1 2 $ su $ telnetd -l /system/bin/sh 即可开启 telnet 服务器。 关闭服务器 执行 1 $ ps 找到COMMA</description>
-            </item><item>
-                <title>Termux 使用教程</title>
-                <link>https://huan.ml/how-to-use-termux/</link>
-                <pubDate>Sun, 21 Oct 2018 09:50:00 &#43;0000</pubDate>
-                <author>驩讙懽歡</author>
-                <guid>https://huan.ml/how-to-use-termux/</guid>
-                <description>安装部署 因为 Termux 官方服务器在国外，第一次打开可能需要科学上网 进入后更新一下 1 2 $ apt update $ apt upgrade 安装nano编辑器 1 $ apt install nano #非必须，我个人喜欢使用</description>
-            </item></channel>
+    <title>Android 开启 Telnet 服务</title>
+    <link>https://huan.ml/android-open-telnet-service/</link>
+    <pubDate>Tue, 23 Oct 2018 12:25:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://huan.ml/android-open-telnet-service/</guid>
+    <description><![CDATA[前提条件 1.需要 Root 2.安装 Busybox 3.安装终端模拟器 开启服务器 在终端模拟器执行 1 2 $ su $ telnetd -l /system/bin/sh 即可开启 telnet 服务器。 关闭服务器 执行 1 $ ps 找到COMMA]]></description>
+</item><item>
+    <title>Termux 使用教程</title>
+    <link>https://huan.ml/how-to-use-termux/</link>
+    <pubDate>Sun, 21 Oct 2018 09:50:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://huan.ml/how-to-use-termux/</guid>
+    <description><![CDATA[安装部署 因为 Termux 官方服务器在国外，第一次打开可能需要科学上网 进入后更新一下 1 2 $ apt update $ apt upgrade 安装nano编辑器 1 $ apt install nano #非必须，我个人喜欢使用]]></description>
+</item></channel>
 </rss>

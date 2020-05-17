@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>TimeZone | 标签 | 驩讙懽歡</title>
+        <title>TimeZone - 标签 - 驩讙懽歡</title>
         <link>https://huan.ml/tags/timezone/</link>
-        <description>TimeZone | 标签 | 驩讙懽歡</description>
+        <description>TimeZone - 标签 - 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
             <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Mon, 12 Feb 2018 18:56:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/timezone/" rel="self" type="application/rss+xml" /><item>
-                <title>Linux 修改时区的方法</title>
-                <link>https://huan.ml/linux-modify-time-zone/</link>
-                <pubDate>Mon, 12 Feb 2018 18:56:00 &#43;0000</pubDate>
-                <author>驩讙懽歡</author>
-                <guid>https://huan.ml/linux-modify-time-zone/</guid>
-                <description>查看时区 1 $ date -R 调整时区 1 $ tzselect #根据提示选择时区 复制文件 1 $ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 更新时间 1 $ ntpdate cn.ntp.org.cn</description>
-            </item></channel>
+    <title>Linux 修改时区的方法</title>
+    <link>https://huan.ml/linux-modify-time-zone/</link>
+    <pubDate>Mon, 12 Feb 2018 18:56:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://huan.ml/linux-modify-time-zone/</guid>
+    <description><![CDATA[查看时区 1 $ date -R 调整时区 1 $ tzselect #根据提示选择时区 复制文件 1 $ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 更新时间 1 $ ntpdate cn.ntp.org.cn]]></description>
+</item></channel>
 </rss>

@@ -1,22 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>SSH | 标签 | 驩讙懽歡</title>
+        <title>SSH - 标签 - 驩讙懽歡</title>
         <link>https://huan.ml/tags/ssh/</link>
-        <description>SSH | 标签 | 驩讙懽歡</description>
+        <description>SSH - 标签 - 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
             <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Mon, 19 Mar 2018 21:09:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/ssh/" rel="self" type="application/rss+xml" /><item>
-                <title>SSH 使用密钥登录并禁止密码登录</title>
-                <link>https://huan.ml/ssh-login-with-key/</link>
-                <pubDate>Mon, 19 Mar 2018 21:09:00 &#43;0000</pubDate>
-                <author>驩讙懽歡</author>
-                <guid>https://huan.ml/ssh-login-with-key/</guid>
-                <description>设置权限 修改.ssh目录及authorized_keys文件权限 1 2 $ chmod 700 ~/.ssh $ chmod 600 ~/.ssh/authorized_keys 编辑文件 将/etc/ssh/sshd_config文件中</description>
-            </item><item>
-                <title>SSH 私钥登陆提示 Server refused our key 的解决办法</title>
-                <link>https://huan.ml/fix-server-refused-our-key/</link>
-                <pubDate>Sat, 10 Mar 2018 18:56:00 &#43;0000</pubDate>
-                <author>驩讙懽歡</author>
-                <guid>https://huan.ml/fix-server-refused-our-key/</guid>
-                <description>原因为authorized_keys文件没有 selinux 上下文属性，导致无法通过 selinux 认证。 执行以下命令： 1 $ restorecon -R -v /root 即可解决。</description>
-            </item></channel>
+    <title>SSH 使用密钥登录并禁止密码登录</title>
+    <link>https://huan.ml/ssh-login-with-key/</link>
+    <pubDate>Mon, 19 Mar 2018 21:09:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://huan.ml/ssh-login-with-key/</guid>
+    <description><![CDATA[设置权限 修改.ssh目录及authorized_keys文件权限 1 2 $ chmod 700 ~/.ssh $ chmod 600 ~/.ssh/authorized_keys 编辑文件 将/etc/ssh/sshd_config文件中]]></description>
+</item><item>
+    <title>SSH 私钥登陆提示 Server refused our key 的解决办法</title>
+    <link>https://huan.ml/fix-server-refused-our-key/</link>
+    <pubDate>Sat, 10 Mar 2018 18:56:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://huan.ml/fix-server-refused-our-key/</guid>
+    <description><![CDATA[原因为authorized_keys文件没有 selinux 上下文属性，导致无法通过 selinux 认证。 执行以下命令： 1 $ restorecon -R -v /root 即可解决。]]></description>
+</item></channel>
 </rss>

@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>motd | 标签 | 驩讙懽歡</title>
+        <title>motd - 标签 - 驩讙懽歡</title>
         <link>https://huan.ml/tags/motd/</link>
-        <description>motd | 标签 | 驩讙懽歡</description>
+        <description>motd - 标签 - 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
             <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Sun, 29 Apr 2018 18:52:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/motd/" rel="self" type="application/rss+xml" /><item>
-                <title>修改 Debian 登录提示</title>
-                <link>https://huan.ml/debian-modify-login-prompt/</link>
-                <pubDate>Sun, 29 Apr 2018 18:52:00 &#43;0000</pubDate>
-                <author>驩讙懽歡</author>
-                <guid>https://huan.ml/debian-modify-login-prompt/</guid>
-                <description>清空/etc/motd文件的内容； 清空/etc/update-motd.d/目录中所有文件的内容，即可。</description>
-            </item></channel>
+    <title>修改 Debian 登录提示</title>
+    <link>https://huan.ml/debian-modify-login-prompt/</link>
+    <pubDate>Sun, 29 Apr 2018 18:52:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://huan.ml/debian-modify-login-prompt/</guid>
+    <description><![CDATA[清空/etc/motd文件的内容； 清空/etc/update-motd.d/目录中所有文件的内容，即可。]]></description>
+</item></channel>
 </rss>

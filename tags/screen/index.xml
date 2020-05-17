@@ -1,22 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Screen | 标签 | 驩讙懽歡</title>
+        <title>Screen - 标签 - 驩讙懽歡</title>
         <link>https://huan.ml/tags/screen/</link>
-        <description>Screen | 标签 | 驩讙懽歡</description>
+        <description>Screen - 标签 - 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
             <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Sun, 16 Sep 2018 20:41:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/screen/" rel="self" type="application/rss+xml" /><item>
-                <title>Linux 进程后台运行的方法</title>
-                <link>https://huan.ml/linux-process-run-background/</link>
-                <pubDate>Sun, 16 Sep 2018 20:41:00 &#43;0000</pubDate>
-                <author>驩讙懽歡</author>
-                <guid>https://huan.ml/linux-process-run-background/</guid>
-                <description>screen 命令 创建 screen 1 $ screen -S test 保留 screen 1 $ ctrl&#43;a&#43;d 按ctrl&#43;a，然后再按d即可保留 screen 查看 screen 1 $ screen -ls 恢复 screen 1 $ screen -r test nohup 命令 后台运行 1 $ nohup server -c ./server.josn &amp;amp; 示例命令为s</description>
-            </item><item>
-                <title>Screen 命令的用法</title>
-                <link>https://huan.ml/how-to-use-screen/</link>
-                <pubDate>Thu, 16 Nov 2017 18:56:00 &#43;0000</pubDate>
-                <author>驩讙懽歡</author>
-                <guid>https://huan.ml/how-to-use-screen/</guid>
-                <description>创建 Screen 1 $ screen -S test 保留 Screen 1 $ Ctrl&#43;a&#43;d 按Ctrl&#43;a，然后再按d即可保留 Screen 查看 Screen 1 $ screen -ls 恢复 Screen 1 $ screen -r test</description>
-            </item></channel>
+    <title>Linux 进程后台运行的方法</title>
+    <link>https://huan.ml/linux-process-run-background/</link>
+    <pubDate>Sun, 16 Sep 2018 20:41:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://huan.ml/linux-process-run-background/</guid>
+    <description><![CDATA[screen 命令 创建 screen 1 $ screen -S test 保留 screen 1 $ ctrl+a+d 按ctrl+a，然后再按d即可保留 screen 查看 screen 1 $ screen -ls 恢复 screen 1 $ screen -r test nohup 命令 后台运行 1 $ nohup server -c ./server.josn &amp; 示例命令为s]]></description>
+</item><item>
+    <title>Screen 命令的用法</title>
+    <link>https://huan.ml/how-to-use-screen/</link>
+    <pubDate>Thu, 16 Nov 2017 18:56:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://huan.ml/how-to-use-screen/</guid>
+    <description><![CDATA[创建 Screen 1 $ screen -S test 保留 Screen 1 $ Ctrl+a+d 按Ctrl+a，然后再按d即可保留 Screen 查看 Screen 1 $ screen -ls 恢复 Screen 1 $ screen -r test]]></description>
+</item></channel>
 </rss>

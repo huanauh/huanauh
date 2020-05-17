@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Telnet | 标签 | 驩讙懽歡</title>
+        <title>Telnet - 标签 - 驩讙懽歡</title>
         <link>https://huan.ml/tags/telnet/</link>
-        <description>Telnet | 标签 | 驩讙懽歡</description>
+        <description>Telnet - 标签 - 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
             <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Tue, 23 Oct 2018 12:25:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/telnet/" rel="self" type="application/rss+xml" /><item>
-                <title>Android 开启 Telnet 服务</title>
-                <link>https://huan.ml/android-open-telnet-service/</link>
-                <pubDate>Tue, 23 Oct 2018 12:25:00 &#43;0000</pubDate>
-                <author>驩讙懽歡</author>
-                <guid>https://huan.ml/android-open-telnet-service/</guid>
-                <description>前提条件 1.需要 Root 2.安装 Busybox 3.安装终端模拟器 开启服务器 在终端模拟器执行 1 2 $ su $ telnetd -l /system/bin/sh 即可开启 telnet 服务器。 关闭服务器 执行 1 $ ps 找到COMMA</description>
-            </item></channel>
+    <title>Android 开启 Telnet 服务</title>
+    <link>https://huan.ml/android-open-telnet-service/</link>
+    <pubDate>Tue, 23 Oct 2018 12:25:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://huan.ml/android-open-telnet-service/</guid>
+    <description><![CDATA[前提条件 1.需要 Root 2.安装 Busybox 3.安装终端模拟器 开启服务器 在终端模拟器执行 1 2 $ su $ telnetd -l /system/bin/sh 即可开启 telnet 服务器。 关闭服务器 执行 1 $ ps 找到COMMA]]></description>
+</item></channel>
 </rss>

@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>nano | 标签 | 驩讙懽歡</title>
+        <title>nano - 标签 - 驩讙懽歡</title>
         <link>https://huan.ml/tags/nano/</link>
-        <description>nano | 标签 | 驩讙懽歡</description>
+        <description>nano - 标签 - 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
             <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Sat, 10 Nov 2018 15:12:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/nano/" rel="self" type="application/rss+xml" /><item>
-                <title>修改 Linux 默认编辑器为 nano</title>
-                <link>https://huan.ml/linux-modified-default-editor-to-nano/</link>
-                <pubDate>Sat, 10 Nov 2018 15:12:00 &#43;0000</pubDate>
-                <author>驩讙懽歡</author>
-                <guid>https://huan.ml/linux-modified-default-editor-to-nano/</guid>
-                <description>在终端执行 1 $ export EDITOR=&amp;#34;/usr/bin/nano&amp;#34; 即可将编辑器临时改为 nano 编辑器。</description>
-            </item></channel>
+    <title>修改 Linux 默认编辑器为 nano</title>
+    <link>https://huan.ml/linux-modified-default-editor-to-nano/</link>
+    <pubDate>Sat, 10 Nov 2018 15:12:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://huan.ml/linux-modified-default-editor-to-nano/</guid>
+    <description><![CDATA[在终端执行 1 $ export EDITOR=&#34;/usr/bin/nano&#34; 即可将编辑器临时改为 nano 编辑器。]]></description>
+</item></channel>
 </rss>

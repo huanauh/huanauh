@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>bioset | 标签 | 驩讙懽歡</title>
+        <title>bioset - 标签 - 驩讙懽歡</title>
         <link>https://huan.ml/tags/bioset/</link>
-        <description>bioset | 标签 | 驩讙懽歡</description>
+        <description>bioset - 标签 - 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
             <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Sun, 16 Sep 2018 20:27:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/bioset/" rel="self" type="application/rss+xml" /><item>
-                <title>Linux 出现大量 bioset 进程的解决办法</title>
-                <link>https://huan.ml/linux-fix-too-mang-bioset-processes/</link>
-                <pubDate>Sun, 16 Sep 2018 20:27:00 &#43;0000</pubDate>
-                <author>驩讙懽歡</author>
-                <guid>https://huan.ml/linux-fix-too-mang-bioset-processes/</guid>
-                <description>此为 linux 4.x 内核的 bug。 解决办法：linux 内核在 4.13 及以上版本修复了该 bug，故安装 4.13 以上 linux 内核即可。</description>
-            </item></channel>
+    <title>Linux 出现大量 bioset 进程的解决办法</title>
+    <link>https://huan.ml/linux-fix-too-mang-bioset-processes/</link>
+    <pubDate>Sun, 16 Sep 2018 20:27:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://huan.ml/linux-fix-too-mang-bioset-processes/</guid>
+    <description><![CDATA[此为 linux 4.x 内核的 bug。 解决办法：linux 内核在 4.13 及以上版本修复了该 bug，故安装 4.13 以上 linux 内核即可。]]></description>
+</item></channel>
 </rss>

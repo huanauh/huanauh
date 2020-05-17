@@ -4,7 +4,7 @@
 将脚本放入`/etc/init.d`文件夹，并给予可执行权限
 ```bash
 $ mv xx.sh /etc/init.d
-$ chmod +x  /etc/init.d/xx.sh
+$ chmod +x /etc/init.d/xx.sh
 ```
 ### 设置开机自启
 ```bash

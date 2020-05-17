@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>LAN | 标签 | 驩讙懽歡</title>
+        <title>LAN - 标签 - 驩讙懽歡</title>
         <link>https://huan.ml/tags/lan/</link>
-        <description>LAN | 标签 | 驩讙懽歡</description>
+        <description>LAN - 标签 - 驩讙懽歡</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lianghuan2919@gmail.com (驩讙懽歡)</managingEditor>
             <webMaster>lianghuan2919@gmail.com (驩讙懽歡)</webMaster><lastBuildDate>Sat, 16 Jun 2018 20:56:00 &#43;0000</lastBuildDate><atom:link href="https://huan.ml/tags/lan/" rel="self" type="application/rss+xml" /><item>
-                <title>Windows 局域网连接共享打印机方法</title>
-                <link>https://huan.ml/windows-share-printer/</link>
-                <pubDate>Sat, 16 Jun 2018 20:56:00 &#43;0000</pubDate>
-                <author>驩讙懽歡</author>
-                <guid>https://huan.ml/windows-share-printer/</guid>
-                <description>写在前面：本文针对在设备和打印机里面添加打印机时，无法搜索到目标打印机的解决方法。 查看目标打印机IP地址 桌面任务栏右下角网络图标-右键-打开</description>
-            </item></channel>
+    <title>Windows 局域网连接共享打印机方法</title>
+    <link>https://huan.ml/windows-share-printer/</link>
+    <pubDate>Sat, 16 Jun 2018 20:56:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://huan.ml/windows-share-printer/</guid>
+    <description><![CDATA[写在前面：本文针对在设备和打印机里面添加打印机时，无法搜索到目标打印机的解决方法。 查看目标打印机IP地址 桌面任务栏右下角网络图标-右键-打开]]></description>
+</item></channel>
 </rss>
