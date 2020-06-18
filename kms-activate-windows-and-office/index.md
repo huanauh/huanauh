@@ -29,7 +29,8 @@ $ CSCRIPT OSPP.VBS /DSTATUS
 
 | 操作系统 | KMS 激活序列号 |
 | --- | --- |
+| Windows 7 Professional | FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4 |
 | Windows 10 Professional | W269N-WFGWX-YVC9B-4J6C9-T83GX |
 | Windows 10 Enterprise | NPPR9-FWDCX-D2C8J-H872K-2YT43 |
 | Windows 10 Enterprise 2016 LTSB | DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ |
-| Windows 7 Professional | FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4 |
+| Windows 10 Enterprise 2019 LTSC | M7XTQ-FN8P6-TTKYV-9D4CC-J462D |
